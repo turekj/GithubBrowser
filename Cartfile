@@ -1,2 +1,7 @@
+# Swinject
 github "Swinject/Swinject" "2.0.0-beta.2"
+
+# Quick
+github "Quick/Quick"
+github "Quick/Nimble"
 
