@@ -77,12 +77,8 @@
 		8C8F93121D9BFFB700EE5A60 /* GithubBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */,
-				8C8F93151D9BFFB700EE5A60 /* ViewController.swift */,
-				8C8F93171D9BFFB700EE5A60 /* Main.storyboard */,
-				8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */,
-				8C8F931C1D9BFFB700EE5A60 /* LaunchScreen.storyboard */,
-				8C8F931F1D9BFFB700EE5A60 /* Info.plist */,
+				8C8F93331D9C00AB00EE5A60 /* Classes */,
+				8C8F93361D9C00C900EE5A60 /* Resources */,
 			);
 			path = GithubBrowser;
 			sourceTree = "<group>";
@@ -90,10 +86,94 @@
 		8C8F93271D9BFFB700EE5A60 /* GithubBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
-				8C8F93281D9BFFB700EE5A60 /* GithubBrowserTests.swift */,
-				8C8F932A1D9BFFB700EE5A60 /* Info.plist */,
+				8C8F933B1D9C011800EE5A60 /* Classes */,
+				8C8F933C1D9C013100EE5A60 /* Resources */,
 			);
 			path = GithubBrowserTests;
+			sourceTree = "<group>";
+		};
+		8C8F93331D9C00AB00EE5A60 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F93341D9C00B300EE5A60 /* AppDelegate */,
+				8C8F93351D9C00BA00EE5A60 /* Main */,
+				8C8F933A1D9C010900EE5A60 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8C8F93341D9C00B300EE5A60 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8C8F93351D9C00BA00EE5A60 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8C8F93361D9C00C900EE5A60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F93391D9C00FE00EE5A60 /* Assets */,
+				8C8F93371D9C00CE00EE5A60 /* InfoPropertyList */,
+				8C8F93381D9C00ED00EE5A60 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C8F93371D9C00CE00EE5A60 /* InfoPropertyList */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F931F1D9BFFB700EE5A60 /* Info.plist */,
+			);
+			path = InfoPropertyList;
+			sourceTree = "<group>";
+		};
+		8C8F93381D9C00ED00EE5A60 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F931C1D9BFFB700EE5A60 /* LaunchScreen.storyboard */,
+				8C8F93171D9BFFB700EE5A60 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8C8F93391D9C00FE00EE5A60 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8C8F933A1D9C010900EE5A60 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F93151D9BFFB700EE5A60 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8C8F933B1D9C011800EE5A60 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F93281D9BFFB700EE5A60 /* GithubBrowserTests.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8C8F933C1D9C013100EE5A60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F932A1D9BFFB700EE5A60 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +311,7 @@
 				8C8F93181D9BFFB700EE5A60 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		8C8F931C1D9BFFB700EE5A60 /* LaunchScreen.storyboard */ = {
@@ -239,6 +320,7 @@
 				8C8F931D1D9BFFB700EE5A60 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,7 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8863322VPF;
-				INFOPLIST_FILE = GithubBrowser/Info.plist;
+				INFOPLIST_FILE = GithubBrowser/Resources/InfoPropertyList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubturek.GithubBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,7 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8863322VPF;
-				INFOPLIST_FILE = GithubBrowser/Info.plist;
+				INFOPLIST_FILE = GithubBrowser/Resources/InfoPropertyList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubturek.GithubBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,7 +451,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8863322VPF;
-				INFOPLIST_FILE = GithubBrowserTests/Info.plist;
+				INFOPLIST_FILE = GithubBrowserTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubturek.GithubBrowserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -384,7 +466,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8863322VPF;
-				INFOPLIST_FILE = GithubBrowserTests/Info.plist;
+				INFOPLIST_FILE = GithubBrowserTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubturek.GithubBrowserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +494,7 @@
 				8C8F932F1D9BFFB700EE5A60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C8F93301D9BFFB700EE5A60 /* Build configuration list for PBXNativeTarget "GithubBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +503,7 @@
 				8C8F93321D9BFFB700EE5A60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
