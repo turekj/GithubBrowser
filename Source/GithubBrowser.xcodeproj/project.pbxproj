@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */; };
-		8C8F93161D9BFFB700EE5A60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93151D9BFFB700EE5A60 /* ViewController.swift */; };
 		8C8F93191D9BFFB700EE5A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F93171D9BFFB700EE5A60 /* Main.storyboard */; };
 		8C8F931B1D9BFFB700EE5A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */; };
 		8C8F931E1D9BFFB700EE5A60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931C1D9BFFB700EE5A60 /* LaunchScreen.storyboard */; };
@@ -39,6 +38,8 @@
 		8CEA8EB01D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EAF1D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift */; };
 		8CEA8EB31D9C37EC00B512B8 /* UserRepositoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EB21D9C37EC00B512B8 /* UserRepositoryList.swift */; };
 		8CEA8EB51D9C385000B512B8 /* UserRepositoryListMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EB41D9C385000B512B8 /* UserRepositoryListMock.swift */; };
+		8CEA8EB81D9C3A1600B512B8 /* GlobalAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EB71D9C3A1600B512B8 /* GlobalAssembly.swift */; };
+		8CEA8EBA1D9C3A3600B512B8 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EB91D9C3A3600B512B8 /* ListAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,6 @@
 /* Begin PBXFileReference section */
 		8C8F93101D9BFFB700EE5A60 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C8F93151D9BFFB700EE5A60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C8F93181D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C8F931D1D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,6 +101,8 @@
 		8CEA8EAF1D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryControllerConfiguratorSpec.swift; sourceTree = "<group>"; };
 		8CEA8EB21D9C37EC00B512B8 /* UserRepositoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryList.swift; sourceTree = "<group>"; };
 		8CEA8EB41D9C385000B512B8 /* UserRepositoryListMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryListMock.swift; sourceTree = "<group>"; };
+		8CEA8EB71D9C3A1600B512B8 /* GlobalAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalAssembly.swift; sourceTree = "<group>"; };
+		8CEA8EB91D9C3A3600B512B8 /* ListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 		8C8F93331D9C00AB00EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8EB61D9C39FC00B512B8 /* Assembly */,
 				8CEA8E931D9C29AE00B512B8 /* Flow */,
 				8C8F93341D9C00B300EE5A60 /* AppDelegate */,
 				8CEA8E8B1D9C268100B512B8 /* Extensions */,
@@ -230,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8EAA1D9C36CE00B512B8 /* List */,
-				8C8F93151D9BFFB700EE5A60 /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -382,6 +384,15 @@
 			name = Impl;
 			sourceTree = "<group>";
 		};
+		8CEA8EB61D9C39FC00B512B8 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8EB71D9C3A1600B512B8 /* GlobalAssembly.swift */,
+				8CEA8EB91D9C3A3600B512B8 /* ListAssembly.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -508,9 +519,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8F93401D9C022B00EE5A60 /* UnitTestAppDelegate.swift in Sources */,
+				8CEA8EB81D9C3A1600B512B8 /* GlobalAssembly.swift in Sources */,
 				8CEA8EAE1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift in Sources */,
+				8CEA8EBA1D9C3A3600B512B8 /* ListAssembly.swift in Sources */,
 				8CEA8EAC1D9C36E600B512B8 /* UserRepositoryViewController.swift in Sources */,
-				8C8F93161D9BFFB700EE5A60 /* ViewController.swift in Sources */,
 				8CEA8E991D9C2AE200B512B8 /* MainFlowController.swift in Sources */,
 				8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */,
 				8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */,
