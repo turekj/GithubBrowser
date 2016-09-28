@@ -13,5 +13,24 @@ class GlobalAssembly: AssemblyType {
             
             return window
         }.inObjectScope(.hierarchy)
+        
+        container.register(UINavigationController.self, name: "root") { _ in
+            return UINavigationController(nibName: nil, bundle: nil)
+        }
+        
+        container.register(FlowController.self, name: "main") { r in
+            let navigationController = r.resolve(UINavigationController.self, name: "root")!
+            let configurator = r.resolve(ControllerConfigurator.self, name: "globalRoot")!
+            
+            return MainFlowController(resolver: container,
+                                      navigationController: navigationController,
+                                      configurator: configurator)
+        }
+        
+        container.register(ControllerConfigurator.self, name: "globalRoot") { r in
+            let listConfigurator = r.resolve(ControllerConfigurator.self, name: "list")!
+            
+            return CompositeControllerConfigurator(configurators: [listConfigurator])
+        }
     }
 }
