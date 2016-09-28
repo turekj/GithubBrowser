@@ -15,6 +15,7 @@
 		8C8F93291D9BFFB700EE5A60 /* GithubBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93281D9BFFB700EE5A60 /* GithubBrowserTests.swift */; };
 		8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F933D1D9C01F500EE5A60 /* main.swift */; };
 		8C8F93401D9C022B00EE5A60 /* UnitTestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F933F1D9C022B00EE5A60 /* UnitTestAppDelegate.swift */; };
+		8C8F93441D9C069100EE5A60 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8F93431D9C069100EE5A60 /* Swinject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		8C8F932A1D9BFFB700EE5A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C8F933D1D9C01F500EE5A60 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = GithubBrowser/Classes/main.swift; sourceTree = SOURCE_ROOT; };
 		8C8F933F1D9C022B00EE5A60 /* UnitTestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestAppDelegate.swift; sourceTree = "<group>"; };
+		8C8F93431D9C069100EE5A60 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8F93441D9C069100EE5A60 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 				8C8F93121D9BFFB700EE5A60 /* GithubBrowser */,
 				8C8F93271D9BFFB700EE5A60 /* GithubBrowserTests */,
 				8C8F93111D9BFFB700EE5A60 /* Products */,
+				8C8F93421D9C069100EE5A60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +186,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8C8F93421D9C069100EE5A60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F93431D9C069100EE5A60 /* Swinject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,6 +204,7 @@
 				8C8F930C1D9BFFB700EE5A60 /* Sources */,
 				8C8F930D1D9BFFB700EE5A60 /* Frameworks */,
 				8C8F930E1D9BFFB700EE5A60 /* Resources */,
+				8C8F93411D9C054800EE5A60 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -281,6 +294,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C8F93411D9C054800EE5A60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C8F930C1D9BFFB700EE5A60 /* Sources */ = {
@@ -432,6 +462,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8863322VPF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GithubBrowser/Resources/InfoPropertyList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubturek.GithubBrowser;
@@ -445,6 +479,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8863322VPF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GithubBrowser/Resources/InfoPropertyList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubturek.GithubBrowser;
