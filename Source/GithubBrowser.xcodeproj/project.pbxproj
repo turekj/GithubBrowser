@@ -75,9 +75,8 @@
 		8C8F931F1D9BFFB700EE5A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C8F93241D9BFFB700EE5A60 /* GithubBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F932A1D9BFFB700EE5A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C8F933D1D9C01F500EE5A60 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = GithubBrowser/Classes/main.swift; sourceTree = SOURCE_ROOT; };
+		8C8F933D1D9C01F500EE5A60 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8C8F933F1D9C022B00EE5A60 /* UnitTestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestAppDelegate.swift; sourceTree = "<group>"; };
-		8C8F93431D9C069100EE5A60 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		8C8F93451D9C076200EE5A60 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		8C8F93571D9C0D5500EE5A60 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		8C8F93581D9C0D5500EE5A60 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -130,10 +129,10 @@
 		8C8F93071D9BFFB700EE5A60 = {
 			isa = PBXGroup;
 			children = (
+				8C8F93421D9C069100EE5A60 /* Frameworks */,
 				8C8F93121D9BFFB700EE5A60 /* GithubBrowser */,
 				8C8F93271D9BFFB700EE5A60 /* GithubBrowserTests */,
 				8C8F93111D9BFFB700EE5A60 /* Products */,
-				8C8F93421D9C069100EE5A60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,10 +166,10 @@
 		8C8F93331D9C00AB00EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8EB61D9C39FC00B512B8 /* Assembly */,
-				8CEA8E931D9C29AE00B512B8 /* Flow */,
 				8C8F93341D9C00B300EE5A60 /* AppDelegate */,
+				8CEA8EB61D9C39FC00B512B8 /* Assembly */,
 				8CEA8E8B1D9C268100B512B8 /* Extensions */,
+				8CEA8E931D9C29AE00B512B8 /* Flow */,
 				8C8F93351D9C00BA00EE5A60 /* Main */,
 				8C8F933A1D9C010900EE5A60 /* ViewControllers */,
 			);
@@ -240,8 +239,8 @@
 		8C8F933B1D9C011800EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8E961D9C2AC600B512B8 /* Flow */,
 				8CEA8E8F1D9C27DC00B512B8 /* Extensions */,
+				8CEA8E961D9C2AC600B512B8 /* Flow */,
 				8C8F934D1D9C09AD00EE5A60 /* Mock */,
 			);
 			path = Classes;
@@ -262,7 +261,6 @@
 				8C8F93571D9C0D5500EE5A60 /* Nimble.framework */,
 				8C8F93581D9C0D5500EE5A60 /* Quick.framework */,
 				8C8F93451D9C076200EE5A60 /* Swinject.framework */,
-				8C8F93431D9C069100EE5A60 /* Swinject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,19 +271,19 @@
 				8CEA8EA11D9C2F6400B512B8 /* Flow */,
 				8C8F935E1D9C0EE400EE5A60 /* ViewControllers */,
 			);
-			name = Mock;
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		8C8F935E1D9C0EE400EE5A60 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8C8F935F1D9C0EF500EE5A60 /* ViewControllerMock.swift */,
-				8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */,
 				8C8F93631D9C0F0900EE5A60 /* NavigationControllerMock.swift */,
-				8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */,
+				8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */,
 				8CEA8EB41D9C385000B512B8 /* UserRepositoryListMock.swift */,
+				8C8F935F1D9C0EF500EE5A60 /* ViewControllerMock.swift */,
+				8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		8CEA8E8B1D9C268100B512B8 /* Extensions */ = {
@@ -293,7 +291,7 @@
 			children = (
 				8CEA8E8C1D9C268E00B512B8 /* UINavigationViewController */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8CEA8E8C1D9C268E00B512B8 /* UINavigationViewController */ = {
@@ -301,7 +299,7 @@
 			children = (
 				8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */,
 			);
-			name = UINavigationViewController;
+			path = UINavigationViewController;
 			sourceTree = "<group>";
 		};
 		8CEA8E8F1D9C27DC00B512B8 /* Extensions */ = {
@@ -309,7 +307,7 @@
 			children = (
 				8CEA8E901D9C27E100B512B8 /* UINavigationViewController */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8CEA8E901D9C27E100B512B8 /* UINavigationViewController */ = {
@@ -317,17 +315,17 @@
 			children = (
 				8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */,
 			);
-			name = UINavigationViewController;
+			path = UINavigationViewController;
 			sourceTree = "<group>";
 		};
 		8CEA8E931D9C29AE00B512B8 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
 				8CEA8E971D9C2AD200B512B8 /* Impl */,
-				8CEA8E941D9C29BC00B512B8 /* FlowController.swift */,
 				8CEA8E9F1D9C2EF700B512B8 /* ControllerConfigurator.swift */,
+				8CEA8E941D9C29BC00B512B8 /* FlowController.swift */,
 			);
-			name = Flow;
+			path = Flow;
 			sourceTree = "<group>";
 		};
 		8CEA8E961D9C2AC600B512B8 /* Flow */ = {
@@ -335,27 +333,27 @@
 			children = (
 				8CEA8E9A1D9C2BB500B512B8 /* Impl */,
 			);
-			name = Flow;
+			path = Flow;
 			sourceTree = "<group>";
 		};
 		8CEA8E971D9C2AD200B512B8 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */,
 				8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */,
+				8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */,
 				8CEA8EAD1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8CEA8E9A1D9C2BB500B512B8 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */,
 				8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */,
+				8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */,
 				8CEA8EAF1D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8CEA8EA11D9C2F6400B512B8 /* Flow */ = {
@@ -364,7 +362,7 @@
 				8CEA8EA21D9C2F7800B512B8 /* ControllerConfiguratorMock.swift */,
 				8CEA8EA81D9C321700B512B8 /* FlowControllerMock.swift */,
 			);
-			name = Flow;
+			path = Flow;
 			sourceTree = "<group>";
 		};
 		8CEA8EAA1D9C36CE00B512B8 /* List */ = {
@@ -373,7 +371,7 @@
 				8CEA8EB11D9C37D400B512B8 /* Impl */,
 				8CEA8EB21D9C37EC00B512B8 /* UserRepositoryList.swift */,
 			);
-			name = List;
+			path = List;
 			sourceTree = "<group>";
 		};
 		8CEA8EB11D9C37D400B512B8 /* Impl */ = {
@@ -381,7 +379,7 @@
 			children = (
 				8CEA8EAB1D9C36E600B512B8 /* UserRepositoryViewController.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8CEA8EB61D9C39FC00B512B8 /* Assembly */ = {
@@ -390,7 +388,7 @@
 				8CEA8EB71D9C3A1600B512B8 /* GlobalAssembly.swift */,
 				8CEA8EB91D9C3A3600B512B8 /* ListAssembly.swift */,
 			);
-			name = Assembly;
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
