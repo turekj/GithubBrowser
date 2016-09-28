@@ -26,6 +26,8 @@
 		8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */; };
 		8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93631D9C0F0900EE5A60 /* NavigationControllerMock.swift */; };
 		8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */; };
+		8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */; };
+		8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewControllerMock.swift; sourceTree = "<group>"; };
 		8C8F93631D9C0F0900EE5A60 /* NavigationControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerMock.swift; sourceTree = "<group>"; };
 		8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YetAnotherViewControllerMock.swift; sourceTree = "<group>"; };
+		8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+BackwardsNavigation.swift"; sourceTree = "<group>"; };
+		8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerBackwardsNavigationSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				8C8F93341D9C00B300EE5A60 /* AppDelegate */,
+				8CEA8E8B1D9C268100B512B8 /* Extensions */,
 				8C8F93351D9C00BA00EE5A60 /* Main */,
 				8C8F933A1D9C010900EE5A60 /* ViewControllers */,
 			);
@@ -209,6 +214,7 @@
 		8C8F933B1D9C011800EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8E8F1D9C27DC00B512B8 /* Extensions */,
 				8C8F934D1D9C09AD00EE5A60 /* Mock */,
 				8C8F934B1D9C099E00EE5A60 /* ViewControllers */,
 			);
@@ -292,6 +298,38 @@
 				8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8CEA8E8B1D9C268100B512B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E8C1D9C268E00B512B8 /* UINavigationViewController */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		8CEA8E8C1D9C268E00B512B8 /* UINavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */,
+			);
+			name = UINavigationViewController;
+			sourceTree = "<group>";
+		};
+		8CEA8E8F1D9C27DC00B512B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E901D9C27E100B512B8 /* UINavigationViewController */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		8CEA8E901D9C27E100B512B8 /* UINavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */,
+			);
+			name = UINavigationViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +462,7 @@
 				8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */,
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
 				8C8F93501D9C0A0B00EE5A60 /* InjectingNavigationController.swift in Sources */,
+				8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */,
 				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
 				8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */,
 				8C8F93561D9C0AD100EE5A60 /* InjectingNavigationControllerSpec.swift in Sources */,
