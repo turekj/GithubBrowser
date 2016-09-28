@@ -18,8 +18,10 @@ class MainFlowControllerSpec: QuickSpec {
             }
             
             let navigationController = UINavigationControllerMock(nibName: nil, bundle: nil)
+            let controllerConfigurator = ControllerConfiguratorMock()
             let sut = MainFlowController(resolver: container,
-                                         navigationController: navigationController)
+                                         navigationController: navigationController,
+                                         configurator: controllerConfigurator)
             
             it("Should return navigation controller as root controller") {
                 let rootController = sut.rootController
@@ -46,6 +48,17 @@ class MainFlowControllerSpec: QuickSpec {
                     
                     expect(navigationController.lastPushed).to(beNil())
                     expect(navigationController.lastPushedAnimated).to(beNil())
+                }
+                
+                it("Should configure new view controller") {
+                    controllerConfigurator.configuredController = nil
+                    controllerConfigurator.configuredWith = nil
+                    
+                    sut.proceed(to: ViewControllerMock.self, animated: false)
+                    
+                    expect(controllerConfigurator.configuredController).to(
+                        beAKindOf(ViewControllerMock.self))
+                    expect(controllerConfigurator.configuredWith).to(be(sut))
                 }
             }
             

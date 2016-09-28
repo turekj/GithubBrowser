@@ -6,10 +6,13 @@ class MainFlowController: FlowController {
     
     let resolver: ResolverType
     let navigationController: UINavigationController
+    let configurator: ControllerConfigurator
     
-    init(resolver: ResolverType, navigationController: UINavigationController) {
+    init(resolver: ResolverType, navigationController: UINavigationController,
+         configurator: ControllerConfigurator) {
         self.resolver = resolver
         self.navigationController = navigationController
+        self.configurator = configurator
     }
     
     var rootController: UIViewController {
@@ -24,6 +27,7 @@ class MainFlowController: FlowController {
             return
         }
         
+        _ = self.configurator.configureController(controller, with: self)
         self.navigationController.pushViewController(controller, animated: true)
     }
     
