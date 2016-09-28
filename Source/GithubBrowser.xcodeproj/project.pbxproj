@@ -15,7 +15,7 @@
 		8C8F93291D9BFFB700EE5A60 /* GithubBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93281D9BFFB700EE5A60 /* GithubBrowserTests.swift */; };
 		8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F933D1D9C01F500EE5A60 /* main.swift */; };
 		8C8F93401D9C022B00EE5A60 /* UnitTestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F933F1D9C022B00EE5A60 /* UnitTestAppDelegate.swift */; };
-		8C8F93441D9C069100EE5A60 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8F93431D9C069100EE5A60 /* Swinject.framework */; };
+		8C8F93471D9C07E700EE5A60 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8F93451D9C076200EE5A60 /* Swinject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 		8C8F933D1D9C01F500EE5A60 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = GithubBrowser/Classes/main.swift; sourceTree = SOURCE_ROOT; };
 		8C8F933F1D9C022B00EE5A60 /* UnitTestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestAppDelegate.swift; sourceTree = "<group>"; };
 		8C8F93431D9C069100EE5A60 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		8C8F93451D9C076200EE5A60 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C8F93441D9C069100EE5A60 /* Swinject.framework in Frameworks */,
+				8C8F93471D9C07E700EE5A60 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +190,7 @@
 		8C8F93421D9C069100EE5A60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C8F93451D9C076200EE5A60 /* Swinject.framework */,
 				8C8F93431D9C069100EE5A60 /* Swinject.framework */,
 			);
 			name = Frameworks;
@@ -302,7 +304,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Swinject.framework",
 			);
 			outputPaths = (
 			);
@@ -464,7 +466,7 @@
 				DEVELOPMENT_TEAM = 8863322VPF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/../Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = GithubBrowser/Resources/InfoPropertyList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -481,7 +483,7 @@
 				DEVELOPMENT_TEAM = 8863322VPF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/../Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = GithubBrowser/Resources/InfoPropertyList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
