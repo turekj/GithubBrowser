@@ -15,9 +15,6 @@
 		8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F933D1D9C01F500EE5A60 /* main.swift */; };
 		8C8F93401D9C022B00EE5A60 /* UnitTestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F933F1D9C022B00EE5A60 /* UnitTestAppDelegate.swift */; };
 		8C8F93471D9C07E700EE5A60 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8F93451D9C076200EE5A60 /* Swinject.framework */; };
-		8C8F934A1D9C08F700EE5A60 /* ViewControllerNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93491D9C08F700EE5A60 /* ViewControllerNavigator.swift */; };
-		8C8F93501D9C0A0B00EE5A60 /* InjectingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F934F1D9C0A0B00EE5A60 /* InjectingNavigationController.swift */; };
-		8C8F93561D9C0AD100EE5A60 /* InjectingNavigationControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93551D9C0AD100EE5A60 /* InjectingNavigationControllerSpec.swift */; };
 		8C8F93591D9C0D5500EE5A60 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8F93571D9C0D5500EE5A60 /* Nimble.framework */; };
 		8C8F935A1D9C0D5500EE5A60 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8F93581D9C0D5500EE5A60 /* Quick.framework */; };
 		8C8F935C1D9C0D6A00EE5A60 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C8F93571D9C0D5500EE5A60 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -26,6 +23,12 @@
 		8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */; };
 		8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93631D9C0F0900EE5A60 /* NavigationControllerMock.swift */; };
 		8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */; };
+		8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */; };
+		8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */; };
+		8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E941D9C29BC00B512B8 /* FlowController.swift */; };
+		8CEA8E991D9C2AE200B512B8 /* MainFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */; };
+		8CEA8E9C1D9C2BC000B512B8 /* MainFlowControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */; };
+		8CEA8E9E1D9C2DD600B512B8 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8E9D1D9C2DD600B512B8 /* Dollar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,15 +69,18 @@
 		8C8F933F1D9C022B00EE5A60 /* UnitTestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestAppDelegate.swift; sourceTree = "<group>"; };
 		8C8F93431D9C069100EE5A60 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		8C8F93451D9C076200EE5A60 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = ../Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
-		8C8F93491D9C08F700EE5A60 /* ViewControllerNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerNavigator.swift; sourceTree = "<group>"; };
-		8C8F934F1D9C0A0B00EE5A60 /* InjectingNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectingNavigationController.swift; sourceTree = "<group>"; };
-		8C8F93551D9C0AD100EE5A60 /* InjectingNavigationControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectingNavigationControllerSpec.swift; sourceTree = "<group>"; };
 		8C8F93571D9C0D5500EE5A60 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		8C8F93581D9C0D5500EE5A60 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		8C8F935F1D9C0EF500EE5A60 /* ViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMock.swift; sourceTree = "<group>"; };
 		8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewControllerMock.swift; sourceTree = "<group>"; };
 		8C8F93631D9C0F0900EE5A60 /* NavigationControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerMock.swift; sourceTree = "<group>"; };
 		8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YetAnotherViewControllerMock.swift; sourceTree = "<group>"; };
+		8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+BackwardsNavigation.swift"; sourceTree = "<group>"; };
+		8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerBackwardsNavigationSpec.swift; sourceTree = "<group>"; };
+		8CEA8E941D9C29BC00B512B8 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowController.swift; sourceTree = "<group>"; };
+		8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowControllerSpec.swift; sourceTree = "<group>"; };
+		8CEA8E9D1D9C2DD600B512B8 /* Dollar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dollar.framework; path = ../Carthage/Build/iOS/Dollar.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEA8E9E1D9C2DD600B512B8 /* Dollar.framework in Frameworks */,
 				8C8F93471D9C07E700EE5A60 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +145,9 @@
 		8C8F93331D9C00AB00EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8E931D9C29AE00B512B8 /* Flow */,
 				8C8F93341D9C00B300EE5A60 /* AppDelegate */,
+				8CEA8E8B1D9C268100B512B8 /* Extensions */,
 				8C8F93351D9C00BA00EE5A60 /* Main */,
 				8C8F933A1D9C010900EE5A60 /* ViewControllers */,
 			);
@@ -200,7 +209,6 @@
 		8C8F933A1D9C010900EE5A60 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8C8F93481D9C08A700EE5A60 /* Navigation */,
 				8C8F93151D9BFFB700EE5A60 /* ViewController.swift */,
 			);
 			path = ViewControllers;
@@ -209,8 +217,9 @@
 		8C8F933B1D9C011800EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8E961D9C2AC600B512B8 /* Flow */,
+				8CEA8E8F1D9C27DC00B512B8 /* Extensions */,
 				8C8F934D1D9C09AD00EE5A60 /* Mock */,
-				8C8F934B1D9C099E00EE5A60 /* ViewControllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -226,6 +235,7 @@
 		8C8F93421D9C069100EE5A60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8E9D1D9C2DD600B512B8 /* Dollar.framework */,
 				8C8F93571D9C0D5500EE5A60 /* Nimble.framework */,
 				8C8F93581D9C0D5500EE5A60 /* Quick.framework */,
 				8C8F93451D9C076200EE5A60 /* Swinject.framework */,
@@ -234,53 +244,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8C8F93481D9C08A700EE5A60 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				8C8F934E1D9C09B500EE5A60 /* Impl */,
-				8C8F93491D9C08F700EE5A60 /* ViewControllerNavigator.swift */,
-			);
-			name = Navigation;
-			sourceTree = "<group>";
-		};
-		8C8F934B1D9C099E00EE5A60 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				8C8F934C1D9C09A400EE5A60 /* Navigation */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		8C8F934C1D9C09A400EE5A60 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				8C8F93511D9C0A9A00EE5A60 /* Impl */,
-			);
-			name = Navigation;
-			sourceTree = "<group>";
-		};
 		8C8F934D1D9C09AD00EE5A60 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
 				8C8F935E1D9C0EE400EE5A60 /* ViewControllers */,
 			);
 			name = Mock;
-			sourceTree = "<group>";
-		};
-		8C8F934E1D9C09B500EE5A60 /* Impl */ = {
-			isa = PBXGroup;
-			children = (
-				8C8F934F1D9C0A0B00EE5A60 /* InjectingNavigationController.swift */,
-			);
-			name = Impl;
-			sourceTree = "<group>";
-		};
-		8C8F93511D9C0A9A00EE5A60 /* Impl */ = {
-			isa = PBXGroup;
-			children = (
-				8C8F93551D9C0AD100EE5A60 /* InjectingNavigationControllerSpec.swift */,
-			);
-			name = Impl;
 			sourceTree = "<group>";
 		};
 		8C8F935E1D9C0EE400EE5A60 /* ViewControllers */ = {
@@ -292,6 +261,71 @@
 				8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8CEA8E8B1D9C268100B512B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E8C1D9C268E00B512B8 /* UINavigationViewController */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		8CEA8E8C1D9C268E00B512B8 /* UINavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */,
+			);
+			name = UINavigationViewController;
+			sourceTree = "<group>";
+		};
+		8CEA8E8F1D9C27DC00B512B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E901D9C27E100B512B8 /* UINavigationViewController */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		8CEA8E901D9C27E100B512B8 /* UINavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */,
+			);
+			name = UINavigationViewController;
+			sourceTree = "<group>";
+		};
+		8CEA8E931D9C29AE00B512B8 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E971D9C2AD200B512B8 /* Impl */,
+				8CEA8E941D9C29BC00B512B8 /* FlowController.swift */,
+			);
+			name = Flow;
+			sourceTree = "<group>";
+		};
+		8CEA8E961D9C2AC600B512B8 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E9A1D9C2BB500B512B8 /* Impl */,
+			);
+			name = Flow;
+			sourceTree = "<group>";
+		};
+		8CEA8E971D9C2AD200B512B8 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */,
+			);
+			name = Impl;
+			sourceTree = "<group>";
+		};
+		8CEA8E9A1D9C2BB500B512B8 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */,
+			);
+			name = Impl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +438,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/../Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Dollar.framework",
 			);
 			outputPaths = (
 			);
@@ -420,10 +455,11 @@
 			files = (
 				8C8F93401D9C022B00EE5A60 /* UnitTestAppDelegate.swift in Sources */,
 				8C8F93161D9BFFB700EE5A60 /* ViewController.swift in Sources */,
-				8C8F934A1D9C08F700EE5A60 /* ViewControllerNavigator.swift in Sources */,
+				8CEA8E991D9C2AE200B512B8 /* MainFlowController.swift in Sources */,
+				8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */,
 				8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */,
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
-				8C8F93501D9C0A0B00EE5A60 /* InjectingNavigationController.swift in Sources */,
+				8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,9 +467,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */,
 				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
 				8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */,
-				8C8F93561D9C0AD100EE5A60 /* InjectingNavigationControllerSpec.swift in Sources */,
+				8CEA8E9C1D9C2BC000B512B8 /* MainFlowControllerSpec.swift in Sources */,
 				8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */,
 				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
 			);
