@@ -34,6 +34,11 @@
 		8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */; };
 		8CEA8EA71D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */; };
 		8CEA8EA91D9C321700B512B8 /* FlowControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EA81D9C321700B512B8 /* FlowControllerMock.swift */; };
+		8CEA8EAC1D9C36E600B512B8 /* UserRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EAB1D9C36E600B512B8 /* UserRepositoryViewController.swift */; };
+		8CEA8EAE1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EAD1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift */; };
+		8CEA8EB01D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EAF1D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift */; };
+		8CEA8EB31D9C37EC00B512B8 /* UserRepositoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EB21D9C37EC00B512B8 /* UserRepositoryList.swift */; };
+		8CEA8EB51D9C385000B512B8 /* UserRepositoryListMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EB41D9C385000B512B8 /* UserRepositoryListMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +96,11 @@
 		8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeControllerConfigurator.swift; sourceTree = "<group>"; };
 		8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeControllerConfiguratorSpec.swift; sourceTree = "<group>"; };
 		8CEA8EA81D9C321700B512B8 /* FlowControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowControllerMock.swift; sourceTree = "<group>"; };
+		8CEA8EAB1D9C36E600B512B8 /* UserRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryViewController.swift; sourceTree = "<group>"; };
+		8CEA8EAD1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryControllerConfigurator.swift; sourceTree = "<group>"; };
+		8CEA8EAF1D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryControllerConfiguratorSpec.swift; sourceTree = "<group>"; };
+		8CEA8EB21D9C37EC00B512B8 /* UserRepositoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryList.swift; sourceTree = "<group>"; };
+		8CEA8EB41D9C385000B512B8 /* UserRepositoryListMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryListMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +229,7 @@
 		8C8F933A1D9C010900EE5A60 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8EAA1D9C36CE00B512B8 /* List */,
 				8C8F93151D9BFFB700EE5A60 /* ViewController.swift */,
 			);
 			path = ViewControllers;
@@ -270,6 +281,7 @@
 				8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */,
 				8C8F93631D9C0F0900EE5A60 /* NavigationControllerMock.swift */,
 				8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */,
+				8CEA8EB41D9C385000B512B8 /* UserRepositoryListMock.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -329,6 +341,7 @@
 			children = (
 				8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */,
 				8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */,
+				8CEA8EAD1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -338,6 +351,7 @@
 			children = (
 				8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */,
 				8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */,
+				8CEA8EAF1D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -349,6 +363,23 @@
 				8CEA8EA81D9C321700B512B8 /* FlowControllerMock.swift */,
 			);
 			name = Flow;
+			sourceTree = "<group>";
+		};
+		8CEA8EAA1D9C36CE00B512B8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8EB11D9C37D400B512B8 /* Impl */,
+				8CEA8EB21D9C37EC00B512B8 /* UserRepositoryList.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		8CEA8EB11D9C37D400B512B8 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8EAB1D9C36E600B512B8 /* UserRepositoryViewController.swift */,
+			);
+			name = Impl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +508,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8F93401D9C022B00EE5A60 /* UnitTestAppDelegate.swift in Sources */,
+				8CEA8EAE1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift in Sources */,
+				8CEA8EAC1D9C36E600B512B8 /* UserRepositoryViewController.swift in Sources */,
 				8C8F93161D9BFFB700EE5A60 /* ViewController.swift in Sources */,
 				8CEA8E991D9C2AE200B512B8 /* MainFlowController.swift in Sources */,
 				8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */,
@@ -484,6 +517,7 @@
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
 				8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */,
 				8CEA8EA01D9C2EF700B512B8 /* ControllerConfigurator.swift in Sources */,
+				8CEA8EB31D9C37EC00B512B8 /* UserRepositoryList.swift in Sources */,
 				8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +526,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEA8EB51D9C385000B512B8 /* UserRepositoryListMock.swift in Sources */,
+				8CEA8EB01D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift in Sources */,
 				8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */,
 				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
 				8CEA8EA91D9C321700B512B8 /* FlowControllerMock.swift in Sources */,
