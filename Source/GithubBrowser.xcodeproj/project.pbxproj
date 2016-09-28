@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */; };
-		8C8F93161D9BFFB700EE5A60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93151D9BFFB700EE5A60 /* ViewController.swift */; };
 		8C8F93191D9BFFB700EE5A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F93171D9BFFB700EE5A60 /* Main.storyboard */; };
 		8C8F931B1D9BFFB700EE5A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */; };
 		8C8F931E1D9BFFB700EE5A60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931C1D9BFFB700EE5A60 /* LaunchScreen.storyboard */; };
@@ -70,7 +69,6 @@
 /* Begin PBXFileReference section */
 		8C8F93101D9BFFB700EE5A60 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C8F93151D9BFFB700EE5A60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C8F93181D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C8F931D1D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8EAA1D9C36CE00B512B8 /* List */,
-				8C8F93151D9BFFB700EE5A60 /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -526,7 +523,6 @@
 				8CEA8EAE1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift in Sources */,
 				8CEA8EBA1D9C3A3600B512B8 /* ListAssembly.swift in Sources */,
 				8CEA8EAC1D9C36E600B512B8 /* UserRepositoryViewController.swift in Sources */,
-				8C8F93161D9BFFB700EE5A60 /* ViewController.swift in Sources */,
 				8CEA8E991D9C2AE200B512B8 /* MainFlowController.swift in Sources */,
 				8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */,
 				8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */,
