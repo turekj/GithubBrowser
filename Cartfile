@@ -6,5 +6,12 @@ github "Quick/Quick"
 github "Quick/Nimble"
 
 # Dollar
-github "ankurp/Dollar"
+github "ankurp/Dollar" ~> 6.0
+
+# Alamofire
+github "Alamofire/Alamofire" ~> 4.0
+
+# RxSwift + extensions
+github "ReactiveX/RxSwift" "3.0.0-beta.1"
+github "RxSwiftCommunity/RxAlamofire" "master"
 

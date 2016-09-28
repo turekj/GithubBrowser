@@ -1,4 +1,7 @@
+github "Alamofire/Alamofire" "4.0.1"
 github "ankurp/Dollar" "6.0.0"
 github "Quick/Nimble" "v5.0.0"
 github "Quick/Quick" "v0.10.0"
+github "ReactiveX/RxSwift" "3.0.0-beta.1"
 github "Swinject/Swinject" "2.0.0-beta.2"
+github "RxSwiftCommunity/RxAlamofire" "b8d5d5d2bfd857b328f48b3c7c5052cdd52698d7"

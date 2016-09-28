@@ -40,6 +40,10 @@
 		8CEA8EB51D9C385000B512B8 /* UserRepositoryListMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EB41D9C385000B512B8 /* UserRepositoryListMock.swift */; };
 		8CEA8EB81D9C3A1600B512B8 /* GlobalAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EB71D9C3A1600B512B8 /* GlobalAssembly.swift */; };
 		8CEA8EBA1D9C3A3600B512B8 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EB91D9C3A3600B512B8 /* ListAssembly.swift */; };
+		8CEA8EBF1D9C4BBC00B512B8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EBB1D9C4BBC00B512B8 /* Alamofire.framework */; };
+		8CEA8EC01D9C4BBC00B512B8 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EBC1D9C4BBC00B512B8 /* RxAlamofire.framework */; };
+		8CEA8EC11D9C4BBC00B512B8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EBD1D9C4BBC00B512B8 /* RxCocoa.framework */; };
+		8CEA8EC21D9C4BBC00B512B8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EBE1D9C4BBC00B512B8 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,10 @@
 		8CEA8EB41D9C385000B512B8 /* UserRepositoryListMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryListMock.swift; sourceTree = "<group>"; };
 		8CEA8EB71D9C3A1600B512B8 /* GlobalAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalAssembly.swift; sourceTree = "<group>"; };
 		8CEA8EB91D9C3A3600B512B8 /* ListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
+		8CEA8EBB1D9C4BBC00B512B8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		8CEA8EBC1D9C4BBC00B512B8 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = ../Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
+		8CEA8EBD1D9C4BBC00B512B8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		8CEA8EBE1D9C4BBC00B512B8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEA8EBF1D9C4BBC00B512B8 /* Alamofire.framework in Frameworks */,
+				8CEA8EC01D9C4BBC00B512B8 /* RxAlamofire.framework in Frameworks */,
+				8CEA8EC11D9C4BBC00B512B8 /* RxCocoa.framework in Frameworks */,
+				8CEA8EC21D9C4BBC00B512B8 /* RxSwift.framework in Frameworks */,
 				8CEA8E9E1D9C2DD600B512B8 /* Dollar.framework in Frameworks */,
 				8C8F93471D9C07E700EE5A60 /* Swinject.framework in Frameworks */,
 			);
@@ -257,6 +269,10 @@
 		8C8F93421D9C069100EE5A60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8EBB1D9C4BBC00B512B8 /* Alamofire.framework */,
+				8CEA8EBC1D9C4BBC00B512B8 /* RxAlamofire.framework */,
+				8CEA8EBD1D9C4BBC00B512B8 /* RxCocoa.framework */,
+				8CEA8EBE1D9C4BBC00B512B8 /* RxSwift.framework */,
 				8CEA8E9D1D9C2DD600B512B8 /* Dollar.framework */,
 				8C8F93571D9C0D5500EE5A60 /* Nimble.framework */,
 				8C8F93581D9C0D5500EE5A60 /* Quick.framework */,
@@ -502,6 +518,10 @@
 			inputPaths = (
 				"$(SRCROOT)/../Carthage/Build/iOS/Swinject.framework",
 				"$(SRCROOT)/../Carthage/Build/iOS/Dollar.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/RxAlamofire.framework",
 			);
 			outputPaths = (
 			);
