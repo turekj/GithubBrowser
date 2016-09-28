@@ -49,6 +49,18 @@
 		8CEA8ED11D9C590800B512B8 /* GithubUsersDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8ED01D9C590800B512B8 /* GithubUsersDeserializer.swift */; };
 		8CEA8ED61D9C596A00B512B8 /* GithubUsersDeserializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8ED51D9C596A00B512B8 /* GithubUsersDeserializerSpec.swift */; };
 		8CEA8ED91D9C5A4F00B512B8 /* DeserializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8ED81D9C5A4F00B512B8 /* DeserializationError.swift */; };
+		8CEA8EDB1D9C5F6100B512B8 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EDA1D9C5F6100B512B8 /* UsersService.swift */; };
+		8CEA8EDE1D9C5FFF00B512B8 /* GithubUsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EDD1D9C5FFF00B512B8 /* GithubUsersService.swift */; };
+		8CEA8EE11D9C607F00B512B8 /* GithubUsersServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EE01D9C607F00B512B8 /* GithubUsersServiceSpec.swift */; };
+		8CEA8EE41D9C60D800B512B8 /* UsersDeserializerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */; };
+		8CEA8EE61D9C61EA00B512B8 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EE51D9C61EA00B512B8 /* OHHTTPStubs.framework */; };
+		8CEA8EE71D9C61F100B512B8 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CEA8EE51D9C61EA00B512B8 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8CEA8EEB1D9C640500B512B8 /* hello.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CEA8EEA1D9C640500B512B8 /* hello.json */; };
+		8CEA8EED1D9C663F00B512B8 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EEC1D9C663F00B512B8 /* RxBlocking.framework */; };
+		8CEA8EEE1D9C664300B512B8 /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CEA8EEC1D9C663F00B512B8 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8CEA8EF01D9C675100B512B8 /* RxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EEF1D9C675100B512B8 /* RxTests.framework */; };
+		8CEA8EF11D9C675500B512B8 /* RxTests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CEA8EEF1D9C675100B512B8 /* RxTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8CEA8EF21D9C67FD00B512B8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EBE1D9C4BBC00B512B8 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +80,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8CEA8EF11D9C675500B512B8 /* RxTests.framework in CopyFiles */,
+				8CEA8EEE1D9C664300B512B8 /* RxBlocking.framework in CopyFiles */,
+				8CEA8EE71D9C61F100B512B8 /* OHHTTPStubs.framework in CopyFiles */,
 				8C8F935C1D9C0D6A00EE5A60 /* Nimble.framework in CopyFiles */,
 				8C8F935D1D9C0D6A00EE5A60 /* Quick.framework in CopyFiles */,
 			);
@@ -120,6 +135,14 @@
 		8CEA8ED01D9C590800B512B8 /* GithubUsersDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUsersDeserializer.swift; sourceTree = "<group>"; };
 		8CEA8ED51D9C596A00B512B8 /* GithubUsersDeserializerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUsersDeserializerSpec.swift; sourceTree = "<group>"; };
 		8CEA8ED81D9C5A4F00B512B8 /* DeserializationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeserializationError.swift; sourceTree = "<group>"; };
+		8CEA8EDA1D9C5F6100B512B8 /* UsersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
+		8CEA8EDD1D9C5FFF00B512B8 /* GithubUsersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUsersService.swift; sourceTree = "<group>"; };
+		8CEA8EE01D9C607F00B512B8 /* GithubUsersServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUsersServiceSpec.swift; sourceTree = "<group>"; };
+		8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersDeserializerMock.swift; sourceTree = "<group>"; };
+		8CEA8EE51D9C61EA00B512B8 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = ../Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		8CEA8EEA1D9C640500B512B8 /* hello.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hello.json; sourceTree = "<group>"; };
+		8CEA8EEC1D9C663F00B512B8 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = ../Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		8CEA8EEF1D9C675100B512B8 /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = ../Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +163,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEA8EF21D9C67FD00B512B8 /* RxSwift.framework in Frameworks */,
+				8CEA8EF01D9C675100B512B8 /* RxTests.framework in Frameworks */,
+				8CEA8EED1D9C663F00B512B8 /* RxBlocking.framework in Frameworks */,
+				8CEA8EE61D9C61EA00B512B8 /* OHHTTPStubs.framework in Frameworks */,
 				8C8F93591D9C0D5500EE5A60 /* Nimble.framework in Frameworks */,
 				8C8F935A1D9C0D5500EE5A60 /* Quick.framework in Frameworks */,
 			);
@@ -275,7 +302,8 @@
 		8C8F933C1D9C013100EE5A60 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8C8F932A1D9BFFB700EE5A60 /* Info.plist */,
+				8CEA8EE91D9C63F400B512B8 /* Fixtures */,
+				8CEA8EE81D9C63DE00B512B8 /* InfoPropertyList */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -283,6 +311,9 @@
 		8C8F93421D9C069100EE5A60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8EEF1D9C675100B512B8 /* RxTests.framework */,
+				8CEA8EEC1D9C663F00B512B8 /* RxBlocking.framework */,
+				8CEA8EE51D9C61EA00B512B8 /* OHHTTPStubs.framework */,
 				8CEA8EBB1D9C4BBC00B512B8 /* Alamofire.framework */,
 				8CEA8EBC1D9C4BBC00B512B8 /* RxAlamofire.framework */,
 				8CEA8EBD1D9C4BBC00B512B8 /* RxCocoa.framework */,
@@ -298,6 +329,7 @@
 		8C8F934D1D9C09AD00EE5A60 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8EE21D9C60CB00B512B8 /* Services */,
 				8CEA8EA11D9C2F6400B512B8 /* Flow */,
 				8C8F935E1D9C0EE400EE5A60 /* ViewControllers */,
 			);
@@ -424,7 +456,9 @@
 		8CEA8EC31D9C4C5700B512B8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8EDC1D9C5FF300B512B8 /* Impl */,
 				8CEA8ECC1D9C555700B512B8 /* Deserializers */,
+				8CEA8EDA1D9C5F6100B512B8 /* UsersService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -457,6 +491,7 @@
 		8CEA8ED21D9C593700B512B8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8EDF1D9C606E00B512B8 /* Impl */,
 				8CEA8ED31D9C593D00B512B8 /* Deserializers */,
 			);
 			name = Services;
@@ -484,6 +519,46 @@
 				8CEA8ED81D9C5A4F00B512B8 /* DeserializationError.swift */,
 			);
 			name = Errors;
+			sourceTree = "<group>";
+		};
+		8CEA8EDC1D9C5FF300B512B8 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8EDD1D9C5FFF00B512B8 /* GithubUsersService.swift */,
+			);
+			name = Impl;
+			sourceTree = "<group>";
+		};
+		8CEA8EDF1D9C606E00B512B8 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8EE01D9C607F00B512B8 /* GithubUsersServiceSpec.swift */,
+			);
+			name = Impl;
+			sourceTree = "<group>";
+		};
+		8CEA8EE21D9C60CB00B512B8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		8CEA8EE81D9C63DE00B512B8 /* InfoPropertyList */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F932A1D9BFFB700EE5A60 /* Info.plist */,
+			);
+			name = InfoPropertyList;
+			sourceTree = "<group>";
+		};
+		8CEA8EE91D9C63F400B512B8 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8EEA1D9C640500B512B8 /* hello.json */,
+			);
+			name = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,6 +658,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEA8EEB1D9C640500B512B8 /* hello.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +703,8 @@
 				8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */,
 				8CEA8ED91D9C5A4F00B512B8 /* DeserializationError.swift in Sources */,
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
+				8CEA8EDB1D9C5F6100B512B8 /* UsersService.swift in Sources */,
+				8CEA8EDE1D9C5FFF00B512B8 /* GithubUsersService.swift in Sources */,
 				8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */,
 				8CEA8EA01D9C2EF700B512B8 /* ControllerConfigurator.swift in Sources */,
 				8CEA8ECE1D9C557F00B512B8 /* UsersDeserializer.swift in Sources */,
@@ -644,11 +722,13 @@
 				8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */,
 				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
 				8CEA8EA91D9C321700B512B8 /* FlowControllerMock.swift in Sources */,
+				8CEA8EE11D9C607F00B512B8 /* GithubUsersServiceSpec.swift in Sources */,
 				8CEA8ED61D9C596A00B512B8 /* GithubUsersDeserializerSpec.swift in Sources */,
 				8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */,
 				8CEA8EA71D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift in Sources */,
 				8CEA8E9C1D9C2BC000B512B8 /* MainFlowControllerSpec.swift in Sources */,
 				8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */,
+				8CEA8EE41D9C60D800B512B8 /* UsersDeserializerMock.swift in Sources */,
 				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
 				8CEA8EA31D9C2F7800B512B8 /* ControllerConfiguratorMock.swift in Sources */,
 			);

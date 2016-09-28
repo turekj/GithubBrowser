@@ -15,3 +15,6 @@ github "Alamofire/Alamofire" ~> 4.0
 github "ReactiveX/RxSwift" "3.0.0-beta.1"
 github "RxSwiftCommunity/RxAlamofire" "master"
 
+# OHHTTPStubs
+github "AliSoftware/OHHTTPStubs" "swift-3.0"
+

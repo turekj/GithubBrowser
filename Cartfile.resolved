@@ -1,6 +1,7 @@
 github "Alamofire/Alamofire" "4.0.1"
 github "ankurp/Dollar" "6.0.0"
 github "Quick/Nimble" "v5.0.0"
+github "AliSoftware/OHHTTPStubs" "624d51619bc88144015c2b275e761b359ae5ecb3"
 github "Quick/Quick" "v0.10.0"
 github "ReactiveX/RxSwift" "3.0.0-beta.1"
 github "Swinject/Swinject" "2.0.0-beta.2"
