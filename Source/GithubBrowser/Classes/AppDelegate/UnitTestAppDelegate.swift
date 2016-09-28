@@ -1,7 +1,7 @@
 import UIKit
 
 
-class UnitTestAppDelegate: NSObject {
+class UnitTestAppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
