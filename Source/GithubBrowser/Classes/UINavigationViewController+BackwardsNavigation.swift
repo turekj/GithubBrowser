@@ -1,3 +1,4 @@
+import Dollar
 import UIKit
 
 
@@ -5,11 +6,15 @@ extension UINavigationController {
     
     func navigateBack<ViewController: UIViewController>(to viewController: ViewController.Type,
                       animated: Bool) {
-        for controller in self.viewControllers.reversed() {
-            if controller.isKind(of: viewController) {
-                self.popToViewController(controller, animated: animated)
-                return
-            }
+        guard let controller = self.findControllerOnStack(controller: viewController) else {
+            return
         }
+        
+        self.popToViewController(controller, animated: animated)
+    }
+    
+    func findControllerOnStack<ViewController: UIViewController>(
+            controller: ViewController.Type) -> UIViewController? {
+        return $.find(self.viewControllers.reversed()) { $0.isKind(of: controller) }
     }
 }

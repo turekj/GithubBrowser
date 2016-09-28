@@ -28,6 +28,7 @@
 		8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E941D9C29BC00B512B8 /* FlowController.swift */; };
 		8CEA8E991D9C2AE200B512B8 /* MainFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */; };
 		8CEA8E9C1D9C2BC000B512B8 /* MainFlowControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */; };
+		8CEA8E9E1D9C2DD600B512B8 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8E9D1D9C2DD600B512B8 /* Dollar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		8CEA8E941D9C29BC00B512B8 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowController.swift; sourceTree = "<group>"; };
 		8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowControllerSpec.swift; sourceTree = "<group>"; };
+		8CEA8E9D1D9C2DD600B512B8 /* Dollar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dollar.framework; path = ../Carthage/Build/iOS/Dollar.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CEA8E9E1D9C2DD600B512B8 /* Dollar.framework in Frameworks */,
 				8C8F93471D9C07E700EE5A60 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +235,7 @@
 		8C8F93421D9C069100EE5A60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8E9D1D9C2DD600B512B8 /* Dollar.framework */,
 				8C8F93571D9C0D5500EE5A60 /* Nimble.framework */,
 				8C8F93581D9C0D5500EE5A60 /* Quick.framework */,
 				8C8F93451D9C076200EE5A60 /* Swinject.framework */,
@@ -434,6 +438,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/../Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Dollar.framework",
 			);
 			outputPaths = (
 			);
