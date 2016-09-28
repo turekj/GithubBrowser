@@ -34,6 +34,7 @@
 		8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */; };
 		8CEA8EA71D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */; };
 		8CEA8EA91D9C321700B512B8 /* FlowControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EA81D9C321700B512B8 /* FlowControllerMock.swift */; };
+		8CEA8EAC1D9C36E600B512B8 /* UserRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EAB1D9C36E600B512B8 /* UserRepositoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeControllerConfigurator.swift; sourceTree = "<group>"; };
 		8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeControllerConfiguratorSpec.swift; sourceTree = "<group>"; };
 		8CEA8EA81D9C321700B512B8 /* FlowControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowControllerMock.swift; sourceTree = "<group>"; };
+		8CEA8EAB1D9C36E600B512B8 /* UserRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 		8C8F933A1D9C010900EE5A60 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8CEA8EAA1D9C36CE00B512B8 /* List */,
 				8C8F93151D9BFFB700EE5A60 /* ViewController.swift */,
 			);
 			path = ViewControllers;
@@ -351,6 +354,14 @@
 			name = Flow;
 			sourceTree = "<group>";
 		};
+		8CEA8EAA1D9C36CE00B512B8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8CEA8EAB1D9C36E600B512B8 /* UserRepositoryViewController.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -477,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8F93401D9C022B00EE5A60 /* UnitTestAppDelegate.swift in Sources */,
+				8CEA8EAC1D9C36E600B512B8 /* UserRepositoryViewController.swift in Sources */,
 				8C8F93161D9BFFB700EE5A60 /* ViewController.swift in Sources */,
 				8CEA8E991D9C2AE200B512B8 /* MainFlowController.swift in Sources */,
 				8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */,
