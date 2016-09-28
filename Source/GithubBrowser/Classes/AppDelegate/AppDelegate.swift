@@ -1,14 +1,6 @@
-//
-//  AppDelegate.swift
-//  GithubBrowser
-//
-//  Created by Jakub Turek on 28/09/2016.
-//  Copyright © 2016 Jakub Turek. All rights reserved.
-//
-
 import UIKit
 
-@UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
