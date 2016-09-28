@@ -22,6 +22,10 @@
 		8C8F935A1D9C0D5500EE5A60 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8F93581D9C0D5500EE5A60 /* Quick.framework */; };
 		8C8F935C1D9C0D6A00EE5A60 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C8F93571D9C0D5500EE5A60 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8C8F935D1D9C0D6A00EE5A60 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C8F93581D9C0D5500EE5A60 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F935F1D9C0EF500EE5A60 /* ViewControllerMock.swift */; };
+		8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */; };
+		8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93631D9C0F0900EE5A60 /* NavigationControllerMock.swift */; };
+		8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		8C8F93551D9C0AD100EE5A60 /* InjectingNavigationControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectingNavigationControllerSpec.swift; sourceTree = "<group>"; };
 		8C8F93571D9C0D5500EE5A60 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		8C8F93581D9C0D5500EE5A60 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		8C8F935F1D9C0EF500EE5A60 /* ViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMock.swift; sourceTree = "<group>"; };
+		8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewControllerMock.swift; sourceTree = "<group>"; };
+		8C8F93631D9C0F0900EE5A60 /* NavigationControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerMock.swift; sourceTree = "<group>"; };
+		8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YetAnotherViewControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +262,7 @@
 		8C8F934D1D9C09AD00EE5A60 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				8C8F935E1D9C0EE400EE5A60 /* ViewControllers */,
 			);
 			name = Mock;
 			sourceTree = "<group>";
@@ -272,6 +281,17 @@
 				8C8F93551D9C0AD100EE5A60 /* InjectingNavigationControllerSpec.swift */,
 			);
 			name = Impl;
+			sourceTree = "<group>";
+		};
+		8C8F935E1D9C0EE400EE5A60 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C8F935F1D9C0EF500EE5A60 /* ViewControllerMock.swift */,
+				8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */,
+				8C8F93631D9C0F0900EE5A60 /* NavigationControllerMock.swift */,
+				8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,7 +431,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
+				8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */,
 				8C8F93561D9C0AD100EE5A60 /* InjectingNavigationControllerSpec.swift in Sources */,
+				8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */,
+				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
