@@ -31,6 +31,9 @@
 		8CEA8E9E1D9C2DD600B512B8 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8E9D1D9C2DD600B512B8 /* Dollar.framework */; };
 		8CEA8EA01D9C2EF700B512B8 /* ControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E9F1D9C2EF700B512B8 /* ControllerConfigurator.swift */; };
 		8CEA8EA31D9C2F7800B512B8 /* ControllerConfiguratorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EA21D9C2F7800B512B8 /* ControllerConfiguratorMock.swift */; };
+		8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */; };
+		8CEA8EA71D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */; };
+		8CEA8EA91D9C321700B512B8 /* FlowControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EA81D9C321700B512B8 /* FlowControllerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		8CEA8E9D1D9C2DD600B512B8 /* Dollar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dollar.framework; path = ../Carthage/Build/iOS/Dollar.framework; sourceTree = "<group>"; };
 		8CEA8E9F1D9C2EF700B512B8 /* ControllerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerConfigurator.swift; sourceTree = "<group>"; };
 		8CEA8EA21D9C2F7800B512B8 /* ControllerConfiguratorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerConfiguratorMock.swift; sourceTree = "<group>"; };
+		8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeControllerConfigurator.swift; sourceTree = "<group>"; };
+		8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeControllerConfiguratorSpec.swift; sourceTree = "<group>"; };
+		8CEA8EA81D9C321700B512B8 /* FlowControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */,
+				8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -330,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */,
+				8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -338,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8EA21D9C2F7800B512B8 /* ControllerConfiguratorMock.swift */,
+				8CEA8EA81D9C321700B512B8 /* FlowControllerMock.swift */,
 			);
 			name = Flow;
 			sourceTree = "<group>";
@@ -473,6 +482,7 @@
 				8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */,
 				8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */,
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
+				8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */,
 				8CEA8EA01D9C2EF700B512B8 /* ControllerConfigurator.swift in Sources */,
 				8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */,
 			);
@@ -484,7 +494,9 @@
 			files = (
 				8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */,
 				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
+				8CEA8EA91D9C321700B512B8 /* FlowControllerMock.swift in Sources */,
 				8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */,
+				8CEA8EA71D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift in Sources */,
 				8CEA8E9C1D9C2BC000B512B8 /* MainFlowControllerSpec.swift in Sources */,
 				8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */,
 				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
