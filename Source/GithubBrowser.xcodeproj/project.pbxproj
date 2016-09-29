@@ -32,6 +32,9 @@
 		8CA102AB1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102AA1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift */; };
 		8CA102AD1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102AC1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift */; };
 		8CA102AF1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102AE1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift */; };
+		8CA102B91D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102B81D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift */; };
+		8CA102BB1D9D44C200F0782C /* AnyUserRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102BA1D9D44C200F0782C /* AnyUserRepositoryFactory.swift */; };
+		8CA102BD1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102BC1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift */; };
 		8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */; };
 		8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */; };
 		8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E941D9C29BC00B512B8 /* FlowController.swift */; };
@@ -137,6 +140,9 @@
 		8CA102AA1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryFromUserFactorySpec.swift; sourceTree = "<group>"; };
 		8CA102AC1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryFromRepositoryFactory.swift; sourceTree = "<group>"; };
 		8CA102AE1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryFromRepositoryFactorySpec.swift; sourceTree = "<group>"; };
+		8CA102B81D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryFromIntFactoryMock.swift; sourceTree = "<group>"; };
+		8CA102BA1D9D44C200F0782C /* AnyUserRepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyUserRepositoryFactory.swift; sourceTree = "<group>"; };
+		8CA102BC1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyUserRepositoryFactorySpec.swift; sourceTree = "<group>"; };
 		8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+BackwardsNavigation.swift"; sourceTree = "<group>"; };
 		8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerBackwardsNavigationSpec.swift; sourceTree = "<group>"; };
 		8CEA8E941D9C29BC00B512B8 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
@@ -369,6 +375,7 @@
 		8C8F934D1D9C09AD00EE5A60 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				8CA102B41D9D42D700F0782C /* Logic */,
 				8CEA8EA11D9C2F6400B512B8 /* Flow */,
 				8CEA8EE21D9C60CB00B512B8 /* Services */,
 				8C8F935E1D9C0EE400EE5A60 /* ViewControllers */,
@@ -410,6 +417,7 @@
 			children = (
 				8CA102A51D9D3FA500F0782C /* UserRepositoryFromUserFactory.swift */,
 				8CA102AC1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift */,
+				8CA102BA1D9D44C200F0782C /* AnyUserRepositoryFactory.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -435,8 +443,25 @@
 			children = (
 				8CA102AA1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift */,
 				8CA102AE1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift */,
+				8CA102BC1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift */,
 			);
 			name = Impl;
+			sourceTree = "<group>";
+		};
+		8CA102B41D9D42D700F0782C /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8CA102B51D9D42DB00F0782C /* Mapping */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		8CA102B51D9D42DB00F0782C /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				8CA102B81D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift */,
+			);
+			name = Mapping;
 			sourceTree = "<group>";
 		};
 		8CEA8E8B1D9C268100B512B8 /* Extensions */ = {
@@ -820,6 +845,7 @@
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
 				8CF699371D9D14C200F2373A /* Repository.swift in Sources */,
 				8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */,
+				8CA102BB1D9D44C200F0782C /* AnyUserRepositoryFactory.swift in Sources */,
 				8CEA8EA01D9C2EF700B512B8 /* ControllerConfigurator.swift in Sources */,
 				8CF699471D9D1C3F00F2373A /* AnyDeserializer.swift in Sources */,
 				8CEA8EB31D9C37EC00B512B8 /* UserRepositoryList.swift in Sources */,
@@ -841,6 +867,7 @@
 				8CF6993D1D9D166F00F2373A /* GithubRepositoryDeserializerSpec.swift in Sources */,
 				8CEA8ED61D9C596A00B512B8 /* GithubUserDeserializerSpec.swift in Sources */,
 				8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */,
+				8CA102BD1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift in Sources */,
 				8CEA8EA71D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift in Sources */,
 				8CEA8E9C1D9C2BC000B512B8 /* MainFlowControllerSpec.swift in Sources */,
 				8CA102AB1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift in Sources */,
@@ -849,6 +876,7 @@
 				8CEA8EE41D9C60D800B512B8 /* UsersDeserializerMock.swift in Sources */,
 				8CA102971D9D365300F0782C /* SearchServiceMock.swift in Sources */,
 				8CF6994B1D9D1E2B00F2373A /* StringDeserializerMock.swift in Sources */,
+				8CA102B91D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift in Sources */,
 				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
 				8CF699511D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift in Sources */,
 				8CF699491D9D1CEF00F2373A /* AnyDeserializerSpec.swift in Sources */,
