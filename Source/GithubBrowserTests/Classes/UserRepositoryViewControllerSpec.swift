@@ -49,6 +49,19 @@ class UserRepositoryViewControllerSpec: QuickSpec {
                     
                     expect(result?.isEmpty).to(beTrue())
                 }
+                
+                it("Should sort entries from service by id") {
+                    let entries = [UserRepository(id: 4, title: "T", imageUrl: "I", type: .user),
+                                   UserRepository(id: 2, title: "E", imageUrl: "L", type: .user)]
+                    userRepositoryService.searchResult = Observable.just(entries)
+                    
+                    self.fireSearchBarTextChangeEvent(searchBar: view.searchBar, text: "ABCD")
+                    let result = try! sut.searchResults.toBlocking().first()
+                    
+                    expect(result?.count).to(equal(2))
+                    expect(result?[0].id).to(equal(2))
+                    expect(result?[1].id).to(equal(4))
+                }
             }
         }
     }

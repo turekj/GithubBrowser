@@ -48,6 +48,7 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
                 }
                 
                 return self.userRepositoryService.search(withQuery: query)
+                    .map { $0.sorted(by: { $0.id < $1.id }) }
                     .catchErrorJustReturn([])
             }
             .observeOn(MainScheduler.instance)
