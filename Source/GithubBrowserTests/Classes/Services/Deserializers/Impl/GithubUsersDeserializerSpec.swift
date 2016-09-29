@@ -55,6 +55,17 @@ class GithubUsersDeserializerSpec: QuickSpec {
                     expect(users[0].login).to(equal("user_login"))
                     expect(users[0].avatarUrl).to(equal("http://google.com"))
                 }
+                
+                it("Should handle optional avatar URL") {
+                    let input = ["items": [
+                        ["id": 9, "login": "user_login"]
+                    ]] as [String: Any]
+                    
+                    let users = try! sut.deserializeUsers(input)
+                    
+                    expect(users.count).to(equal(1))
+                    expect(users[0].avatarUrl).to(beNil())
+                }
             }
         }
     }

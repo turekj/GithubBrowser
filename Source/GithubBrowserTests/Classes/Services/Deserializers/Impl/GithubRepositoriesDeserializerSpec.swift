@@ -55,6 +55,28 @@ class GithubRepositoriesDeserializerSpec: QuickSpec {
                     expect(repositories[0].name).to(equal("repository_name"))
                     expect(repositories[0].ownerAvatarUrl).to(equal("avatar"))
                 }
+                
+                it("Should handle optional owner info") {
+                    let input = ["items": [
+                        ["id": 13, "name": "repository_name"]
+                    ]] as [String: Any]
+                    
+                    let repositories = try! sut.deserializeRepositories(input)
+                    
+                    expect(repositories.count).to(equal(1))
+                    expect(repositories[0].ownerAvatarUrl).to(beNil())
+                }
+                
+                it("Should handle optional owner avatar") {
+                    let input = ["items": [
+                        ["id": 13, "name": "repository_name", "owner": ["not_an": "avatar"]]
+                    ]] as [String: Any]
+                    
+                    let repositories = try! sut.deserializeRepositories(input)
+                    
+                    expect(repositories.count).to(equal(1))
+                    expect(repositories[0].ownerAvatarUrl).to(beNil())
+                }
             }
         }
     }
