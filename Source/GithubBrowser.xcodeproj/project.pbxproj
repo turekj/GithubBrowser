@@ -45,6 +45,7 @@
 		8CA102D01D9D6CBE00F0782C /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102CF1D9D6CBE00F0782C /* ServiceAssembly.swift */; };
 		8CA102D21D9D713800F0782C /* UserRepositorySearchServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102D11D9D713800F0782C /* UserRepositorySearchServiceMock.swift */; };
 		8CA102D71D9D723600F0782C /* UserRepositoryViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102D61D9D723600F0782C /* UserRepositoryViewControllerSpec.swift */; };
+		8CA102D91D9D929C00F0782C /* UserRepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102D81D9D929C00F0782C /* UserRepositoryCell.swift */; };
 		8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */; };
 		8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */; };
 		8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E941D9C29BC00B512B8 /* FlowController.swift */; };
@@ -163,6 +164,7 @@
 		8CA102CF1D9D6CBE00F0782C /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		8CA102D11D9D713800F0782C /* UserRepositorySearchServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositorySearchServiceMock.swift; sourceTree = "<group>"; };
 		8CA102D61D9D723600F0782C /* UserRepositoryViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryViewControllerSpec.swift; sourceTree = "<group>"; };
+		8CA102D81D9D929C00F0782C /* UserRepositoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryCell.swift; sourceTree = "<group>"; };
 		8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+BackwardsNavigation.swift"; sourceTree = "<group>"; };
 		8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerBackwardsNavigationSpec.swift; sourceTree = "<group>"; };
 		8CEA8E941D9C29BC00B512B8 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
@@ -500,6 +502,7 @@
 		8CA102C71D9D4F8000F0782C /* List */ = {
 			isa = PBXGroup;
 			children = (
+				8CA102D81D9D929C00F0782C /* UserRepositoryCell.swift */,
 				8CA102C81D9D4F9600F0782C /* UserRepositoryView.swift */,
 			);
 			name = List;
@@ -934,6 +937,7 @@
 				8CEA8EB31D9C37EC00B512B8 /* UserRepositoryList.swift in Sources */,
 				8CA102D01D9D6CBE00F0782C /* ServiceAssembly.swift in Sources */,
 				8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */,
+				8CA102D91D9D929C00F0782C /* UserRepositoryCell.swift in Sources */,
 				8CF6993B1D9D164400F2373A /* GithubRepositoryDeserializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

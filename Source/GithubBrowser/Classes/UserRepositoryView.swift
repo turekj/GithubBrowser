@@ -33,6 +33,8 @@ class UserRepositoryView: UIView {
     }
     
     private func setupList() {
+        self.list.register(UserRepositoryCell.self,
+                           forCellReuseIdentifier: ReuseIdentifiers.userRepositoryCell.rawValue)
         self.addSubview(self.list)
         
         constrain(self.list, self.searchBar) { l, f in

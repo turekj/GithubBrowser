@@ -4,7 +4,7 @@ import Foundation
 class GithubUserDeserializer: Deserializer {
 
     func deserialize(_ serialized: Any?) throws -> User {
-        guard let json = serialized as? [String: Any?] else {
+        guard let json = serialized as? [String: Any] else {
             throw DeserializationError.improperInputFormat
         }
         

@@ -4,7 +4,7 @@ import Foundation
 class GithubRepositoryDeserializer: Deserializer {
     
     func deserialize(_ serialized: Any?) throws -> Repository {
-        guard let json = serialized as? [String: Any?] else {
+        guard let json = serialized as? [String: Any] else {
             throw DeserializationError.improperInputFormat
         }
         

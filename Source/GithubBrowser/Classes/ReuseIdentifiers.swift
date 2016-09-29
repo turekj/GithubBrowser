@@ -3,5 +3,5 @@ import Foundation
 
 enum ReuseIdentifiers: String {
     
-    case userRepositoryListCell = "UserRepositoryListCellReuseIdentifier"
+    case userRepositoryCell = "UserRepositoryListCellReuseIdentifier"
 }

@@ -13,6 +13,7 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
     var translucentNavigationBar = false
     
     var searchResults: Observable<[UserRepository]> = Observable.just([])
+    let disposeBag = DisposeBag()
     
     init(view: UserRepositoryView, userRepositoryService: AnySearchService<UserRepository>) {
         self.userRepositoryView = view
@@ -50,6 +51,14 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
                     .catchErrorJustReturn([])
             }
             .observeOn(MainScheduler.instance)
+        
+        self.searchResults
+            .bindTo(self.userRepositoryView.list.rx.items(
+                    cellIdentifier: ReuseIdentifiers.userRepositoryCell.rawValue,
+                    cellType: UserRepositoryCell.self)) { (row, userRepository, cell) in
+                cell.titleView.text = userRepository.title
+            }
+            .addDisposableTo(self.disposeBag)
     }
     
     // MARK: - Layout
