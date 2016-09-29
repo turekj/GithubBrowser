@@ -3,7 +3,7 @@ import Foundation
 
 class UserRepositoryFromRepositoryFactory: UserRepositoryFactory {
     
-    func makeUserRepository(_ source: Repository) -> UserRepository {
+    func makeUserRepository(_ source: Repository) -> UserRepository? {
         return UserRepository(
             id: source.id,
             title: source.name,
