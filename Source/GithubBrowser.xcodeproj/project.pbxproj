@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C164F811D9DA012008F15C0 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F801D9DA012008F15C0 /* UserDetailViewController.swift */; };
+		8C164F851D9DA028008F15C0 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F841D9DA028008F15C0 /* UserDetail.swift */; };
 		8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */; };
 		8C8F93191D9BFFB700EE5A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F93171D9BFFB700EE5A60 /* Main.storyboard */; };
 		8C8F931B1D9BFFB700EE5A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */; };
@@ -124,6 +126,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C164F801D9DA012008F15C0 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		8C164F841D9DA028008F15C0 /* UserDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 		8C8F93101D9BFFB700EE5A60 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C8F93181D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -242,6 +246,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C164F7F1D9D9FF5008F15C0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8C164F821D9DA015008F15C0 /* Impl */,
+				8C164F841D9DA028008F15C0 /* UserDetail.swift */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		8C164F821D9DA015008F15C0 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				8C164F801D9DA012008F15C0 /* UserDetailViewController.swift */,
+			);
+			name = Impl;
+			sourceTree = "<group>";
+		};
 		8C8F93071D9BFFB700EE5A60 = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +374,7 @@
 		8C8F933A1D9C010900EE5A60 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8C164F7F1D9D9FF5008F15C0 /* Detail */,
 				8CEA8EAA1D9C36CE00B512B8 /* List */,
 			);
 			path = ViewControllers;
@@ -906,6 +928,7 @@
 			files = (
 				8CA102931D9D35A300F0782C /* AnySearchService.swift in Sources */,
 				8CEA8ED11D9C590800B512B8 /* GithubUserDeserializer.swift in Sources */,
+				8C164F811D9DA012008F15C0 /* UserDetailViewController.swift in Sources */,
 				8C8F93401D9C022B00EE5A60 /* UnitTestAppDelegate.swift in Sources */,
 				8CA102991D9D39B700F0782C /* UserRepository.swift in Sources */,
 				8CEA8EB81D9C3A1600B512B8 /* GlobalAssembly.swift in Sources */,
@@ -913,6 +936,7 @@
 				8CEA8EAE1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift in Sources */,
 				8CF699451D9D1B9100F2373A /* Deserializer.swift in Sources */,
 				8CEA8ECB1D9C53B900B512B8 /* User.swift in Sources */,
+				8C164F851D9DA028008F15C0 /* UserDetail.swift in Sources */,
 				8CF699591D9D284100F2373A /* GithubSearchService.swift in Sources */,
 				8CA102AD1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift in Sources */,
 				8CEA8EBA1D9C3A3600B512B8 /* ListAssembly.swift in Sources */,

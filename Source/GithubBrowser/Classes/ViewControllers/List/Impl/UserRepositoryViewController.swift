@@ -62,6 +62,13 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
                 cell.titleView.text = userRepository.title
             }
             .addDisposableTo(self.disposeBag)
+        
+        self.userRepositoryView.list.rx.modelSelected(UserRepository.self)
+            .asDriver()
+            .drive(onNext: { userRepository in
+                self.onUserRepositorySelected?(userRepository)
+            })
+            .addDisposableTo(self.disposeBag)
     }
     
     // MARK: - Layout
