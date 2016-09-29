@@ -66,6 +66,9 @@
 		8CF699391D9D161D00F2373A /* RepositoriesDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699381D9D161D00F2373A /* RepositoriesDeserializer.swift */; };
 		8CF6993B1D9D164400F2373A /* GithubRepositoriesDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6993A1D9D164400F2373A /* GithubRepositoriesDeserializer.swift */; };
 		8CF6993D1D9D166F00F2373A /* GithubRepositoriesDeserializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6993C1D9D166F00F2373A /* GithubRepositoriesDeserializerSpec.swift */; };
+		8CF6993F1D9D191300F2373A /* GithubRepositoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6993E1D9D191300F2373A /* GithubRepositoriesService.swift */; };
+		8CF699411D9D197800F2373A /* GithubRepositoriesServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699401D9D197800F2373A /* GithubRepositoriesServiceSpec.swift */; };
+		8CF699431D9D19A300F2373A /* RepositoriesDeserializerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +156,9 @@
 		8CF699381D9D161D00F2373A /* RepositoriesDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesDeserializer.swift; sourceTree = "<group>"; };
 		8CF6993A1D9D164400F2373A /* GithubRepositoriesDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesDeserializer.swift; sourceTree = "<group>"; };
 		8CF6993C1D9D166F00F2373A /* GithubRepositoriesDeserializerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesDeserializerSpec.swift; sourceTree = "<group>"; };
+		8CF6993E1D9D191300F2373A /* GithubRepositoriesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesService.swift; sourceTree = "<group>"; };
+		8CF699401D9D197800F2373A /* GithubRepositoriesServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesServiceSpec.swift; sourceTree = "<group>"; };
+		8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesDeserializerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -540,6 +546,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8EDD1D9C5FFF00B512B8 /* GithubUsersService.swift */,
+				8CF6993E1D9D191300F2373A /* GithubRepositoriesService.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -548,6 +555,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8EE01D9C607F00B512B8 /* GithubUsersServiceSpec.swift */,
+				8CF699401D9D197800F2373A /* GithubRepositoriesServiceSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -556,6 +564,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
+				8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -728,6 +737,7 @@
 				8CF699351D9D144F00F2373A /* RepositoriesService.swift in Sources */,
 				8CEA8EB31D9C37EC00B512B8 /* UserRepositoryList.swift in Sources */,
 				8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */,
+				8CF6993F1D9D191300F2373A /* GithubRepositoriesService.swift in Sources */,
 				8CF6993B1D9D164400F2373A /* GithubRepositoriesDeserializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,7 +759,9 @@
 				8CEA8E9C1D9C2BC000B512B8 /* MainFlowControllerSpec.swift in Sources */,
 				8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */,
 				8CEA8EE41D9C60D800B512B8 /* UsersDeserializerMock.swift in Sources */,
+				8CF699411D9D197800F2373A /* GithubRepositoriesServiceSpec.swift in Sources */,
 				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
+				8CF699431D9D19A300F2373A /* RepositoriesDeserializerMock.swift in Sources */,
 				8CEA8EA31D9C2F7800B512B8 /* ControllerConfiguratorMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
