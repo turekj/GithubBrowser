@@ -5,22 +5,23 @@ import Quick
 import RxBlocking
 
 
-class GithubUsersServiceSpec: QuickSpec {
+class GithubSearchServiceSpec: QuickSpec {
     
     override func spec() {
-        describe("GithubUsersService") {
+        describe("GithubSearchService") {
             let deserializer = UsersDeserializerMock()
-            let sut = GithubUsersService(deserializer: AnyDeserializer(deserializer))
+            let sut = GithubSearchService(deserializer: AnyDeserializer(deserializer),
+                                          entityType: "fake_entity")
             
             beforeSuite {
                 _ = stub(condition: isHost("api.github.com") &&
                                     isMethodGET() &&
-                                    isPath("/search/users") &&
+                                    isPath("/search/fake_entity") &&
                                     containsQueryParams(["q": "to_search"])) { _ in
-                    let stubPath = OHPathForFile("hello.json", type(of: self))
-                    let headers = ["Content-Type": "application/json"] as [NSString: NSString]
-                    
-                    return fixture(filePath: stubPath!, headers: headers)
+                        let stubPath = OHPathForFile("hello.json", type(of: self))
+                        let headers = ["Content-Type": "application/json"] as [NSString: NSString]
+                        
+                        return fixture(filePath: stubPath!, headers: headers)
                 }
             }
             
@@ -28,9 +29,13 @@ class GithubUsersServiceSpec: QuickSpec {
                 OHHTTPStubs.removeAllStubs()
             }
             
-            context("When searching for users") {
+            context("When searching") {
+                beforeEach {
+                    deserializer.receivedInput = nil
+                }
+                
                 it("Should return users from deserializer") {
-                    let result = try! sut.searchUsers(withQuery: "to_search").toBlocking().first()
+                    let result = try! sut.search(withQuery: "to_search").toBlocking().first()
                     
                     expect(result).toNot(beNil())
                     expect(result!.count).to(equal(1))
@@ -39,15 +44,15 @@ class GithubUsersServiceSpec: QuickSpec {
                     expect(result![0].avatarUrl).to(equal("http://avatar.com"))
                 }
                 
-                it("Should pass service JSON to serializer") {
-                    _ = try! sut.searchUsers(withQuery: "to_search").toBlocking().first()
+                it("Should pass fetched JSON to deserializer") {
+                    _ = try! sut.search(withQuery: "to_search").toBlocking().first()
                     let json = deserializer.receivedInput as! [String: Any]
                     
                     expect(json["hello"] as? String).to(equal("world"))
                 }
                 
                 it("Should return empty result if query is empty") {
-                    let result = try! sut.searchUsers(withQuery: "").toBlocking().first()
+                    let result = try! sut.search(withQuery: "").toBlocking().first()
                     
                     expect(result?.isEmpty).to(beTrue())
                 }

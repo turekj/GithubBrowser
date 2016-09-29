@@ -48,9 +48,6 @@
 		8CEA8ED11D9C590800B512B8 /* GithubUserDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8ED01D9C590800B512B8 /* GithubUserDeserializer.swift */; };
 		8CEA8ED61D9C596A00B512B8 /* GithubUserDeserializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8ED51D9C596A00B512B8 /* GithubUserDeserializerSpec.swift */; };
 		8CEA8ED91D9C5A4F00B512B8 /* DeserializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8ED81D9C5A4F00B512B8 /* DeserializationError.swift */; };
-		8CEA8EDB1D9C5F6100B512B8 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EDA1D9C5F6100B512B8 /* UsersService.swift */; };
-		8CEA8EDE1D9C5FFF00B512B8 /* GithubUsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EDD1D9C5FFF00B512B8 /* GithubUsersService.swift */; };
-		8CEA8EE11D9C607F00B512B8 /* GithubUsersServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EE01D9C607F00B512B8 /* GithubUsersServiceSpec.swift */; };
 		8CEA8EE41D9C60D800B512B8 /* UsersDeserializerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */; };
 		8CEA8EE61D9C61EA00B512B8 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EE51D9C61EA00B512B8 /* OHHTTPStubs.framework */; };
 		8CEA8EE71D9C61F100B512B8 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CEA8EE51D9C61EA00B512B8 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -60,12 +57,9 @@
 		8CEA8EF01D9C675100B512B8 /* RxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EEF1D9C675100B512B8 /* RxTests.framework */; };
 		8CEA8EF11D9C675500B512B8 /* RxTests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CEA8EEF1D9C675100B512B8 /* RxTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CEA8EF21D9C67FD00B512B8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EBE1D9C4BBC00B512B8 /* RxSwift.framework */; };
-		8CF699351D9D144F00F2373A /* RepositoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699341D9D144F00F2373A /* RepositoriesService.swift */; };
 		8CF699371D9D14C200F2373A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699361D9D14C200F2373A /* Repository.swift */; };
 		8CF6993B1D9D164400F2373A /* GithubRepositoryDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6993A1D9D164400F2373A /* GithubRepositoryDeserializer.swift */; };
 		8CF6993D1D9D166F00F2373A /* GithubRepositoryDeserializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6993C1D9D166F00F2373A /* GithubRepositoryDeserializerSpec.swift */; };
-		8CF6993F1D9D191300F2373A /* GithubRepositoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6993E1D9D191300F2373A /* GithubRepositoriesService.swift */; };
-		8CF699411D9D197800F2373A /* GithubRepositoriesServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699401D9D197800F2373A /* GithubRepositoriesServiceSpec.swift */; };
 		8CF699431D9D19A300F2373A /* RepositoriesDeserializerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */; };
 		8CF699451D9D1B9100F2373A /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699441D9D1B9100F2373A /* Deserializer.swift */; };
 		8CF699471D9D1C3F00F2373A /* AnyDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699461D9D1C3F00F2373A /* AnyDeserializer.swift */; };
@@ -73,6 +67,9 @@
 		8CF6994B1D9D1E2B00F2373A /* StringDeserializerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */; };
 		8CF6994F1D9D200E00F2373A /* GithubSearchItemsDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6994E1D9D200E00F2373A /* GithubSearchItemsDeserializer.swift */; };
 		8CF699511D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699501D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift */; };
+		8CF699531D9D257700F2373A /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699521D9D257700F2373A /* SearchService.swift */; };
+		8CF699571D9D264C00F2373A /* GithubSearchServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699561D9D264C00F2373A /* GithubSearchServiceSpec.swift */; };
+		8CF699591D9D284100F2373A /* GithubSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699581D9D284100F2373A /* GithubSearchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,20 +143,14 @@
 		8CEA8ED01D9C590800B512B8 /* GithubUserDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUserDeserializer.swift; sourceTree = "<group>"; };
 		8CEA8ED51D9C596A00B512B8 /* GithubUserDeserializerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUserDeserializerSpec.swift; sourceTree = "<group>"; };
 		8CEA8ED81D9C5A4F00B512B8 /* DeserializationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeserializationError.swift; sourceTree = "<group>"; };
-		8CEA8EDA1D9C5F6100B512B8 /* UsersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
-		8CEA8EDD1D9C5FFF00B512B8 /* GithubUsersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUsersService.swift; sourceTree = "<group>"; };
-		8CEA8EE01D9C607F00B512B8 /* GithubUsersServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUsersServiceSpec.swift; sourceTree = "<group>"; };
 		8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersDeserializerMock.swift; sourceTree = "<group>"; };
 		8CEA8EE51D9C61EA00B512B8 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = ../Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		8CEA8EEA1D9C640500B512B8 /* hello.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hello.json; sourceTree = "<group>"; };
 		8CEA8EEC1D9C663F00B512B8 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = ../Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		8CEA8EEF1D9C675100B512B8 /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = ../Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
-		8CF699341D9D144F00F2373A /* RepositoriesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesService.swift; sourceTree = "<group>"; };
 		8CF699361D9D14C200F2373A /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		8CF6993A1D9D164400F2373A /* GithubRepositoryDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepositoryDeserializer.swift; sourceTree = "<group>"; };
 		8CF6993C1D9D166F00F2373A /* GithubRepositoryDeserializerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepositoryDeserializerSpec.swift; sourceTree = "<group>"; };
-		8CF6993E1D9D191300F2373A /* GithubRepositoriesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesService.swift; sourceTree = "<group>"; };
-		8CF699401D9D197800F2373A /* GithubRepositoriesServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesServiceSpec.swift; sourceTree = "<group>"; };
 		8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesDeserializerMock.swift; sourceTree = "<group>"; };
 		8CF699441D9D1B9100F2373A /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
 		8CF699461D9D1C3F00F2373A /* AnyDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnyDeserializer.swift; path = ../AnyDeserializer.swift; sourceTree = "<group>"; };
@@ -167,6 +158,9 @@
 		8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDeserializerMock.swift; sourceTree = "<group>"; };
 		8CF6994E1D9D200E00F2373A /* GithubSearchItemsDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchItemsDeserializer.swift; sourceTree = "<group>"; };
 		8CF699501D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchItemsDeserializerSpec.swift; sourceTree = "<group>"; };
+		8CF699521D9D257700F2373A /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		8CF699561D9D264C00F2373A /* GithubSearchServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchServiceSpec.swift; sourceTree = "<group>"; };
+		8CF699581D9D284100F2373A /* GithubSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -482,8 +476,7 @@
 			children = (
 				8CEA8ECC1D9C555700B512B8 /* Deserializers */,
 				8CEA8EDC1D9C5FF300B512B8 /* Impl */,
-				8CEA8EDA1D9C5F6100B512B8 /* UsersService.swift */,
-				8CF699341D9D144F00F2373A /* RepositoriesService.swift */,
+				8CF699521D9D257700F2373A /* SearchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -556,8 +549,7 @@
 		8CEA8EDC1D9C5FF300B512B8 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8EDD1D9C5FFF00B512B8 /* GithubUsersService.swift */,
-				8CF6993E1D9D191300F2373A /* GithubRepositoriesService.swift */,
+				8CF699581D9D284100F2373A /* GithubSearchService.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -565,8 +557,7 @@
 		8CEA8EDF1D9C606E00B512B8 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8EE01D9C607F00B512B8 /* GithubUsersServiceSpec.swift */,
-				8CF699401D9D197800F2373A /* GithubRepositoriesServiceSpec.swift */,
+				8CF699561D9D264C00F2373A /* GithubSearchServiceSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -733,6 +724,7 @@
 				8CEA8EAE1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift in Sources */,
 				8CF699451D9D1B9100F2373A /* Deserializer.swift in Sources */,
 				8CEA8ECB1D9C53B900B512B8 /* User.swift in Sources */,
+				8CF699591D9D284100F2373A /* GithubSearchService.swift in Sources */,
 				8CEA8EBA1D9C3A3600B512B8 /* ListAssembly.swift in Sources */,
 				8CEA8EAC1D9C36E600B512B8 /* UserRepositoryViewController.swift in Sources */,
 				8CEA8E991D9C2AE200B512B8 /* MainFlowController.swift in Sources */,
@@ -740,17 +732,14 @@
 				8CF6994F1D9D200E00F2373A /* GithubSearchItemsDeserializer.swift in Sources */,
 				8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */,
 				8CEA8ED91D9C5A4F00B512B8 /* DeserializationError.swift in Sources */,
+				8CF699531D9D257700F2373A /* SearchService.swift in Sources */,
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
-				8CEA8EDB1D9C5F6100B512B8 /* UsersService.swift in Sources */,
-				8CEA8EDE1D9C5FFF00B512B8 /* GithubUsersService.swift in Sources */,
 				8CF699371D9D14C200F2373A /* Repository.swift in Sources */,
 				8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */,
 				8CEA8EA01D9C2EF700B512B8 /* ControllerConfigurator.swift in Sources */,
 				8CF699471D9D1C3F00F2373A /* AnyDeserializer.swift in Sources */,
-				8CF699351D9D144F00F2373A /* RepositoriesService.swift in Sources */,
 				8CEA8EB31D9C37EC00B512B8 /* UserRepositoryList.swift in Sources */,
 				8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */,
-				8CF6993F1D9D191300F2373A /* GithubRepositoriesService.swift in Sources */,
 				8CF6993B1D9D164400F2373A /* GithubRepositoryDeserializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,8 +752,8 @@
 				8CEA8EB01D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift in Sources */,
 				8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */,
 				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
+				8CF699571D9D264C00F2373A /* GithubSearchServiceSpec.swift in Sources */,
 				8CEA8EA91D9C321700B512B8 /* FlowControllerMock.swift in Sources */,
-				8CEA8EE11D9C607F00B512B8 /* GithubUsersServiceSpec.swift in Sources */,
 				8CF6993D1D9D166F00F2373A /* GithubRepositoryDeserializerSpec.swift in Sources */,
 				8CEA8ED61D9C596A00B512B8 /* GithubUserDeserializerSpec.swift in Sources */,
 				8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */,
@@ -773,7 +762,6 @@
 				8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */,
 				8CEA8EE41D9C60D800B512B8 /* UsersDeserializerMock.swift in Sources */,
 				8CF6994B1D9D1E2B00F2373A /* StringDeserializerMock.swift in Sources */,
-				8CF699411D9D197800F2373A /* GithubRepositoriesServiceSpec.swift in Sources */,
 				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
 				8CF699511D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift in Sources */,
 				8CF699491D9D1CEF00F2373A /* AnyDeserializerSpec.swift in Sources */,
