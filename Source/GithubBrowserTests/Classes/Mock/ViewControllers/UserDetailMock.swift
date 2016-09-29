@@ -2,12 +2,9 @@
 import UIKit
 
 
-class UserRepositoryListMock: UIViewController, UserRepositoryList {
+class UserDetailMock: UIViewController, UserDetail {
     
-    var onUserRepositorySelected: ((UserRepository) -> Void)?
-    
-    var navigationBarTitle = ""
-    var translucentNavigationBar = false
+    var userId: Int?
     
     init() {
         super.init(nibName: nil, bundle: nil)

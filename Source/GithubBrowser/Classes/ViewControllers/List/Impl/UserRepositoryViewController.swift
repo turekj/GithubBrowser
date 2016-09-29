@@ -9,6 +9,8 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
     let userRepositoryView: UserRepositoryView
     let userRepositoryService: AnySearchService<UserRepository>
     
+    var onUserRepositorySelected: ((UserRepository) -> Void)?
+    
     var navigationBarTitle = ""
     var translucentNavigationBar = false
     
@@ -59,6 +61,13 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
                     cellType: UserRepositoryCell.self)) { (row, userRepository, cell) in
                 cell.titleView.text = userRepository.title
             }
+            .addDisposableTo(self.disposeBag)
+        
+        self.userRepositoryView.list.rx.modelSelected(UserRepository.self)
+            .asDriver()
+            .drive(onNext: { userRepository in
+                self.onUserRepositorySelected?(userRepository)
+            })
             .addDisposableTo(self.disposeBag)
     }
     

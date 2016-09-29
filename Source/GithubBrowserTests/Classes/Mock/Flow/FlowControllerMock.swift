@@ -5,6 +5,7 @@ import UIKit
 class FlowControllerMock: FlowController {
     
     var rootController: UIViewController = ViewControllerMock()
+    var selectedUserId: Int?
     var proceededTo: AnyClass?
     var proceededAnimated: Bool?
     var revertedTo: AnyClass?
