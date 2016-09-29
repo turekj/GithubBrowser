@@ -61,6 +61,8 @@
 		8CEA8EF01D9C675100B512B8 /* RxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EEF1D9C675100B512B8 /* RxTests.framework */; };
 		8CEA8EF11D9C675500B512B8 /* RxTests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CEA8EEF1D9C675100B512B8 /* RxTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CEA8EF21D9C67FD00B512B8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEA8EBE1D9C4BBC00B512B8 /* RxSwift.framework */; };
+		8CF699351D9D144F00F2373A /* RepositoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699341D9D144F00F2373A /* RepositoriesService.swift */; };
+		8CF699371D9D14C200F2373A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699361D9D14C200F2373A /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +145,8 @@
 		8CEA8EEA1D9C640500B512B8 /* hello.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hello.json; sourceTree = "<group>"; };
 		8CEA8EEC1D9C663F00B512B8 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = ../Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		8CEA8EEF1D9C675100B512B8 /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = ../Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
+		8CF699341D9D144F00F2373A /* RepositoriesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesService.swift; sourceTree = "<group>"; };
+		8CF699361D9D14C200F2373A /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -459,6 +463,7 @@
 				8CEA8ECC1D9C555700B512B8 /* Deserializers */,
 				8CEA8EDC1D9C5FF300B512B8 /* Impl */,
 				8CEA8EDA1D9C5F6100B512B8 /* UsersService.swift */,
+				8CF699341D9D144F00F2373A /* RepositoriesService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -467,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8ECA1D9C53B900B512B8 /* User.swift */,
+				8CF699361D9D14C200F2373A /* Repository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -705,9 +711,11 @@
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
 				8CEA8EDB1D9C5F6100B512B8 /* UsersService.swift in Sources */,
 				8CEA8EDE1D9C5FFF00B512B8 /* GithubUsersService.swift in Sources */,
+				8CF699371D9D14C200F2373A /* Repository.swift in Sources */,
 				8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */,
 				8CEA8EA01D9C2EF700B512B8 /* ControllerConfigurator.swift in Sources */,
 				8CEA8ECE1D9C557F00B512B8 /* UsersDeserializer.swift in Sources */,
+				8CF699351D9D144F00F2373A /* RepositoriesService.swift in Sources */,
 				8CEA8EB31D9C37EC00B512B8 /* UserRepositoryList.swift in Sources */,
 				8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */,
 			);
