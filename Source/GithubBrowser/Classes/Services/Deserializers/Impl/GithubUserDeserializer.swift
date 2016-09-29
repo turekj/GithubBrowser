@@ -1,21 +1,9 @@
 import Foundation
 
 
-class GithubUsersDeserializer: UsersDeserializer {
+class GithubUserDeserializer: Deserializer {
 
-    func deserializeUsers(_ serialized: Any?) throws -> [User] {
-        guard let json = serialized as? [String: Any?] else {
-            throw DeserializationError.ImproperInputFormat
-        }
-        
-        guard let items = json["items"] as? [Any?] else {
-            throw DeserializationError.ImproperInputFormat
-        }
-        
-        return try items.map { try self.deserializeUser($0) }
-    }
-    
-    private func deserializeUser(_ serialized: Any?) throws -> User {
+    func deserialize(_ serialized: Any?) throws -> User {
         guard let json = serialized as? [String: Any?] else {
             throw DeserializationError.ImproperInputFormat
         }

@@ -1,21 +1,9 @@
 import Foundation
 
 
-class GithubRepositoriesDeserializer: RepositoriesDeserializer {
+class GithubRepositoryDeserializer: Deserializer {
     
-    func deserializeRepositories(_ serialized: Any?) throws -> [Repository] {
-        guard let json = serialized as? [String: Any?] else {
-            throw DeserializationError.ImproperInputFormat
-        }
-        
-        guard let items = json["items"] as? [Any?] else {
-            throw DeserializationError.ImproperInputFormat
-        }
-        
-        return try items.map { try self.deserializeRepository($0) }
-    }
-    
-    private func deserializeRepository(_ serialized: Any?) throws -> Repository {
+    func deserialize(_ serialized: Any?) throws -> Repository {
         guard let json = serialized as? [String: Any?] else {
             throw DeserializationError.ImproperInputFormat
         }
