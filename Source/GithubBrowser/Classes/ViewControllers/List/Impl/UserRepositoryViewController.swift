@@ -1,16 +1,19 @@
 import Cartography
+import RxSwift
 import UIKit
 
 
 class UserRepositoryViewController: UIViewController, UserRepositoryList {
     
     let userRepositoryView: UserRepositoryView
+    let userRepositoryService: AnySearchService<UserRepository>
     
     var navigationBarTitle = ""
     var translucentNavigationBar = false
     
-    init(view: UserRepositoryView) {
+    init(view: UserRepositoryView, userRepositoryService: AnySearchService<UserRepository>) {
         self.userRepositoryView = view
+        self.userRepositoryService = userRepositoryService
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -20,6 +23,7 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
+        self.bindViewModel()
     }
     
     func configureView() {
@@ -28,6 +32,10 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
         constrain(self.userRepositoryView) { v in
             v.edges == v.superview!.edges
         }
+    }
+    
+    func bindViewModel() {
+        
     }
     
     // MARK: - Layout

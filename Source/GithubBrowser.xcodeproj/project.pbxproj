@@ -42,6 +42,7 @@
 		8CA102C91D9D4F9600F0782C /* UserRepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102C81D9D4F9600F0782C /* UserRepositoryView.swift */; };
 		8CA102CC1D9D505F00F0782C /* ReuseIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102CB1D9D505F00F0782C /* ReuseIdentifiers.swift */; };
 		8CA102CE1D9D5EDB00F0782C /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA102CD1D9D5EDB00F0782C /* Cartography.framework */; };
+		8CA102D01D9D6CBE00F0782C /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102CF1D9D6CBE00F0782C /* ServiceAssembly.swift */; };
 		8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */; };
 		8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */; };
 		8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E941D9C29BC00B512B8 /* FlowController.swift */; };
@@ -157,6 +158,7 @@
 		8CA102C81D9D4F9600F0782C /* UserRepositoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryView.swift; sourceTree = "<group>"; };
 		8CA102CB1D9D505F00F0782C /* ReuseIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiers.swift; sourceTree = "<group>"; };
 		8CA102CD1D9D5EDB00F0782C /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = ../Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
+		8CA102CF1D9D6CBE00F0782C /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+BackwardsNavigation.swift"; sourceTree = "<group>"; };
 		8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerBackwardsNavigationSpec.swift; sourceTree = "<group>"; };
 		8CEA8E941D9C29BC00B512B8 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
@@ -607,6 +609,7 @@
 			children = (
 				8CEA8EB71D9C3A1600B512B8 /* GlobalAssembly.swift */,
 				8CEA8EB91D9C3A3600B512B8 /* ListAssembly.swift */,
+				8CA102CF1D9D6CBE00F0782C /* ServiceAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -899,6 +902,7 @@
 				8CEA8EA01D9C2EF700B512B8 /* ControllerConfigurator.swift in Sources */,
 				8CF699471D9D1C3F00F2373A /* AnyDeserializer.swift in Sources */,
 				8CEA8EB31D9C37EC00B512B8 /* UserRepositoryList.swift in Sources */,
+				8CA102D01D9D6CBE00F0782C /* ServiceAssembly.swift in Sources */,
 				8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */,
 				8CF6993B1D9D164400F2373A /* GithubRepositoryDeserializer.swift in Sources */,
 			);

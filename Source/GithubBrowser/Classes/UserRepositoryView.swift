@@ -4,11 +4,11 @@ import UIKit
 
 class UserRepositoryView: UIView {
     
-    let searchField: UITextField
+    let searchBar: UISearchBar
     let list: UITableView
     
-    init(searchField: UITextField, list: UITableView) {
-        self.searchField = searchField
+    init(searchBar: UISearchBar, list: UITableView) {
+        self.searchBar = searchBar
         self.list = list
         
         super.init(frame: .zero)
@@ -17,25 +17,25 @@ class UserRepositoryView: UIView {
     }
     
     private func setupView() {
-        self.setupSearchField()
+        self.setupSearchBar()
         self.setupList()
     }
     
-    private func setupSearchField() {
-        self.addSubview(self.searchField)
+    private func setupSearchBar() {
+        self.addSubview(self.searchBar)
         
-        constrain(self.searchField) { f in
+        constrain(self.searchBar) { f in
             f.top == f.superview!.top
-            f.leading == f.superview!.leading + 10
-            f.trailing == f.superview!.trailing - 10
-            f.height == 40
+            f.leading == f.superview!.leading
+            f.trailing == f.superview!.trailing
+            f.height == 44
         }
     }
     
     private func setupList() {
         self.addSubview(self.list)
         
-        constrain(self.list, self.searchField) { l, f in
+        constrain(self.list, self.searchBar) { l, f in
             l.top == f.bottom
             l.leading == l.superview!.leading
             l.trailing == l.superview!.trailing
