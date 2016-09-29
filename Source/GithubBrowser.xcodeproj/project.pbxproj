@@ -267,12 +267,12 @@
 		8C8F93331D9C00AB00EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8CA102A01D9D3B4C00F0782C /* Logic */,
 				8C8F93341D9C00B300EE5A60 /* AppDelegate */,
 				8CEA8EB61D9C39FC00B512B8 /* Assembly */,
 				8CEA8ED71D9C59EC00B512B8 /* Errors */,
 				8CEA8E8B1D9C268100B512B8 /* Extensions */,
 				8CEA8E931D9C29AE00B512B8 /* Flow */,
+				8CA102A01D9D3B4C00F0782C /* Logic */,
 				8C8F93351D9C00BA00EE5A60 /* Main */,
 				8CEA8EC91D9C53AD00B512B8 /* Model */,
 				8CEA8EC31D9C4C5700B512B8 /* Services */,
@@ -344,9 +344,9 @@
 		8C8F933B1D9C011800EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8CA102A71D9D3FE600F0782C /* Logic */,
 				8CEA8E8F1D9C27DC00B512B8 /* Extensions */,
 				8CEA8E961D9C2AC600B512B8 /* Flow */,
+				8CA102A71D9D3FE600F0782C /* Logic */,
 				8C8F934D1D9C09AD00EE5A60 /* Mock */,
 				8CEA8ED21D9C593700B512B8 /* Services */,
 			);
@@ -383,8 +383,8 @@
 		8C8F934D1D9C09AD00EE5A60 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				8CA102B41D9D42D700F0782C /* Logic */,
 				8CEA8EA11D9C2F6400B512B8 /* Flow */,
+				8CA102B41D9D42D700F0782C /* Logic */,
 				8CEA8EE21D9C60CB00B512B8 /* Services */,
 				8C8F935E1D9C0EE400EE5A60 /* ViewControllers */,
 			);
@@ -408,7 +408,7 @@
 			children = (
 				8CA102A11D9D3B5700F0782C /* Mapping */,
 			);
-			name = Logic;
+			path = Logic;
 			sourceTree = "<group>";
 		};
 		8CA102A11D9D3B5700F0782C /* Mapping */ = {
@@ -417,17 +417,17 @@
 				8CA102A41D9D3F8800F0782C /* Impl */,
 				8CA102A21D9D3B6900F0782C /* UserRepositoryFactory.swift */,
 			);
-			name = Mapping;
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 		8CA102A41D9D3F8800F0782C /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				8CA102A51D9D3FA500F0782C /* UserRepositoryFromUserFactory.swift */,
-				8CA102AC1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift */,
 				8CA102BA1D9D44C200F0782C /* AnyUserRepositoryFactory.swift */,
+				8CA102AC1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift */,
+				8CA102A51D9D3FA500F0782C /* UserRepositoryFromUserFactory.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8CA102A71D9D3FE600F0782C /* Logic */ = {
@@ -435,7 +435,7 @@
 			children = (
 				8CA102A81D9D3FED00F0782C /* Mapping */,
 			);
-			name = Logic;
+			path = Logic;
 			sourceTree = "<group>";
 		};
 		8CA102A81D9D3FED00F0782C /* Mapping */ = {
@@ -443,17 +443,17 @@
 			children = (
 				8CA102A91D9D3FF100F0782C /* Impl */,
 			);
-			name = Mapping;
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 		8CA102A91D9D3FF100F0782C /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				8CA102AA1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift */,
-				8CA102AE1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift */,
 				8CA102BC1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift */,
+				8CA102AE1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift */,
+				8CA102AA1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8CA102B41D9D42D700F0782C /* Logic */ = {
@@ -461,7 +461,7 @@
 			children = (
 				8CA102B51D9D42DB00F0782C /* Mapping */,
 			);
-			name = Logic;
+			path = Logic;
 			sourceTree = "<group>";
 		};
 		8CA102B51D9D42DB00F0782C /* Mapping */ = {
@@ -469,7 +469,7 @@
 			children = (
 				8CA102B81D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift */,
 			);
-			name = Mapping;
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 		8CEA8E8B1D9C268100B512B8 /* Extensions */ = {
@@ -657,8 +657,8 @@
 		8CEA8EDC1D9C5FF300B512B8 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				8CF699581D9D284100F2373A /* GithubSearchService.swift */,
 				8CA102921D9D35A300F0782C /* AnySearchService.swift */,
+				8CF699581D9D284100F2373A /* GithubSearchService.swift */,
 				8CA102BE1D9D463700F0782C /* UserRepositorySearchService.swift */,
 			);
 			path = Impl;
@@ -667,8 +667,8 @@
 		8CEA8EDF1D9C606E00B512B8 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				8CF699561D9D264C00F2373A /* GithubSearchServiceSpec.swift */,
 				8CA102941D9D361F00F0782C /* AnySearchServiceSpec.swift */,
+				8CF699561D9D264C00F2373A /* GithubSearchServiceSpec.swift */,
 				8CA102C01D9D476800F0782C /* UserRepositorySearchServiceSpec.swift */,
 			);
 			path = Impl;
@@ -678,11 +678,11 @@
 			isa = PBXGroup;
 			children = (
 				8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */,
-				8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */,
-				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
-				8CA102961D9D365300F0782C /* SearchServiceMock.swift */,
-				8CA102C21D9D480600F0782C /* UserSearchServiceMock.swift */,
 				8CA102C41D9D487900F0782C /* RepositorySearchServiceMock.swift */,
+				8CA102961D9D365300F0782C /* SearchServiceMock.swift */,
+				8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */,
+				8CA102C21D9D480600F0782C /* UserSearchServiceMock.swift */,
+				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
