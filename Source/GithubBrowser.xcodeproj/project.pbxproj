@@ -215,14 +215,14 @@
 		8C8F93331D9C00AB00EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8ED71D9C59EC00B512B8 /* Errors */,
-				8CEA8EC91D9C53AD00B512B8 /* Model */,
-				8CEA8EC31D9C4C5700B512B8 /* Services */,
 				8C8F93341D9C00B300EE5A60 /* AppDelegate */,
 				8CEA8EB61D9C39FC00B512B8 /* Assembly */,
+				8CEA8ED71D9C59EC00B512B8 /* Errors */,
 				8CEA8E8B1D9C268100B512B8 /* Extensions */,
 				8CEA8E931D9C29AE00B512B8 /* Flow */,
 				8C8F93351D9C00BA00EE5A60 /* Main */,
+				8CEA8EC91D9C53AD00B512B8 /* Model */,
+				8CEA8EC31D9C4C5700B512B8 /* Services */,
 				8C8F933A1D9C010900EE5A60 /* ViewControllers */,
 			);
 			path = Classes;
@@ -291,10 +291,10 @@
 		8C8F933B1D9C011800EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8ED21D9C593700B512B8 /* Services */,
 				8CEA8E8F1D9C27DC00B512B8 /* Extensions */,
 				8CEA8E961D9C2AC600B512B8 /* Flow */,
 				8C8F934D1D9C09AD00EE5A60 /* Mock */,
+				8CEA8ED21D9C593700B512B8 /* Services */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -329,8 +329,8 @@
 		8C8F934D1D9C09AD00EE5A60 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8EE21D9C60CB00B512B8 /* Services */,
 				8CEA8EA11D9C2F6400B512B8 /* Flow */,
+				8CEA8EE21D9C60CB00B512B8 /* Services */,
 				8C8F935E1D9C0EE400EE5A60 /* ViewControllers */,
 			);
 			path = Mock;
@@ -456,11 +456,11 @@
 		8CEA8EC31D9C4C5700B512B8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8EDC1D9C5FF300B512B8 /* Impl */,
 				8CEA8ECC1D9C555700B512B8 /* Deserializers */,
+				8CEA8EDC1D9C5FF300B512B8 /* Impl */,
 				8CEA8EDA1D9C5F6100B512B8 /* UsersService.swift */,
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		8CEA8EC91D9C53AD00B512B8 /* Model */ = {
@@ -468,7 +468,7 @@
 			children = (
 				8CEA8ECA1D9C53B900B512B8 /* User.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8CEA8ECC1D9C555700B512B8 /* Deserializers */ = {
@@ -477,7 +477,7 @@
 				8CEA8ECF1D9C58F800B512B8 /* Impl */,
 				8CEA8ECD1D9C557F00B512B8 /* UsersDeserializer.swift */,
 			);
-			name = Deserializers;
+			path = Deserializers;
 			sourceTree = "<group>";
 		};
 		8CEA8ECF1D9C58F800B512B8 /* Impl */ = {
@@ -485,16 +485,16 @@
 			children = (
 				8CEA8ED01D9C590800B512B8 /* GithubUsersDeserializer.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8CEA8ED21D9C593700B512B8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8EDF1D9C606E00B512B8 /* Impl */,
 				8CEA8ED31D9C593D00B512B8 /* Deserializers */,
+				8CEA8EDF1D9C606E00B512B8 /* Impl */,
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		8CEA8ED31D9C593D00B512B8 /* Deserializers */ = {
@@ -502,7 +502,7 @@
 			children = (
 				8CEA8ED41D9C595C00B512B8 /* Impl */,
 			);
-			name = Deserializers;
+			path = Deserializers;
 			sourceTree = "<group>";
 		};
 		8CEA8ED41D9C595C00B512B8 /* Impl */ = {
@@ -510,7 +510,7 @@
 			children = (
 				8CEA8ED51D9C596A00B512B8 /* GithubUsersDeserializerSpec.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8CEA8ED71D9C59EC00B512B8 /* Errors */ = {
@@ -518,7 +518,7 @@
 			children = (
 				8CEA8ED81D9C5A4F00B512B8 /* DeserializationError.swift */,
 			);
-			name = Errors;
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		8CEA8EDC1D9C5FF300B512B8 /* Impl */ = {
@@ -526,7 +526,7 @@
 			children = (
 				8CEA8EDD1D9C5FFF00B512B8 /* GithubUsersService.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8CEA8EDF1D9C606E00B512B8 /* Impl */ = {
@@ -534,7 +534,7 @@
 			children = (
 				8CEA8EE01D9C607F00B512B8 /* GithubUsersServiceSpec.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8CEA8EE21D9C60CB00B512B8 /* Services */ = {
@@ -542,7 +542,7 @@
 			children = (
 				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		8CEA8EE81D9C63DE00B512B8 /* InfoPropertyList */ = {
@@ -550,7 +550,7 @@
 			children = (
 				8C8F932A1D9BFFB700EE5A60 /* Info.plist */,
 			);
-			name = InfoPropertyList;
+			path = InfoPropertyList;
 			sourceTree = "<group>";
 		};
 		8CEA8EE91D9C63F400B512B8 /* Fixtures */ = {
@@ -558,7 +558,7 @@
 			children = (
 				8CEA8EEA1D9C640500B512B8 /* hello.json */,
 			);
-			name = Fixtures;
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -900,7 +900,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8863322VPF;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
-				INFOPLIST_FILE = GithubBrowserTests/Resources/Info.plist;
+				INFOPLIST_FILE = GithubBrowserTests/Resources/InfoPropertyList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubturek.GithubBrowserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -916,7 +916,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8863322VPF;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
-				INFOPLIST_FILE = GithubBrowserTests/Resources/Info.plist;
+				INFOPLIST_FILE = GithubBrowserTests/Resources/InfoPropertyList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubturek.GithubBrowserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
