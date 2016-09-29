@@ -12,6 +12,10 @@ class GithubUsersService: UsersService {
     }
     
     func searchUsers(withQuery query: String) -> Observable<[User]> {
+        guard !query.isEmpty else {
+            return Observable.just([])
+        }
+        
         let url = "https://api.github.com/search/users"
         let parameters = ["q": query as NSString]
         
