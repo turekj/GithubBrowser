@@ -1,3 +1,4 @@
+import Cartography
 import UIKit
 
 
@@ -22,10 +23,24 @@ class UserRepositoryView: UIView {
     
     private func setupSearchField() {
         self.addSubview(self.searchField)
+        
+        constrain(self.searchField) { f in
+            f.top == f.superview!.top
+            f.leading == f.superview!.leading + 10
+            f.trailing == f.superview!.trailing - 10
+            f.height == 40
+        }
     }
     
     private func setupList() {
         self.addSubview(self.list)
+        
+        constrain(self.list, self.searchField) { l, f in
+            l.top == f.bottom
+            l.leading == l.superview!.leading
+            l.trailing == l.superview!.trailing
+            l.bottom == l.superview!.bottom
+        }
     }
     
     // MARK: - Required initializer
