@@ -10,7 +10,7 @@ class GithubRepositoriesServiceSpec: QuickSpec {
     override func spec() {
         describe("GithubRepositoriesService") {
             let deserializer = RepositoriesDeserializerMock()
-            let sut = GithubRepositoriesService(deserializer: deserializer)
+            let sut = GithubRepositoriesService(deserializer: AnyDeserializer(deserializer))
             
             beforeSuite {
                 _ = stub(condition: isHost("api.github.com") &&

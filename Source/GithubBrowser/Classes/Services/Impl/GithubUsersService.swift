@@ -5,9 +5,9 @@ import RxSwift
 
 class GithubUsersService: UsersService {
     
-    let deserializer: UsersDeserializer
+    let deserializer: AnyDeserializer<[User]>
     
-    init(deserializer: UsersDeserializer) {
+    init(deserializer: AnyDeserializer<[User]>) {
         self.deserializer = deserializer
     }
     
@@ -20,6 +20,6 @@ class GithubUsersService: UsersService {
         let parameters = ["q": query as NSString]
         
         return json(.get, url, parameters: parameters)
-            .map({ try self.deserializer.deserializeUsers($0) })
+            .map({ try self.deserializer.deserialize($0) })
     }
 }

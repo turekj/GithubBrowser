@@ -10,7 +10,7 @@ class GithubUsersServiceSpec: QuickSpec {
     override func spec() {
         describe("GithubUsersService") {
             let deserializer = UsersDeserializerMock()
-            let sut = GithubUsersService(deserializer: deserializer)
+            let sut = GithubUsersService(deserializer: AnyDeserializer(deserializer))
             
             beforeSuite {
                 _ = stub(condition: isHost("api.github.com") &&

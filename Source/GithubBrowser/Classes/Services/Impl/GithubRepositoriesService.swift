@@ -5,9 +5,9 @@ import RxSwift
 
 class GithubRepositoriesService: RepositoriesService {
     
-    let deserializer: RepositoriesDeserializer
+    let deserializer: AnyDeserializer<[Repository]>
     
-    init(deserializer: RepositoriesDeserializer) {
+    init(deserializer: AnyDeserializer<[Repository]>) {
         self.deserializer = deserializer
     }
     
@@ -20,6 +20,6 @@ class GithubRepositoriesService: RepositoriesService {
         let parameters = ["q": query as NSString]
         
         return json(.get, url, parameters: parameters)
-            .map({ try self.deserializer.deserializeRepositories($0) })
+            .map({ try self.deserializer.deserialize($0) })
     }
 }
