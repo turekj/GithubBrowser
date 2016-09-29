@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8C164F811D9DA012008F15C0 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F801D9DA012008F15C0 /* UserDetailViewController.swift */; };
 		8C164F851D9DA028008F15C0 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F841D9DA028008F15C0 /* UserDetail.swift */; };
+		8C164F871D9DA28D008F15C0 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F861D9DA28D008F15C0 /* DetailAssembly.swift */; };
+		8C164F891D9DA314008F15C0 /* UserDetailControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F881D9DA314008F15C0 /* UserDetailControllerConfigurator.swift */; };
+		8C164F8B1D9DA3A8008F15C0 /* UserDetailControllerConfiguratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F8A1D9DA3A8008F15C0 /* UserDetailControllerConfiguratorSpec.swift */; };
+		8C164F8D1D9DA3D4008F15C0 /* UserDetailMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F8C1D9DA3D4008F15C0 /* UserDetailMock.swift */; };
 		8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */; };
 		8C8F93191D9BFFB700EE5A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F93171D9BFFB700EE5A60 /* Main.storyboard */; };
 		8C8F931B1D9BFFB700EE5A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */; };
@@ -128,6 +132,10 @@
 /* Begin PBXFileReference section */
 		8C164F801D9DA012008F15C0 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		8C164F841D9DA028008F15C0 /* UserDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		8C164F861D9DA28D008F15C0 /* DetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
+		8C164F881D9DA314008F15C0 /* UserDetailControllerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailControllerConfigurator.swift; sourceTree = "<group>"; };
+		8C164F8A1D9DA3A8008F15C0 /* UserDetailControllerConfiguratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailControllerConfiguratorSpec.swift; sourceTree = "<group>"; };
+		8C164F8C1D9DA3D4008F15C0 /* UserDetailMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailMock.swift; sourceTree = "<group>"; };
 		8C8F93101D9BFFB700EE5A60 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C8F93181D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -440,6 +448,7 @@
 				8CEA8EB41D9C385000B512B8 /* UserRepositoryListMock.swift */,
 				8C8F935F1D9C0EF500EE5A60 /* ViewControllerMock.swift */,
 				8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */,
+				8C164F8C1D9DA3D4008F15C0 /* UserDetailMock.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -618,6 +627,7 @@
 				8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */,
 				8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */,
 				8CEA8EAD1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift */,
+				8C164F881D9DA314008F15C0 /* UserDetailControllerConfigurator.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -628,6 +638,7 @@
 				8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */,
 				8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */,
 				8CEA8EAF1D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift */,
+				8C164F8A1D9DA3A8008F15C0 /* UserDetailControllerConfiguratorSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -664,6 +675,7 @@
 				8CEA8EB71D9C3A1600B512B8 /* GlobalAssembly.swift */,
 				8CEA8EB91D9C3A3600B512B8 /* ListAssembly.swift */,
 				8CA102CF1D9D6CBE00F0782C /* ServiceAssembly.swift */,
+				8C164F861D9DA28D008F15C0 /* DetailAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -930,6 +942,7 @@
 				8CEA8ED11D9C590800B512B8 /* GithubUserDeserializer.swift in Sources */,
 				8C164F811D9DA012008F15C0 /* UserDetailViewController.swift in Sources */,
 				8C8F93401D9C022B00EE5A60 /* UnitTestAppDelegate.swift in Sources */,
+				8C164F871D9DA28D008F15C0 /* DetailAssembly.swift in Sources */,
 				8CA102991D9D39B700F0782C /* UserRepository.swift in Sources */,
 				8CEA8EB81D9C3A1600B512B8 /* GlobalAssembly.swift in Sources */,
 				8CA102A31D9D3B6900F0782C /* UserRepositoryFactory.swift in Sources */,
@@ -953,6 +966,7 @@
 				8CA102BF1D9D463700F0782C /* UserRepositorySearchService.swift in Sources */,
 				8CF699531D9D257700F2373A /* SearchService.swift in Sources */,
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
+				8C164F891D9DA314008F15C0 /* UserDetailControllerConfigurator.swift in Sources */,
 				8CF699371D9D14C200F2373A /* Repository.swift in Sources */,
 				8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */,
 				8CA102BB1D9D44C200F0782C /* AnyUserRepositoryFactory.swift in Sources */,
@@ -975,6 +989,7 @@
 				8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */,
 				8CA102C51D9D487900F0782C /* RepositorySearchServiceMock.swift in Sources */,
 				8CA102C11D9D476800F0782C /* UserRepositorySearchServiceSpec.swift in Sources */,
+				8C164F8B1D9DA3A8008F15C0 /* UserDetailControllerConfiguratorSpec.swift in Sources */,
 				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
 				8CF699571D9D264C00F2373A /* GithubSearchServiceSpec.swift in Sources */,
 				8CEA8EA91D9C321700B512B8 /* FlowControllerMock.swift in Sources */,
@@ -994,6 +1009,7 @@
 				8CA102B91D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift in Sources */,
 				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
 				8CA102C31D9D480600F0782C /* UserSearchServiceMock.swift in Sources */,
+				8C164F8D1D9DA3D4008F15C0 /* UserDetailMock.swift in Sources */,
 				8CF699511D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift in Sources */,
 				8CF699491D9D1CEF00F2373A /* AnyDeserializerSpec.swift in Sources */,
 				8CA102D71D9D723600F0782C /* UserRepositoryViewControllerSpec.swift in Sources */,

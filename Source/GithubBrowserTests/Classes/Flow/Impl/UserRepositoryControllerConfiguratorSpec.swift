@@ -1,7 +1,6 @@
 @testable import GithubBrowser
 import Nimble
 import Quick
-import Swinject
 
 
 class UserRepositoryControllerConfiguratorSpec: QuickSpec {

@@ -29,8 +29,10 @@ class GlobalAssembly: AssemblyType {
         
         container.register(ControllerConfigurator.self, name: "globalRoot") { r in
             let listConfigurator = r.resolve(ControllerConfigurator.self, name: "list")!
+            let detailConfigurator = r.resolve(ControllerConfigurator.self, name: "detail")!
+            let configurators = [listConfigurator, detailConfigurator]
             
-            return CompositeControllerConfigurator(configurators: [listConfigurator])
+            return CompositeControllerConfigurator(configurators: configurators)
         }
     }
 }

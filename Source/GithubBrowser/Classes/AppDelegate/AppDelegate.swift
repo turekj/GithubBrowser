@@ -9,7 +9,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var flowController: FlowController = self.createFlowController()
     
     private func createAssembler() -> Assembler {
-        let assemblies = [GlobalAssembly(), ListAssembly(), ServiceAssembly()] as [AssemblyType]
+        let assemblies = [DetailAssembly(), GlobalAssembly(),
+                          ListAssembly(), ServiceAssembly()] as [AssemblyType]
         
         return try! Assembler(assemblies: assemblies)
     }
