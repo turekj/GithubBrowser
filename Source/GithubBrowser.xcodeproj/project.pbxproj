@@ -70,6 +70,9 @@
 		8CF699411D9D197800F2373A /* GithubRepositoriesServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699401D9D197800F2373A /* GithubRepositoriesServiceSpec.swift */; };
 		8CF699431D9D19A300F2373A /* RepositoriesDeserializerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */; };
 		8CF699451D9D1B9100F2373A /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699441D9D1B9100F2373A /* Deserializer.swift */; };
+		8CF699471D9D1C3F00F2373A /* AnyDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699461D9D1C3F00F2373A /* AnyDeserializer.swift */; };
+		8CF699491D9D1CEF00F2373A /* AnyDeserializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF699481D9D1CEF00F2373A /* AnyDeserializerSpec.swift */; };
+		8CF6994B1D9D1E2B00F2373A /* StringDeserializerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +164,9 @@
 		8CF699401D9D197800F2373A /* GithubRepositoriesServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesServiceSpec.swift; sourceTree = "<group>"; };
 		8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesDeserializerMock.swift; sourceTree = "<group>"; };
 		8CF699441D9D1B9100F2373A /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
+		8CF699461D9D1C3F00F2373A /* AnyDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnyDeserializer.swift; path = ../AnyDeserializer.swift; sourceTree = "<group>"; };
+		8CF699481D9D1CEF00F2373A /* AnyDeserializerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDeserializerSpec.swift; sourceTree = "<group>"; };
+		8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDeserializerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,6 +511,7 @@
 		8CEA8ECF1D9C58F800B512B8 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
+				8CF699461D9D1C3F00F2373A /* AnyDeserializer.swift */,
 				8CEA8ED01D9C590800B512B8 /* GithubUsersDeserializer.swift */,
 				8CF6993A1D9D164400F2373A /* GithubRepositoriesDeserializer.swift */,
 			);
@@ -533,6 +540,7 @@
 			children = (
 				8CEA8ED51D9C596A00B512B8 /* GithubUsersDeserializerSpec.swift */,
 				8CF6993C1D9D166F00F2373A /* GithubRepositoriesDeserializerSpec.swift */,
+				8CF699481D9D1CEF00F2373A /* AnyDeserializerSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -568,6 +576,7 @@
 			children = (
 				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
 				8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */,
+				8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -737,6 +746,7 @@
 				8CF699371D9D14C200F2373A /* Repository.swift in Sources */,
 				8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */,
 				8CEA8EA01D9C2EF700B512B8 /* ControllerConfigurator.swift in Sources */,
+				8CF699471D9D1C3F00F2373A /* AnyDeserializer.swift in Sources */,
 				8CEA8ECE1D9C557F00B512B8 /* UsersDeserializer.swift in Sources */,
 				8CF699351D9D144F00F2373A /* RepositoriesService.swift in Sources */,
 				8CEA8EB31D9C37EC00B512B8 /* UserRepositoryList.swift in Sources */,
@@ -763,8 +773,10 @@
 				8CEA8E9C1D9C2BC000B512B8 /* MainFlowControllerSpec.swift in Sources */,
 				8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */,
 				8CEA8EE41D9C60D800B512B8 /* UsersDeserializerMock.swift in Sources */,
+				8CF6994B1D9D1E2B00F2373A /* StringDeserializerMock.swift in Sources */,
 				8CF699411D9D197800F2373A /* GithubRepositoriesServiceSpec.swift in Sources */,
 				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
+				8CF699491D9D1CEF00F2373A /* AnyDeserializerSpec.swift in Sources */,
 				8CF699431D9D19A300F2373A /* RepositoriesDeserializerMock.swift in Sources */,
 				8CEA8EA31D9C2F7800B512B8 /* ControllerConfiguratorMock.swift in Sources */,
 			);
