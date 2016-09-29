@@ -30,6 +30,8 @@
 		8CA102A31D9D3B6900F0782C /* UserRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102A21D9D3B6900F0782C /* UserRepositoryFactory.swift */; };
 		8CA102A61D9D3FA500F0782C /* UserRepositoryFromUserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102A51D9D3FA500F0782C /* UserRepositoryFromUserFactory.swift */; };
 		8CA102AB1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102AA1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift */; };
+		8CA102AD1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102AC1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift */; };
+		8CA102AF1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102AE1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift */; };
 		8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */; };
 		8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */; };
 		8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E941D9C29BC00B512B8 /* FlowController.swift */; };
@@ -133,6 +135,8 @@
 		8CA102A21D9D3B6900F0782C /* UserRepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryFactory.swift; sourceTree = "<group>"; };
 		8CA102A51D9D3FA500F0782C /* UserRepositoryFromUserFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryFromUserFactory.swift; sourceTree = "<group>"; };
 		8CA102AA1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryFromUserFactorySpec.swift; sourceTree = "<group>"; };
+		8CA102AC1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryFromRepositoryFactory.swift; sourceTree = "<group>"; };
+		8CA102AE1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryFromRepositoryFactorySpec.swift; sourceTree = "<group>"; };
 		8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+BackwardsNavigation.swift"; sourceTree = "<group>"; };
 		8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerBackwardsNavigationSpec.swift; sourceTree = "<group>"; };
 		8CEA8E941D9C29BC00B512B8 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
@@ -405,6 +409,7 @@
 			isa = PBXGroup;
 			children = (
 				8CA102A51D9D3FA500F0782C /* UserRepositoryFromUserFactory.swift */,
+				8CA102AC1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -429,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				8CA102AA1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift */,
+				8CA102AE1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift */,
 			);
 			name = Impl;
 			sourceTree = "<group>";
@@ -800,6 +806,7 @@
 				8CF699451D9D1B9100F2373A /* Deserializer.swift in Sources */,
 				8CEA8ECB1D9C53B900B512B8 /* User.swift in Sources */,
 				8CF699591D9D284100F2373A /* GithubSearchService.swift in Sources */,
+				8CA102AD1D9D411000F0782C /* UserRepositoryFromRepositoryFactory.swift in Sources */,
 				8CEA8EBA1D9C3A3600B512B8 /* ListAssembly.swift in Sources */,
 				8CEA8EAC1D9C36E600B512B8 /* UserRepositoryViewController.swift in Sources */,
 				8CA1029B1D9D39EA00F0782C /* UserRepositoryEntryType.swift in Sources */,
@@ -846,6 +853,7 @@
 				8CF699511D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift in Sources */,
 				8CF699491D9D1CEF00F2373A /* AnyDeserializerSpec.swift in Sources */,
 				8CF699431D9D19A300F2373A /* RepositoriesDeserializerMock.swift in Sources */,
+				8CA102AF1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift in Sources */,
 				8CEA8EA31D9C2F7800B512B8 /* ControllerConfiguratorMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
