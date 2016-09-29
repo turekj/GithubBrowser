@@ -14,24 +14,20 @@ class UserRepositoryFromUserFactorySpec: QuickSpec {
                 
                 let result = sut.makeUserRepository(user)
                 
-                it("Should return result") {
-                    expect(result).toNot(beNil())
-                }
-                
                 it("Should rewrite id field") {
-                    expect(result?.id).to(equal(19))
+                    expect(result.id).to(equal(19))
                 }
                 
                 it("Should rewrite login to title") {
-                    expect(result?.title).to(equal("usr_lgn"))
+                    expect(result.title).to(equal("usr_lgn"))
                 }
                 
                 it("Should rewrite avatarUrl to imageUrl") {
-                    expect(result?.imageUrl).to(equal("https://url.com"))
+                    expect(result.imageUrl).to(equal("https://url.com"))
                 }
                 
                 it("Should set type to user") {
-                    expect(result?.type).to(equal(UserRepositoryEntryType.user))
+                    expect(result.type).to(equal(UserRepositoryEntryType.user))
                 }
             }
         }

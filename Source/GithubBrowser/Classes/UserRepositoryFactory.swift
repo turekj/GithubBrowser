@@ -5,5 +5,5 @@ protocol UserRepositoryFactory {
 
     associatedtype SourceDataType
     
-    func makeUserRepository(_ source: SourceDataType) -> UserRepository?
+    func makeUserRepository(_ source: SourceDataType) -> UserRepository
 }

@@ -35,6 +35,10 @@
 		8CA102B91D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102B81D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift */; };
 		8CA102BB1D9D44C200F0782C /* AnyUserRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102BA1D9D44C200F0782C /* AnyUserRepositoryFactory.swift */; };
 		8CA102BD1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102BC1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift */; };
+		8CA102BF1D9D463700F0782C /* UserRepositorySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102BE1D9D463700F0782C /* UserRepositorySearchService.swift */; };
+		8CA102C11D9D476800F0782C /* UserRepositorySearchServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102C01D9D476800F0782C /* UserRepositorySearchServiceSpec.swift */; };
+		8CA102C31D9D480600F0782C /* UserSearchServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102C21D9D480600F0782C /* UserSearchServiceMock.swift */; };
+		8CA102C51D9D487900F0782C /* RepositorySearchServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102C41D9D487900F0782C /* RepositorySearchServiceMock.swift */; };
 		8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */; };
 		8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */; };
 		8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E941D9C29BC00B512B8 /* FlowController.swift */; };
@@ -143,6 +147,10 @@
 		8CA102B81D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryFromIntFactoryMock.swift; sourceTree = "<group>"; };
 		8CA102BA1D9D44C200F0782C /* AnyUserRepositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyUserRepositoryFactory.swift; sourceTree = "<group>"; };
 		8CA102BC1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyUserRepositoryFactorySpec.swift; sourceTree = "<group>"; };
+		8CA102BE1D9D463700F0782C /* UserRepositorySearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositorySearchService.swift; sourceTree = "<group>"; };
+		8CA102C01D9D476800F0782C /* UserRepositorySearchServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositorySearchServiceSpec.swift; sourceTree = "<group>"; };
+		8CA102C21D9D480600F0782C /* UserSearchServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchServiceMock.swift; sourceTree = "<group>"; };
+		8CA102C41D9D487900F0782C /* RepositorySearchServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorySearchServiceMock.swift; sourceTree = "<group>"; };
 		8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+BackwardsNavigation.swift"; sourceTree = "<group>"; };
 		8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerBackwardsNavigationSpec.swift; sourceTree = "<group>"; };
 		8CEA8E941D9C29BC00B512B8 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
@@ -651,6 +659,7 @@
 			children = (
 				8CF699581D9D284100F2373A /* GithubSearchService.swift */,
 				8CA102921D9D35A300F0782C /* AnySearchService.swift */,
+				8CA102BE1D9D463700F0782C /* UserRepositorySearchService.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -660,6 +669,7 @@
 			children = (
 				8CF699561D9D264C00F2373A /* GithubSearchServiceSpec.swift */,
 				8CA102941D9D361F00F0782C /* AnySearchServiceSpec.swift */,
+				8CA102C01D9D476800F0782C /* UserRepositorySearchServiceSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -671,6 +681,8 @@
 				8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */,
 				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
 				8CA102961D9D365300F0782C /* SearchServiceMock.swift */,
+				8CA102C21D9D480600F0782C /* UserSearchServiceMock.swift */,
+				8CA102C41D9D487900F0782C /* RepositorySearchServiceMock.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -841,6 +853,7 @@
 				8CA102A61D9D3FA500F0782C /* UserRepositoryFromUserFactory.swift in Sources */,
 				8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */,
 				8CEA8ED91D9C5A4F00B512B8 /* DeserializationError.swift in Sources */,
+				8CA102BF1D9D463700F0782C /* UserRepositorySearchService.swift in Sources */,
 				8CF699531D9D257700F2373A /* SearchService.swift in Sources */,
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
 				8CF699371D9D14C200F2373A /* Repository.swift in Sources */,
@@ -861,6 +874,8 @@
 				8CEA8EB51D9C385000B512B8 /* UserRepositoryListMock.swift in Sources */,
 				8CEA8EB01D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift in Sources */,
 				8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */,
+				8CA102C51D9D487900F0782C /* RepositorySearchServiceMock.swift in Sources */,
+				8CA102C11D9D476800F0782C /* UserRepositorySearchServiceSpec.swift in Sources */,
 				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
 				8CF699571D9D264C00F2373A /* GithubSearchServiceSpec.swift in Sources */,
 				8CEA8EA91D9C321700B512B8 /* FlowControllerMock.swift in Sources */,
@@ -878,6 +893,7 @@
 				8CF6994B1D9D1E2B00F2373A /* StringDeserializerMock.swift in Sources */,
 				8CA102B91D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift in Sources */,
 				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
+				8CA102C31D9D480600F0782C /* UserSearchServiceMock.swift in Sources */,
 				8CF699511D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift in Sources */,
 				8CF699491D9D1CEF00F2373A /* AnyDeserializerSpec.swift in Sources */,
 				8CF699431D9D19A300F2373A /* RepositoriesDeserializerMock.swift in Sources */,
