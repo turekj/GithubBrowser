@@ -10,7 +10,7 @@ class GithubSearchItemsDeserializer<T>: Deserializer {
     }
     
     func deserialize(_ serialized: Any?) throws -> [T] {
-        guard let json = serialized as? [String: Any?] else {
+        guard let json = serialized as? [String: Any] else {
             throw DeserializationError.improperInputFormat
         }
         

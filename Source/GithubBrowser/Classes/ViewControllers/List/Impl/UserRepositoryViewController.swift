@@ -1,4 +1,5 @@
 import Cartography
+import RxCocoa
 import RxSwift
 import UIKit
 
@@ -10,6 +11,9 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
     
     var navigationBarTitle = ""
     var translucentNavigationBar = false
+    
+    var searchResults: Observable<[UserRepository]> = Observable.just([])
+    let disposeBag = DisposeBag()
     
     init(view: UserRepositoryView, userRepositoryService: AnySearchService<UserRepository>) {
         self.userRepositoryView = view
@@ -35,7 +39,27 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
     }
     
     func bindViewModel() {
+        self.searchResults = self.userRepositoryView.searchBar.rx.text
+            .throttle(0.3, scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .flatMapLatest { query -> Observable<[UserRepository]> in
+                guard query.characters.count > 1 else {
+                    return .just([])
+                }
+                
+                return self.userRepositoryService.search(withQuery: query)
+                    .map { $0.sorted(by: { $0.id < $1.id }) }
+                    .catchErrorJustReturn([])
+            }
+            .observeOn(MainScheduler.instance)
         
+        self.searchResults
+            .bindTo(self.userRepositoryView.list.rx.items(
+                    cellIdentifier: ReuseIdentifiers.userRepositoryCell.rawValue,
+                    cellType: UserRepositoryCell.self)) { (row, userRepository, cell) in
+                cell.titleView.text = userRepository.title
+            }
+            .addDisposableTo(self.disposeBag)
     }
     
     // MARK: - Layout
