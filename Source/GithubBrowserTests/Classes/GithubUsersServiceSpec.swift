@@ -45,6 +45,12 @@ class GithubUsersServiceSpec: QuickSpec {
                     
                     expect(json["hello"] as? String).to(equal("world"))
                 }
+                
+                it("Should return empty result if query is empty") {
+                    let result = try! sut.searchUsers(withQuery: "").toBlocking().first()
+                    
+                    expect(result?.isEmpty).to(beTrue())
+                }
             }
         }
     }
