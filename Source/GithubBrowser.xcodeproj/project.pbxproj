@@ -43,6 +43,8 @@
 		8CA102CC1D9D505F00F0782C /* ReuseIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102CB1D9D505F00F0782C /* ReuseIdentifiers.swift */; };
 		8CA102CE1D9D5EDB00F0782C /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA102CD1D9D5EDB00F0782C /* Cartography.framework */; };
 		8CA102D01D9D6CBE00F0782C /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102CF1D9D6CBE00F0782C /* ServiceAssembly.swift */; };
+		8CA102D21D9D713800F0782C /* UserRepositorySearchServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102D11D9D713800F0782C /* UserRepositorySearchServiceMock.swift */; };
+		8CA102D71D9D723600F0782C /* UserRepositoryViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA102D61D9D723600F0782C /* UserRepositoryViewControllerSpec.swift */; };
 		8CEA8E8E1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */; };
 		8CEA8E921D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */; };
 		8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8E941D9C29BC00B512B8 /* FlowController.swift */; };
@@ -159,6 +161,8 @@
 		8CA102CB1D9D505F00F0782C /* ReuseIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiers.swift; sourceTree = "<group>"; };
 		8CA102CD1D9D5EDB00F0782C /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = ../Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
 		8CA102CF1D9D6CBE00F0782C /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		8CA102D11D9D713800F0782C /* UserRepositorySearchServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositorySearchServiceMock.swift; sourceTree = "<group>"; };
+		8CA102D61D9D723600F0782C /* UserRepositoryViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryViewControllerSpec.swift; sourceTree = "<group>"; };
 		8CEA8E8D1D9C279500B512B8 /* UINavigationViewController+BackwardsNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+BackwardsNavigation.swift"; sourceTree = "<group>"; };
 		8CEA8E911D9C280500B512B8 /* UINavigationViewControllerBackwardsNavigationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerBackwardsNavigationSpec.swift; sourceTree = "<group>"; };
 		8CEA8E941D9C29BC00B512B8 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
@@ -355,6 +359,7 @@
 		8C8F933B1D9C011800EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8CA102D31D9D721900F0782C /* ViewControllers */,
 				8CEA8E8F1D9C27DC00B512B8 /* Extensions */,
 				8CEA8E961D9C2AC600B512B8 /* Flow */,
 				8CA102A71D9D3FE600F0782C /* Logic */,
@@ -506,6 +511,30 @@
 				8CA102CB1D9D505F00F0782C /* ReuseIdentifiers.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		8CA102D31D9D721900F0782C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CA102D41D9D722000F0782C /* List */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8CA102D41D9D722000F0782C /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8CA102D51D9D722400F0782C /* Impl */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		8CA102D51D9D722400F0782C /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				8CA102D61D9D723600F0782C /* UserRepositoryViewControllerSpec.swift */,
+			);
+			name = Impl;
 			sourceTree = "<group>";
 		};
 		8CEA8E8B1D9C268100B512B8 /* Extensions */ = {
@@ -720,6 +749,7 @@
 				8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */,
 				8CA102C21D9D480600F0782C /* UserSearchServiceMock.swift */,
 				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
+				8CA102D11D9D713800F0782C /* UserRepositorySearchServiceMock.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -920,6 +950,7 @@
 				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
 				8CF699571D9D264C00F2373A /* GithubSearchServiceSpec.swift in Sources */,
 				8CEA8EA91D9C321700B512B8 /* FlowControllerMock.swift in Sources */,
+				8CA102D21D9D713800F0782C /* UserRepositorySearchServiceMock.swift in Sources */,
 				8CF6993D1D9D166F00F2373A /* GithubRepositoryDeserializerSpec.swift in Sources */,
 				8CEA8ED61D9C596A00B512B8 /* GithubUserDeserializerSpec.swift in Sources */,
 				8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */,
@@ -937,6 +968,7 @@
 				8CA102C31D9D480600F0782C /* UserSearchServiceMock.swift in Sources */,
 				8CF699511D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift in Sources */,
 				8CF699491D9D1CEF00F2373A /* AnyDeserializerSpec.swift in Sources */,
+				8CA102D71D9D723600F0782C /* UserRepositoryViewControllerSpec.swift in Sources */,
 				8CF699431D9D19A300F2373A /* RepositoriesDeserializerMock.swift in Sources */,
 				8CA102AF1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift in Sources */,
 				8CEA8EA31D9C2F7800B512B8 /* ControllerConfiguratorMock.swift in Sources */,

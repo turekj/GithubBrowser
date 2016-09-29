@@ -1,4 +1,5 @@
 import Cartography
+import RxCocoa
 import RxSwift
 import UIKit
 
@@ -10,6 +11,8 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
     
     var navigationBarTitle = ""
     var translucentNavigationBar = false
+    
+    var searchResults: Observable<[UserRepository]> = Observable.just([])
     
     init(view: UserRepositoryView, userRepositoryService: AnySearchService<UserRepository>) {
         self.userRepositoryView = view
@@ -35,7 +38,18 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
     }
     
     func bindViewModel() {
-        
+        self.searchResults = self.userRepositoryView.searchBar.rx.text
+            .throttle(0.3, scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .flatMapLatest { query -> Observable<[UserRepository]> in
+                guard query.characters.count > 1 else {
+                    return .just([])
+                }
+                
+                return self.userRepositoryService.search(withQuery: query)
+                    .catchErrorJustReturn([])
+            }
+            .observeOn(MainScheduler.instance)
     }
     
     // MARK: - Layout
