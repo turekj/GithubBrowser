@@ -11,11 +11,11 @@ class GithubSearchItemsDeserializer<T>: Deserializer {
     
     func deserialize(_ serialized: Any?) throws -> [T] {
         guard let json = serialized as? [String: Any?] else {
-            throw DeserializationError.ImproperInputFormat
+            throw DeserializationError.improperInputFormat
         }
         
         guard let items = json["items"] as? [Any?] else {
-            throw DeserializationError.ImproperInputFormat
+            throw DeserializationError.improperInputFormat
         }
         
         return try items.map { try self.itemDeserializer.deserialize($0) }

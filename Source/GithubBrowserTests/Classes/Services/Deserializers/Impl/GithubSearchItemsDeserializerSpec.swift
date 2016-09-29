@@ -16,21 +16,21 @@ class GithubSearchItemsDeserializerSpec: QuickSpec {
                     let input = "String input"
                     
                     expect { try sut.deserialize(input) }.to(
-                        throwError(DeserializationError.ImproperInputFormat))
+                        throwError(DeserializationError.improperInputFormat))
                 }
                 
                 it("Should throw deserialization error if serialized input does not have items") {
                     let input = ["Some": "Array"] as [String: Any]
                     
                     expect { try sut.deserialize(input) }.to(
-                        throwError(DeserializationError.ImproperInputFormat))
+                        throwError(DeserializationError.improperInputFormat))
                 }
                 
                 it("Should throw deserialization error if items are not an array") {
                     let input = ["items": "not valid items"] as [String: Any]
                     
                     expect { try sut.deserialize(input) }.to(
-                        throwError(DeserializationError.ImproperInputFormat))
+                        throwError(DeserializationError.improperInputFormat))
                 }
                 
                 it("Should return items deserialized by item deserializer") {

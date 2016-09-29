@@ -15,21 +15,21 @@ class GithubRepositoryDeserializerSpec: QuickSpec {
                     let input = "Not a dictionary"
                     
                     expect { try sut.deserialize(input) }.to(
-                        throwError(DeserializationError.ImproperInputFormat))
+                        throwError(DeserializationError.improperInputFormat))
                 }
                 
                 it("Should throw deserialization error if repository id is missing") {
                     let input = ["name": "name"] as [String: Any]
                     
                     expect { try sut.deserialize(input) }.to(
-                        throwError(DeserializationError.ImproperInputFormat))
+                        throwError(DeserializationError.improperInputFormat))
                 }
                 
                 it("Should throw deserialization error if repository name is missing") {
                     let input = ["id": 14] as [String: Any]
                     
                     expect { try sut.deserialize(input) }.to(
-                        throwError(DeserializationError.ImproperInputFormat))
+                        throwError(DeserializationError.improperInputFormat))
                 }
                 
                 it("Should serialize repositories properly if data is in correct format") {

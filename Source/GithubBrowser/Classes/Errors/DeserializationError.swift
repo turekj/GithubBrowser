@@ -2,5 +2,6 @@ import Foundation
 
 
 enum DeserializationError: Error {
-    case ImproperInputFormat
+    
+    case improperInputFormat
 }

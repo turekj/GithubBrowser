@@ -15,21 +15,21 @@ class GithubUserDeserializerSpec: QuickSpec {
                     let input = "String input"
                     
                     expect { try sut.deserialize(input) }.to(
-                        throwError(DeserializationError.ImproperInputFormat))
+                        throwError(DeserializationError.improperInputFormat))
                 }
                 
                 it("Should throw deserialization error if user id is missing") {
                     let input = ["login": "login"] as [String: Any]
                     
                     expect { try sut.deserialize(input) }.to(
-                        throwError(DeserializationError.ImproperInputFormat))
+                        throwError(DeserializationError.improperInputFormat))
                 }
                 
                 it("Should throw deserialization error if user login is missing") {
                     let input = ["id": 7] as [String: Any]
                     
                     expect { try sut.deserialize(input) }.to(
-                        throwError(DeserializationError.ImproperInputFormat))
+                        throwError(DeserializationError.improperInputFormat))
                 }
                 
                 it("Should serialize users properly if data is in correct format") {
