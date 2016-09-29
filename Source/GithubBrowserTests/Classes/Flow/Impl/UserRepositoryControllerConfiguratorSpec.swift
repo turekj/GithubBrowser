@@ -53,31 +53,53 @@ class UserRepositoryControllerConfiguratorSpec: QuickSpec {
                 }
             }
             
-            context("When configuring cell select action") {
+            context("When configuring cell select action for a repository") {
+                let repo = UserRepository(id: 1, title: "", imageUrl: nil, type: .repository)
                 let controller = UserRepositoryListMock()
                 _ = sut.configureController(controller, with: flowController)
                 
                 beforeEach {
                     flowController.proceededTo = nil
                     flowController.proceededAnimated = nil
+                    flowController.selectedUserId = nil
                 }
                 
-                it("Should not navigate to details view controller if not a user") {
-                    let repo = UserRepository(id: 1, title: "", imageUrl: nil, type: .repository)
-                    
+                it("Should not navigate to details view controller") {
                     controller.onUserRepositorySelected?(repo)
                     
                     expect(flowController.proceededTo).to(beNil())
                     expect(flowController.proceededAnimated).to(beNil())
                 }
                 
-                it("Should navigate to details view controller if it is a user") {
-                    let user = UserRepository(id: 1, title: "", imageUrl: nil, type: .user)
+                it("Should not set selected user ID") {
+                    controller.onUserRepositorySelected?(repo)
                     
+                    expect(flowController.selectedUserId).to(beNil())
+                }
+            }
+            
+            context("When configuring cell select action for a user") {
+                let user = UserRepository(id: 1, title: "", imageUrl: nil, type: .user)
+                let controller = UserRepositoryListMock()
+                _ = sut.configureController(controller, with: flowController)
+                
+                beforeEach {
+                    flowController.proceededTo = nil
+                    flowController.proceededAnimated = nil
+                    flowController.selectedUserId = nil
+                }
+                
+                it("Should navigate to details view controller") {
                     controller.onUserRepositorySelected?(user)
                     
                     expect(flowController.proceededTo).to(be(UserDetailViewController.self))
                     expect(flowController.proceededAnimated).to(beTrue())
+                }
+                
+                it("Should set selected user ID if it is a user") {
+                    controller.onUserRepositorySelected?(user)
+                    
+                    expect(flowController.selectedUserId).to(equal(1))
                 }
             }
         }

@@ -1,6 +1,7 @@
 import Foundation
 
 
-protocol UserDetail {
+protocol UserDetail: class {
 
+    var userId: Int? { get set }
 }

@@ -8,6 +8,8 @@ class MainFlowController: FlowController {
     let navigationController: UINavigationController
     let configurator: ControllerConfigurator
     
+    var selectedUserId: Int?
+    
     init(resolver: ResolverType, navigationController: UINavigationController,
          configurator: ControllerConfigurator) {
         self.resolver = resolver
