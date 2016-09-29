@@ -1,4 +1,5 @@
 github "Alamofire/Alamofire" "4.0.1"
+github "robb/Cartography" "1.0.0"
 github "ankurp/Dollar" "6.0.0"
 github "Quick/Nimble" "v5.0.0"
 github "AliSoftware/OHHTTPStubs" "624d51619bc88144015c2b275e761b359ae5ecb3"

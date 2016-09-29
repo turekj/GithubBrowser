@@ -4,6 +4,9 @@ import UIKit
 
 class UserRepositoryListMock: UIViewController, UserRepositoryList {
     
+    var navigationBarTitle = ""
+    var translucentNavigationBar = false
+    
     init() {
         super.init(nibName: nil, bundle: nil)
     }

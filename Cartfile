@@ -18,3 +18,6 @@ github "RxSwiftCommunity/RxAlamofire" "master"
 # OHHTTPStubs
 github "AliSoftware/OHHTTPStubs" "swift-3.0"
 
+# Cartography
+github "robb/Cartography" ~> 1.0
+
