@@ -9,6 +9,8 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
     let userRepositoryView: UserRepositoryView
     let userRepositoryService: AnySearchService<UserRepository>
     
+    var onUserRepositorySelected: ((UserRepository) -> Void)?
+    
     var navigationBarTitle = ""
     var translucentNavigationBar = false
     

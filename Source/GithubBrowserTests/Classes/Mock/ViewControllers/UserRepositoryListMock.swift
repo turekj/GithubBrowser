@@ -4,6 +4,8 @@ import UIKit
 
 class UserRepositoryListMock: UIViewController, UserRepositoryList {
     
+    var onUserRepositorySelected: ((UserRepository) -> Void)?
+    
     var navigationBarTitle = ""
     var translucentNavigationBar = false
     
