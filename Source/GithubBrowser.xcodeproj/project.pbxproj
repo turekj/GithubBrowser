@@ -153,7 +153,7 @@
 		8CF6993C1D9D166F00F2373A /* GithubRepositoryDeserializerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepositoryDeserializerSpec.swift; sourceTree = "<group>"; };
 		8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesDeserializerMock.swift; sourceTree = "<group>"; };
 		8CF699441D9D1B9100F2373A /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
-		8CF699461D9D1C3F00F2373A /* AnyDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnyDeserializer.swift; path = ../AnyDeserializer.swift; sourceTree = "<group>"; };
+		8CF699461D9D1C3F00F2373A /* AnyDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDeserializer.swift; sourceTree = "<group>"; };
 		8CF699481D9D1CEF00F2373A /* AnyDeserializerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDeserializerSpec.swift; sourceTree = "<group>"; };
 		8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDeserializerMock.swift; sourceTree = "<group>"; };
 		8CF6994E1D9D200E00F2373A /* GithubSearchItemsDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchItemsDeserializer.swift; sourceTree = "<group>"; };
@@ -484,8 +484,8 @@
 		8CEA8EC91D9C53AD00B512B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8ECA1D9C53B900B512B8 /* User.swift */,
 				8CF699361D9D14C200F2373A /* Repository.swift */,
+				8CEA8ECA1D9C53B900B512B8 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -503,9 +503,9 @@
 			isa = PBXGroup;
 			children = (
 				8CF699461D9D1C3F00F2373A /* AnyDeserializer.swift */,
-				8CEA8ED01D9C590800B512B8 /* GithubUserDeserializer.swift */,
 				8CF6993A1D9D164400F2373A /* GithubRepositoryDeserializer.swift */,
 				8CF6994E1D9D200E00F2373A /* GithubSearchItemsDeserializer.swift */,
+				8CEA8ED01D9C590800B512B8 /* GithubUserDeserializer.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -530,10 +530,10 @@
 		8CEA8ED41D9C595C00B512B8 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8ED51D9C596A00B512B8 /* GithubUserDeserializerSpec.swift */,
-				8CF6993C1D9D166F00F2373A /* GithubRepositoryDeserializerSpec.swift */,
 				8CF699481D9D1CEF00F2373A /* AnyDeserializerSpec.swift */,
+				8CF6993C1D9D166F00F2373A /* GithubRepositoryDeserializerSpec.swift */,
 				8CF699501D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift */,
+				8CEA8ED51D9C596A00B512B8 /* GithubUserDeserializerSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -565,9 +565,9 @@
 		8CEA8EE21D9C60CB00B512B8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
 				8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */,
 				8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */,
+				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
