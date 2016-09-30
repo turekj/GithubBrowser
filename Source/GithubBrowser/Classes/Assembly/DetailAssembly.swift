@@ -7,8 +7,9 @@ class DetailAssembly: AssemblyType {
     func assemble(container: Container) {
         container.register(UserDetailViewController.self) { r in
             let view = r.resolve(UserDetailView.self)!
+            let userDetailsService = r.resolve(UserDetailsService.self)!
             
-            return UserDetailViewController(view: view)
+            return UserDetailViewController(view: view, detailsService: userDetailsService)
         }
         
         container.register(ControllerConfigurator.self, name: "detail") { _ in
@@ -21,7 +22,7 @@ class DetailAssembly: AssemblyType {
             usernameLabel.text = "Username"
             usernameLabel.lineBreakMode = .byTruncatingTail
             let starCountLabel = UILabel()
-            starCountLabel.text = "Star count"
+            starCountLabel.text = "Stars count"
             starCountLabel.lineBreakMode = .byTruncatingTail
             let followersLabel = UILabel()
             followersLabel.text = "Followers count"

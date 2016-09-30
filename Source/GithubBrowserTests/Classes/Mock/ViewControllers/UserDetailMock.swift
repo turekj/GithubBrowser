@@ -1,10 +1,11 @@
 @testable import GithubBrowser
+import RxSwift
 import UIKit
 
 
 class UserDetailMock: UIViewController, UserDetail {
     
-    var userLogin: String?
+    var userLogin: Variable<String?> = Variable(nil)
     
     init() {
         super.init(nibName: nil, bundle: nil)

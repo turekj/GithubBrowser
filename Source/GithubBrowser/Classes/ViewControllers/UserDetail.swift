@@ -1,7 +1,8 @@
 import Foundation
+import RxSwift
 
 
 protocol UserDetail: class {
 
-    var userLogin: String? { get set }
+    var userLogin: Variable<String?> { get set }
 }
