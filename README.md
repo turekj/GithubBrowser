@@ -8,6 +8,7 @@
 
 Obvious things to do:
 
+- [ ] Freeze all of the dependencies in `Cartfile`
 - [ ] Add API authentication to not hit rate limit so often.
 - [ ] Introduce caching to not hit rate limit so often:
     - HTTP caching (ETag header), because `304 Not Modified` does not count against rate limit,
