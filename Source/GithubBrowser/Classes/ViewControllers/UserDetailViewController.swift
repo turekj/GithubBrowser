@@ -7,14 +7,16 @@ class UserDetailViewController: UIViewController, UserDetail {
     
     let userDetailView: UserDetailView
     let detailsService: UserDetailsService
+    let imageService: ImageService
     
     var userLogin: Variable<String?> = Variable(nil)
     var userData: Observable<User>?
     let disposeBag = DisposeBag()
     
-    init(view: UserDetailView, detailsService: UserDetailsService) {
+    init(view: UserDetailView, detailsService: UserDetailsService, imageService: ImageService) {
         self.userDetailView = view
         self.detailsService = detailsService
+        self.imageService = imageService
         
         super.init(nibName: nil, bundle: nil)
     }

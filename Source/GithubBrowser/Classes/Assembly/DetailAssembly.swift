@@ -8,8 +8,10 @@ class DetailAssembly: AssemblyType {
         container.register(UserDetailViewController.self) { r in
             let view = r.resolve(UserDetailView.self)!
             let userDetailsService = r.resolve(UserDetailsService.self)!
+            let imageService = r.resolve(ImageService.self)!
             
-            return UserDetailViewController(view: view, detailsService: userDetailsService)
+            return UserDetailViewController(view: view, detailsService: userDetailsService,
+                                            imageService: imageService)
         }
         
         container.register(ControllerConfigurator.self, name: "detail") { _ in

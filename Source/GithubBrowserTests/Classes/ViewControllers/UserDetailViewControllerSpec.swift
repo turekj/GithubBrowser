@@ -19,8 +19,10 @@ class UserDetailViewControllerSpec: QuickSpec {
                                       starCountLabel: starCountLabel,
                                       followersLabel: followersLabel)
             let detailsService = UserDetailsServiceMock()
+            let imageService = ImageServiceMock()
             
-            let sut = UserDetailViewController(view: view, detailsService: detailsService)
+            let sut = UserDetailViewController(view: view, detailsService: detailsService,
+                                               imageService: imageService)
             sut.viewDidLoad()
             
             context("When user login changes") {
