@@ -42,6 +42,20 @@ class UserDetailViewControllerSpec: QuickSpec {
                     expect(result?.followers).to(equal(detailsService.user.followers))
                     expect(result?.starCount).to(equal(detailsService.user.starCount))
                 }
+                
+                it("Should bind followers count to a label") {
+                    sut.userLogin.value = "login"
+                    _ = try! sut.userData?.toBlocking().first()
+                    
+                    expect(followersLabel.text).to(equal("Followers count: 45"))
+                }
+                
+                it("Should bind stars count to a label") {
+                    sut.userLogin.value = "lg"
+                    _ = try! sut.userData?.toBlocking().first()
+                    
+                    expect(starCountLabel.text).to(equal("Stars count: 12"))
+                }
             }
         }
     }

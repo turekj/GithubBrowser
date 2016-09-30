@@ -49,6 +49,20 @@ class UserDetailViewController: UIViewController, UserDetail {
             }
             .observeOn(MainScheduler.instance)
             .shareReplay(1)
+        
+        self.userData?
+            .filter { $0.followers != nil }
+            .map { "Followers count: \($0.followers!)" }
+            .asDriver(onErrorJustReturn: "Followers count: n/a")
+            .drive(self.userDetailView.followersLabel.rx.text)
+            .addDisposableTo(self.disposeBag)
+        
+        self.userData?
+            .filter { $0.starCount != nil }
+            .map { "Stars count: \($0.starCount!)" }
+            .asDriver(onErrorJustReturn: "Stars count: n/a")
+            .drive(self.userDetailView.starCountLabel.rx.text)
+            .addDisposableTo(self.disposeBag)
     }
     
     // MARK: - Layout
