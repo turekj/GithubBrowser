@@ -8,7 +8,7 @@ class MainFlowController: FlowController {
     let navigationController: UINavigationController
     let configurator: ControllerConfigurator
     
-    var selectedUserId: Int?
+    var selectedUserLogin: String?
     
     init(resolver: ResolverType, navigationController: UINavigationController,
          configurator: ControllerConfigurator) {
