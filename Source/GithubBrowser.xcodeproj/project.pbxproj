@@ -33,6 +33,7 @@
 		8C58FDF71D9E688B0068B591 /* ImageServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDF61D9E688B0068B591 /* ImageServiceMock.swift */; };
 		8C58FDFA1D9E8ABB0068B591 /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDF91D9E8ABB0068B591 /* UserSpec.swift */; };
 		8C58FDFC1D9E8C5C0068B591 /* RepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDFB1D9E8C5C0068B591 /* RepositorySpec.swift */; };
+		8C58FDFE1D9E8D3B0068B591 /* UserRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDFD1D9E8D3B0068B591 /* UserRepositorySpec.swift */; };
 		8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */; };
 		8C8F93191D9BFFB700EE5A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F93171D9BFFB700EE5A60 /* Main.storyboard */; };
 		8C8F931B1D9BFFB700EE5A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */; };
@@ -176,6 +177,7 @@
 		8C58FDF61D9E688B0068B591 /* ImageServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageServiceMock.swift; sourceTree = "<group>"; };
 		8C58FDF91D9E8ABB0068B591 /* UserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
 		8C58FDFB1D9E8C5C0068B591 /* RepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositorySpec.swift; sourceTree = "<group>"; };
+		8C58FDFD1D9E8D3B0068B591 /* UserRepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositorySpec.swift; sourceTree = "<group>"; };
 		8C8F93101D9BFFB700EE5A60 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C8F93181D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 			children = (
 				8C58FDF91D9E8ABB0068B591 /* UserSpec.swift */,
 				8C58FDFB1D9E8C5C0068B591 /* RepositorySpec.swift */,
+				8C58FDFD1D9E8D3B0068B591 /* UserRepositorySpec.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1128,6 +1131,7 @@
 				8CA102C31D9D480600F0782C /* UserSearchServiceMock.swift in Sources */,
 				8C164F8D1D9DA3D4008F15C0 /* UserDetailMock.swift in Sources */,
 				8CF699511D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift in Sources */,
+				8C58FDFE1D9E8D3B0068B591 /* UserRepositorySpec.swift in Sources */,
 				8CF699491D9D1CEF00F2373A /* AnyDeserializerSpec.swift in Sources */,
 				8C58FDDB1D9E35810068B591 /* SingleUserDeserializerMock.swift in Sources */,
 				8CA102D71D9D723600F0782C /* UserRepositoryViewControllerSpec.swift in Sources */,
