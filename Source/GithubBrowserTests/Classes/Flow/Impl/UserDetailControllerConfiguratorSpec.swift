@@ -24,7 +24,7 @@ class UserDetailControllerConfiguratorSpec: QuickSpec {
                     
                     _ = sut.configureController(controller, with: flowController)
                     
-                    expect(controller.userLogin).to(equal("selected_user_login"))
+                    expect(controller.userLogin.value).to(equal("selected_user_login"))
                 }
             }
             

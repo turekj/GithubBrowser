@@ -1,4 +1,5 @@
 import Cartography
+import RxSwift
 import UIKit
 
 
@@ -7,7 +8,7 @@ class UserDetailViewController: UIViewController, UserDetail {
     let userDetailView: UserDetailView
     let detailsService: UserDetailsService
     
-    var userLogin: String?
+    var userLogin: Variable<String?> = Variable(nil)
     
     init(view: UserDetailView, detailsService: UserDetailsService) {
         self.userDetailView = view
