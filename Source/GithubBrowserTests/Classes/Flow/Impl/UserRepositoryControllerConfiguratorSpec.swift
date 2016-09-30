@@ -61,7 +61,7 @@ class UserRepositoryControllerConfiguratorSpec: QuickSpec {
                 beforeEach {
                     flowController.proceededTo = nil
                     flowController.proceededAnimated = nil
-                    flowController.selectedUserId = nil
+                    flowController.selectedUserLogin = nil
                 }
                 
                 it("Should not navigate to details view controller") {
@@ -71,22 +71,22 @@ class UserRepositoryControllerConfiguratorSpec: QuickSpec {
                     expect(flowController.proceededAnimated).to(beNil())
                 }
                 
-                it("Should not set selected user ID") {
+                it("Should not set selected user login") {
                     controller.onUserRepositorySelected?(repo)
                     
-                    expect(flowController.selectedUserId).to(beNil())
+                    expect(flowController.selectedUserLogin).to(beNil())
                 }
             }
             
             context("When configuring cell select action for a user") {
-                let user = UserRepository(id: 1, title: "", imageUrl: nil, type: .user)
+                let user = UserRepository(id: 1, title: "login", imageUrl: nil, type: .user)
                 let controller = UserRepositoryListMock()
                 _ = sut.configureController(controller, with: flowController)
                 
                 beforeEach {
                     flowController.proceededTo = nil
                     flowController.proceededAnimated = nil
-                    flowController.selectedUserId = nil
+                    flowController.selectedUserLogin = nil
                 }
                 
                 it("Should navigate to details view controller") {
@@ -99,7 +99,7 @@ class UserRepositoryControllerConfiguratorSpec: QuickSpec {
                 it("Should set selected user ID if it is a user") {
                     controller.onUserRepositorySelected?(user)
                     
-                    expect(flowController.selectedUserId).to(equal(1))
+                    expect(flowController.selectedUserLogin).to(equal("login"))
                 }
             }
         }

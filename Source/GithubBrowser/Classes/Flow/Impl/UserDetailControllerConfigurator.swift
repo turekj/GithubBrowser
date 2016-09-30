@@ -9,7 +9,7 @@ class UserDetailControllerConfigurator: ControllerConfigurator {
             return false
         }
         
-        detail.userId = flowController.selectedUserId
+        detail.userLogin = flowController.selectedUserLogin
         
         return true
     }

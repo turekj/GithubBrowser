@@ -16,7 +16,7 @@ class UserRepositoryControllerConfigurator: ControllerConfigurator {
                 return
             }
             
-            flowController.selectedUserId = userRepository.id
+            flowController.selectedUserLogin = userRepository.title
             flowController.proceed(to: UserDetailViewController.self, animated: true)
         }
         

@@ -4,7 +4,7 @@ import UIKit
 
 class UserDetailMock: UIViewController, UserDetail {
     
-    var userId: Int?
+    var userLogin: String?
     
     init() {
         super.init(nibName: nil, bundle: nil)

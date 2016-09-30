@@ -19,12 +19,12 @@ class UserDetailControllerConfiguratorSpec: QuickSpec {
                     expect(result).to(beTrue())
                 }
                 
-                it("Should pass selected user ID value") {
-                    flowController.selectedUserId = 73
+                it("Should pass selected user login value") {
+                    flowController.selectedUserLogin = "selected_user_login"
                     
                     _ = sut.configureController(controller, with: flowController)
                     
-                    expect(controller.userId).to(equal(73))
+                    expect(controller.userLogin).to(equal("selected_user_login"))
                 }
             }
             

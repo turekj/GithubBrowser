@@ -6,7 +6,7 @@ class UserDetailViewController: UIViewController, UserDetail {
     
     let userDetailView: UserDetailView
     
-    var userId: Int?
+    var userLogin: String?
     
     init(view: UserDetailView) {
         self.userDetailView = view
