@@ -5,12 +5,30 @@ import UIKit
 class DetailAssembly: AssemblyType {
     
     func assemble(container: Container) {
-        container.register(UserDetailViewController.self) { _ in
-            return UserDetailViewController(nibName: nil, bundle: nil)
+        container.register(UserDetailViewController.self) { r in
+            let view = r.resolve(UserDetailView.self)!
+            
+            return UserDetailViewController(view: view)
         }
         
         container.register(ControllerConfigurator.self, name: "detail") { _ in
             return UserDetailControllerConfigurator()
+        }
+        
+        container.register(UserDetailView.self) { _ in
+            let avatarView = UIImageView()
+            let usernameLabel = UILabel()
+            usernameLabel.text = "Username"
+            usernameLabel.lineBreakMode = .byTruncatingTail
+            let starCountLabel = UILabel()
+            starCountLabel.text = "Star count"
+            starCountLabel.lineBreakMode = .byTruncatingTail
+            let followersLabel = UILabel()
+            followersLabel.text = "Followers count"
+            followersLabel.lineBreakMode = .byTruncatingTail
+            
+            return UserDetailView(avatarView: avatarView, usernameLabel: usernameLabel,
+                                  starCountLabel: starCountLabel, followersLabel: followersLabel)
         }
     }
 }
