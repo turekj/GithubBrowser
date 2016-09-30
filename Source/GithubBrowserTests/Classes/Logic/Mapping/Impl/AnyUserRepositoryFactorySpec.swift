@@ -14,10 +14,7 @@ class AnyUserRepositoryFactorySpec: QuickSpec {
                 let result = sut.makeUserRepository(15)
                 
                 it("Should pass make invocation to wrapped object") {
-                    expect(result.id).to(equal(33))
-                    expect(result.title).to(equal(""))
-                    expect(result.url).to(equal("https://image.com"))
-                    expect(result.type).to(equal(UserRepositoryEntryType.repository))
+                    expect(result).to(equal(factory.userRepository))
                     expect(factory.source).to(equal(15))
                 }
             }
