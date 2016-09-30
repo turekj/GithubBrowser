@@ -1,7 +1,7 @@
 import Foundation
 
 
-struct Repository {
+struct Repository: Equatable {
     let id: Int
     let name: String
     let url: String
@@ -11,4 +11,11 @@ struct Repository {
         self.name = name
         self.url = url
     }
+}
+
+
+func ==(lhs: Repository, rhs: Repository) -> Bool {
+    return lhs.id == rhs.id &&
+        lhs.name == rhs.name &&
+        lhs.url == rhs.url
 }

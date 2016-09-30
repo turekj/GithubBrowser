@@ -66,10 +66,7 @@ class GithubUserDetailsServiceSpec: QuickSpec {
                     let observable = sut.getUserDetails(username: "turekj")
                     let result = try! observable.toBlocking().first()
                     
-                    expect(result).toNot(beNil())
-                    expect(result?.id).to(equal(deserializer.deserialized.id))
-                    expect(result?.login).to(equal(deserializer.deserialized.login))
-                    expect(result?.url).to(equal(deserializer.deserialized.url))
+                    expect(result).to(equal(deserializer.deserialized))
                 }
             }
         }

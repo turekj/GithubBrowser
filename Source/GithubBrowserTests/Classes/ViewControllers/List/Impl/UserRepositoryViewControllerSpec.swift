@@ -37,7 +37,7 @@ class UserRepositoryViewControllerSpec: QuickSpec {
                     let result = try! sut.searchResults.toBlocking().first()
                     
                     expect(result?.count).to(equal(1))
-                    expect(result?[0].id).to(equal(4))
+                    expect(result?[0]).to(equal(entries[0]))
                 }
                 
                 it("Should return empty results if fetching data from service fails") {
@@ -59,8 +59,8 @@ class UserRepositoryViewControllerSpec: QuickSpec {
                     let result = try! sut.searchResults.toBlocking().first()
                     
                     expect(result?.count).to(equal(2))
-                    expect(result?[0].id).to(equal(2))
-                    expect(result?[1].id).to(equal(4))
+                    expect(result?[0]).to(equal(entries[1]))
+                    expect(result?[1]).to(equal(entries[0]))
                 }
             }
         }
