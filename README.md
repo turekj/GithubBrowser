@@ -2,7 +2,9 @@
 
 ### How to run
 
-1. Run `carthage update --platform ios` before opening project. 
+1. Run `carthage update --platform ios` before opening project.
+2. Grab yourself a cup of coffee (or five).
+3. Enjoy!
 
 ### Notes to self (real-world app TODOs)
 
