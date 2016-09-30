@@ -41,6 +41,14 @@ class UserDetailViewController: UIViewController, UserDetail {
             .map { "Username: \($0!)" }
             .drive(self.userDetailView.usernameLabel.rx.text)
             .addDisposableTo(self.disposeBag)
+        
+        self.userData = self.userLogin.asObservable()
+            .filter { $0 != nil }
+            .flatMapLatest { (login: String?) -> Observable<User> in
+                self.detailsService.getUserDetails(username: login!)
+            }
+            .observeOn(MainScheduler.instance)
+            .shareReplay(1)
     }
     
     // MARK: - Layout
