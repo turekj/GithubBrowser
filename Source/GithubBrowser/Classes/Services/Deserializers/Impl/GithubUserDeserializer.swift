@@ -17,7 +17,10 @@ class GithubUserDeserializer: Deserializer {
         }
         
         let avatarUrl = json["avatar_url"] as? String
+        let starCount = json["star_count"] as? Int
+        let followers = json["followers"] as? Int
         
-        return User(id: id, login: login, avatarUrl: avatarUrl)
+        return User(id: id, login: login, avatarUrl: avatarUrl,
+                    starCount: starCount, followers: followers)
     }
 }

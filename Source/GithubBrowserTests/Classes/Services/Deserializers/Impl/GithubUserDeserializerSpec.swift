@@ -50,6 +50,22 @@ class GithubUserDeserializerSpec: QuickSpec {
                     
                     expect(user.avatarUrl).to(beNil())
                 }
+                
+                it("Should set star count if present") {
+                    let input = ["id": 44, "login": "sc", "star_count": 33] as [String: Any]
+                    
+                    let user = try! sut.deserialize(input)
+                    
+                    expect(user.starCount).to(equal(33))
+                }
+                
+                it("Should set followers count if present") {
+                    let input = ["id": 22, "login": "flwrs", "followers": 99] as [String: Any]
+                    
+                    let user = try! sut.deserialize(input)
+                    
+                    expect(user.followers).to(equal(99))
+                }
             }
         }
     }
