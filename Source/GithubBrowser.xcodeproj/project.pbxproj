@@ -13,6 +13,11 @@
 		8C164F891D9DA314008F15C0 /* UserDetailControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F881D9DA314008F15C0 /* UserDetailControllerConfigurator.swift */; };
 		8C164F8B1D9DA3A8008F15C0 /* UserDetailControllerConfiguratorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F8A1D9DA3A8008F15C0 /* UserDetailControllerConfiguratorSpec.swift */; };
 		8C164F8D1D9DA3D4008F15C0 /* UserDetailMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C164F8C1D9DA3D4008F15C0 /* UserDetailMock.swift */; };
+		8C58FDCB1D9E2FDD0068B591 /* StarCountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDCA1D9E2FDD0068B591 /* StarCountService.swift */; };
+		8C58FDCD1D9E30730068B591 /* GithubStarCountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDCC1D9E30730068B591 /* GithubStarCountService.swift */; };
+		8C58FDCF1D9E30990068B591 /* GithubStarCountServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDCE1D9E30990068B591 /* GithubStarCountServiceSpec.swift */; };
+		8C58FDD11D9E31270068B591 /* ServiceParameterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDD01D9E31270068B591 /* ServiceParameterError.swift */; };
+		8C58FDD31D9E31C90068B591 /* stars_count.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C58FDD21D9E31C90068B591 /* stars_count.json */; };
 		8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */; };
 		8C8F93191D9BFFB700EE5A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F93171D9BFFB700EE5A60 /* Main.storyboard */; };
 		8C8F931B1D9BFFB700EE5A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */; };
@@ -136,6 +141,11 @@
 		8C164F881D9DA314008F15C0 /* UserDetailControllerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailControllerConfigurator.swift; sourceTree = "<group>"; };
 		8C164F8A1D9DA3A8008F15C0 /* UserDetailControllerConfiguratorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailControllerConfiguratorSpec.swift; sourceTree = "<group>"; };
 		8C164F8C1D9DA3D4008F15C0 /* UserDetailMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailMock.swift; sourceTree = "<group>"; };
+		8C58FDCA1D9E2FDD0068B591 /* StarCountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarCountService.swift; sourceTree = "<group>"; };
+		8C58FDCC1D9E30730068B591 /* GithubStarCountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubStarCountService.swift; sourceTree = "<group>"; };
+		8C58FDCE1D9E30990068B591 /* GithubStarCountServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubStarCountServiceSpec.swift; sourceTree = "<group>"; };
+		8C58FDD01D9E31270068B591 /* ServiceParameterError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceParameterError.swift; sourceTree = "<group>"; };
+		8C58FDD21D9E31C90068B591 /* stars_count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stars_count.json; sourceTree = "<group>"; };
 		8C8F93101D9BFFB700EE5A60 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C8F93181D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -686,6 +696,7 @@
 				8CEA8ECC1D9C555700B512B8 /* Deserializers */,
 				8CEA8EDC1D9C5FF300B512B8 /* Impl */,
 				8CF699521D9D257700F2373A /* SearchService.swift */,
+				8C58FDCA1D9E2FDD0068B591 /* StarCountService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -753,6 +764,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8ED81D9C5A4F00B512B8 /* DeserializationError.swift */,
+				8C58FDD01D9E31270068B591 /* ServiceParameterError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -763,6 +775,7 @@
 				8CA102921D9D35A300F0782C /* AnySearchService.swift */,
 				8CF699581D9D284100F2373A /* GithubSearchService.swift */,
 				8CA102BE1D9D463700F0782C /* UserRepositorySearchService.swift */,
+				8C58FDCC1D9E30730068B591 /* GithubStarCountService.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -773,6 +786,7 @@
 				8CA102941D9D361F00F0782C /* AnySearchServiceSpec.swift */,
 				8CF699561D9D264C00F2373A /* GithubSearchServiceSpec.swift */,
 				8CA102C01D9D476800F0782C /* UserRepositorySearchServiceSpec.swift */,
+				8C58FDCE1D9E30990068B591 /* GithubStarCountServiceSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -803,6 +817,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEA8EEA1D9C640500B512B8 /* hello.json */,
+				8C58FDD21D9E31C90068B591 /* stars_count.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -905,6 +920,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CEA8EEB1D9C640500B512B8 /* hello.json in Resources */,
+				8C58FDD31D9E31C90068B591 /* stars_count.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,6 +954,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C58FDCD1D9E30730068B591 /* GithubStarCountService.swift in Sources */,
 				8CA102931D9D35A300F0782C /* AnySearchService.swift in Sources */,
 				8CEA8ED11D9C590800B512B8 /* GithubUserDeserializer.swift in Sources */,
 				8C164F811D9DA012008F15C0 /* UserDetailViewController.swift in Sources */,
@@ -959,9 +976,11 @@
 				8CEA8E991D9C2AE200B512B8 /* MainFlowController.swift in Sources */,
 				8CEA8E951D9C29BC00B512B8 /* FlowController.swift in Sources */,
 				8CF6994F1D9D200E00F2373A /* GithubSearchItemsDeserializer.swift in Sources */,
+				8C58FDCB1D9E2FDD0068B591 /* StarCountService.swift in Sources */,
 				8CA102A61D9D3FA500F0782C /* UserRepositoryFromUserFactory.swift in Sources */,
 				8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */,
 				8CA102CC1D9D505F00F0782C /* ReuseIdentifiers.swift in Sources */,
+				8C58FDD11D9E31270068B591 /* ServiceParameterError.swift in Sources */,
 				8CEA8ED91D9C5A4F00B512B8 /* DeserializationError.swift in Sources */,
 				8CA102BF1D9D463700F0782C /* UserRepositorySearchService.swift in Sources */,
 				8CF699531D9D257700F2373A /* SearchService.swift in Sources */,
@@ -1016,6 +1035,7 @@
 				8CF699431D9D19A300F2373A /* RepositoriesDeserializerMock.swift in Sources */,
 				8CA102AF1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift in Sources */,
 				8CEA8EA31D9C2F7800B512B8 /* ControllerConfiguratorMock.swift in Sources */,
+				8C58FDCF1D9E30990068B591 /* GithubStarCountServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
