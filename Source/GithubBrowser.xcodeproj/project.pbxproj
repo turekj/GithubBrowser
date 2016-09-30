@@ -18,6 +18,11 @@
 		8C58FDCF1D9E30990068B591 /* GithubStarCountServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDCE1D9E30990068B591 /* GithubStarCountServiceSpec.swift */; };
 		8C58FDD11D9E31270068B591 /* ServiceParameterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDD01D9E31270068B591 /* ServiceParameterError.swift */; };
 		8C58FDD31D9E31C90068B591 /* stars_count.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C58FDD21D9E31C90068B591 /* stars_count.json */; };
+		8C58FDD51D9E34580068B591 /* UserDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDD41D9E34580068B591 /* UserDetailsService.swift */; };
+		8C58FDD71D9E348C0068B591 /* GithubUserDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDD61D9E348C0068B591 /* GithubUserDetailsService.swift */; };
+		8C58FDD91D9E35290068B591 /* GithubUserDetailsServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDD81D9E35290068B591 /* GithubUserDetailsServiceSpec.swift */; };
+		8C58FDDB1D9E35810068B591 /* SingleUserDeserializerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDDA1D9E35810068B591 /* SingleUserDeserializerMock.swift */; };
+		8C58FDDD1D9E35FA0068B591 /* StarCountServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDDC1D9E35FA0068B591 /* StarCountServiceMock.swift */; };
 		8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */; };
 		8C8F93191D9BFFB700EE5A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F93171D9BFFB700EE5A60 /* Main.storyboard */; };
 		8C8F931B1D9BFFB700EE5A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */; };
@@ -146,6 +151,11 @@
 		8C58FDCE1D9E30990068B591 /* GithubStarCountServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubStarCountServiceSpec.swift; sourceTree = "<group>"; };
 		8C58FDD01D9E31270068B591 /* ServiceParameterError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceParameterError.swift; sourceTree = "<group>"; };
 		8C58FDD21D9E31C90068B591 /* stars_count.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stars_count.json; sourceTree = "<group>"; };
+		8C58FDD41D9E34580068B591 /* UserDetailsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsService.swift; sourceTree = "<group>"; };
+		8C58FDD61D9E348C0068B591 /* GithubUserDetailsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUserDetailsService.swift; sourceTree = "<group>"; };
+		8C58FDD81D9E35290068B591 /* GithubUserDetailsServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubUserDetailsServiceSpec.swift; sourceTree = "<group>"; };
+		8C58FDDA1D9E35810068B591 /* SingleUserDeserializerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleUserDeserializerMock.swift; sourceTree = "<group>"; };
+		8C58FDDC1D9E35FA0068B591 /* StarCountServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarCountServiceMock.swift; sourceTree = "<group>"; };
 		8C8F93101D9BFFB700EE5A60 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C8F93181D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -697,6 +707,7 @@
 				8CEA8EDC1D9C5FF300B512B8 /* Impl */,
 				8CF699521D9D257700F2373A /* SearchService.swift */,
 				8C58FDCA1D9E2FDD0068B591 /* StarCountService.swift */,
+				8C58FDD41D9E34580068B591 /* UserDetailsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -776,6 +787,7 @@
 				8CF699581D9D284100F2373A /* GithubSearchService.swift */,
 				8CA102BE1D9D463700F0782C /* UserRepositorySearchService.swift */,
 				8C58FDCC1D9E30730068B591 /* GithubStarCountService.swift */,
+				8C58FDD61D9E348C0068B591 /* GithubUserDetailsService.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -787,6 +799,7 @@
 				8CF699561D9D264C00F2373A /* GithubSearchServiceSpec.swift */,
 				8CA102C01D9D476800F0782C /* UserRepositorySearchServiceSpec.swift */,
 				8C58FDCE1D9E30990068B591 /* GithubStarCountServiceSpec.swift */,
+				8C58FDD81D9E35290068B591 /* GithubUserDetailsServiceSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -801,6 +814,8 @@
 				8CA102D11D9D713800F0782C /* UserRepositorySearchServiceMock.swift */,
 				8CA102C21D9D480600F0782C /* UserSearchServiceMock.swift */,
 				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
+				8C58FDDA1D9E35810068B591 /* SingleUserDeserializerMock.swift */,
+				8C58FDDC1D9E35FA0068B591 /* StarCountServiceMock.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -964,6 +979,7 @@
 				8CEA8EB81D9C3A1600B512B8 /* GlobalAssembly.swift in Sources */,
 				8CA102A31D9D3B6900F0782C /* UserRepositoryFactory.swift in Sources */,
 				8CEA8EAE1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift in Sources */,
+				8C58FDD51D9E34580068B591 /* UserDetailsService.swift in Sources */,
 				8CF699451D9D1B9100F2373A /* Deserializer.swift in Sources */,
 				8CEA8ECB1D9C53B900B512B8 /* User.swift in Sources */,
 				8C164F851D9DA028008F15C0 /* UserDetail.swift in Sources */,
@@ -987,6 +1003,7 @@
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
 				8C164F891D9DA314008F15C0 /* UserDetailControllerConfigurator.swift in Sources */,
 				8CF699371D9D14C200F2373A /* Repository.swift in Sources */,
+				8C58FDD71D9E348C0068B591 /* GithubUserDetailsService.swift in Sources */,
 				8CEA8EA51D9C30E500B512B8 /* CompositeControllerConfigurator.swift in Sources */,
 				8CA102BB1D9D44C200F0782C /* AnyUserRepositoryFactory.swift in Sources */,
 				8CEA8EA01D9C2EF700B512B8 /* ControllerConfigurator.swift in Sources */,
@@ -1018,12 +1035,14 @@
 				8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */,
 				8CA102BD1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift in Sources */,
 				8CEA8EA71D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift in Sources */,
+				8C58FDDD1D9E35FA0068B591 /* StarCountServiceMock.swift in Sources */,
 				8CEA8E9C1D9C2BC000B512B8 /* MainFlowControllerSpec.swift in Sources */,
 				8CA102AB1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift in Sources */,
 				8CA102951D9D361F00F0782C /* AnySearchServiceSpec.swift in Sources */,
 				8C8F93661D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift in Sources */,
 				8CEA8EE41D9C60D800B512B8 /* UsersDeserializerMock.swift in Sources */,
 				8CA102971D9D365300F0782C /* SearchServiceMock.swift in Sources */,
+				8C58FDD91D9E35290068B591 /* GithubUserDetailsServiceSpec.swift in Sources */,
 				8CF6994B1D9D1E2B00F2373A /* StringDeserializerMock.swift in Sources */,
 				8CA102B91D9D434400F0782C /* UserRepositoryFromIntFactoryMock.swift in Sources */,
 				8C8F93641D9C0F0900EE5A60 /* NavigationControllerMock.swift in Sources */,
@@ -1031,6 +1050,7 @@
 				8C164F8D1D9DA3D4008F15C0 /* UserDetailMock.swift in Sources */,
 				8CF699511D9D206C00F2373A /* GithubSearchItemsDeserializerSpec.swift in Sources */,
 				8CF699491D9D1CEF00F2373A /* AnyDeserializerSpec.swift in Sources */,
+				8C58FDDB1D9E35810068B591 /* SingleUserDeserializerMock.swift in Sources */,
 				8CA102D71D9D723600F0782C /* UserRepositoryViewControllerSpec.swift in Sources */,
 				8CF699431D9D19A300F2373A /* RepositoriesDeserializerMock.swift in Sources */,
 				8CA102AF1D9D413F00F0782C /* UserRepositoryFromRepositoryFactorySpec.swift in Sources */,
