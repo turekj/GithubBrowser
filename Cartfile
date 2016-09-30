@@ -1,0 +1,23 @@
+# Swinject
+github "Swinject/Swinject" "2.0.0-beta.2"
+
+# Quick
+github "Quick/Quick"
+github "Quick/Nimble"
+
+# Dollar
+github "ankurp/Dollar" ~> 6.0
+
+# Alamofire
+github "Alamofire/Alamofire" ~> 4.0
+
+# RxSwift + extensions
+github "ReactiveX/RxSwift" "3.0.0-beta.1"
+github "RxSwiftCommunity/RxAlamofire" "master"
+
+# OHHTTPStubs
+github "AliSoftware/OHHTTPStubs" "swift-3.0"
+
+# Cartography
+github "robb/Cartography" ~> 1.0
+
