@@ -5,11 +5,13 @@ import UIKit
 class UserDetailViewController: UIViewController, UserDetail {
     
     let userDetailView: UserDetailView
+    let detailsService: UserDetailsService
     
     var userLogin: String?
     
-    init(view: UserDetailView) {
+    init(view: UserDetailView, detailsService: UserDetailsService) {
         self.userDetailView = view
+        self.detailsService = detailsService
         
         super.init(nibName: nil, bundle: nil)
     }

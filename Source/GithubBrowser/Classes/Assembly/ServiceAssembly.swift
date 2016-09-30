@@ -63,5 +63,17 @@ class ServiceAssembly: AssemblyType {
         container.register(AnyUserRepositoryFactory<Repository>.self) { _ in
             return AnyUserRepositoryFactory(UserRepositoryFromRepositoryFactory())
         }
+        
+        container.register(UserDetailsService.self) { r in
+            let starCountService = r.resolve(StarCountService.self)!
+            let deserializer = r.resolve(AnyDeserializer<User>.self)!
+            
+            return GithubUserDetailsService(starCountService: starCountService,
+                                            deserializer: deserializer)
+        }
+        
+        container.register(StarCountService.self) { _ in
+            return GithubStarCountService()
+        }
     }
 }
