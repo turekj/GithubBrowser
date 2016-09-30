@@ -1,7 +1,7 @@
 import Foundation
 
 
-struct User {
+struct User: Equatable {
     let id: Int
     let login: String
     let url: String
@@ -18,4 +18,14 @@ struct User {
         self.starCount = starCount
         self.followers = followers
     }
+}
+
+
+func ==(lhs: User, rhs: User) -> Bool {
+    return lhs.id == rhs.id &&
+        lhs.login == rhs.login &&
+        lhs.url == rhs.url &&
+        lhs.avatarUrl == rhs.avatarUrl &&
+        lhs.starCount == rhs.starCount &&
+        lhs.followers == rhs.followers
 }

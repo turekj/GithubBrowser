@@ -31,6 +31,7 @@
 		8C58FDEE1D9E61150068B591 /* DownloadImageServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDED1D9E61150068B591 /* DownloadImageServiceSpec.swift */; };
 		8C58FDF51D9E62C60068B591 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C58FDF41D9E62C60068B591 /* avatar.jpg */; };
 		8C58FDF71D9E688B0068B591 /* ImageServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDF61D9E688B0068B591 /* ImageServiceMock.swift */; };
+		8C58FDFA1D9E8ABB0068B591 /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDF91D9E8ABB0068B591 /* UserSpec.swift */; };
 		8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */; };
 		8C8F93191D9BFFB700EE5A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F93171D9BFFB700EE5A60 /* Main.storyboard */; };
 		8C8F931B1D9BFFB700EE5A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */; };
@@ -172,6 +173,7 @@
 		8C58FDED1D9E61150068B591 /* DownloadImageServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadImageServiceSpec.swift; sourceTree = "<group>"; };
 		8C58FDF41D9E62C60068B591 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 		8C58FDF61D9E688B0068B591 /* ImageServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageServiceMock.swift; sourceTree = "<group>"; };
+		8C58FDF91D9E8ABB0068B591 /* UserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
 		8C8F93101D9BFFB700EE5A60 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C8F93181D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -339,6 +341,14 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		8C58FDF81D9E8AAF0068B591 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C58FDF91D9E8ABB0068B591 /* UserSpec.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		8C8F93071D9BFFB700EE5A60 = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +469,7 @@
 		8C8F933B1D9C011800EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8C58FDF81D9E8AAF0068B591 /* Model */,
 				8CEA8E8F1D9C27DC00B512B8 /* Extensions */,
 				8CEA8E961D9C2AC600B512B8 /* Flow */,
 				8CA102A71D9D3FE600F0782C /* Logic */,
@@ -1098,6 +1109,7 @@
 				8C58FDF71D9E688B0068B591 /* ImageServiceMock.swift in Sources */,
 				8CA102BD1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift in Sources */,
 				8CEA8EA71D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift in Sources */,
+				8C58FDFA1D9E8ABB0068B591 /* UserSpec.swift in Sources */,
 				8C58FDDD1D9E35FA0068B591 /* StarCountServiceMock.swift in Sources */,
 				8CEA8E9C1D9C2BC000B512B8 /* MainFlowControllerSpec.swift in Sources */,
 				8CA102AB1D9D3FFA00F0782C /* UserRepositoryFromUserFactorySpec.swift in Sources */,
