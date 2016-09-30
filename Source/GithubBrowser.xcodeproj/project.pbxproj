@@ -26,6 +26,10 @@
 		8C58FDE21D9E49FA0068B591 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDE11D9E49FA0068B591 /* UserDetailView.swift */; };
 		8C58FDE61D9E54540068B591 /* UserDetailViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDE51D9E54540068B591 /* UserDetailViewControllerSpec.swift */; };
 		8C58FDE81D9E54B20068B591 /* UserDetailsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDE71D9E54B20068B591 /* UserDetailsServiceMock.swift */; };
+		8C58FDEA1D9E5F180068B591 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDE91D9E5F180068B591 /* ImageService.swift */; };
+		8C58FDEC1D9E5FA60068B591 /* DownloadImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDEB1D9E5FA60068B591 /* DownloadImageService.swift */; };
+		8C58FDEE1D9E61150068B591 /* DownloadImageServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDED1D9E61150068B591 /* DownloadImageServiceSpec.swift */; };
+		8C58FDF51D9E62C60068B591 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C58FDF41D9E62C60068B591 /* avatar.jpg */; };
 		8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */; };
 		8C8F93191D9BFFB700EE5A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F93171D9BFFB700EE5A60 /* Main.storyboard */; };
 		8C8F931B1D9BFFB700EE5A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */; };
@@ -162,6 +166,10 @@
 		8C58FDE11D9E49FA0068B591 /* UserDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		8C58FDE51D9E54540068B591 /* UserDetailViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewControllerSpec.swift; sourceTree = "<group>"; };
 		8C58FDE71D9E54B20068B591 /* UserDetailsServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsServiceMock.swift; sourceTree = "<group>"; };
+		8C58FDE91D9E5F180068B591 /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		8C58FDEB1D9E5FA60068B591 /* DownloadImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadImageService.swift; sourceTree = "<group>"; };
+		8C58FDED1D9E61150068B591 /* DownloadImageServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadImageServiceSpec.swift; sourceTree = "<group>"; };
+		8C58FDF41D9E62C60068B591 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 		8C8F93101D9BFFB700EE5A60 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C8F93181D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -321,6 +329,14 @@
 			name = Impl;
 			sourceTree = "<group>";
 		};
+		8C58FDF31D9E62AC0068B591 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8C58FDF41D9E62C60068B591 /* avatar.jpg */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		8C8F93071D9BFFB700EE5A60 = {
 			isa = PBXGroup;
 			children = (
@@ -352,8 +368,8 @@
 		8C8F93271D9BFFB700EE5A60 /* GithubBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
-				8C8F933B1D9C011800EE5A60 /* Classes */,
 				8C8F933C1D9C013100EE5A60 /* Resources */,
+				8C8F933B1D9C011800EE5A60 /* Classes */,
 			);
 			path = GithubBrowserTests;
 			sourceTree = "<group>";
@@ -454,6 +470,7 @@
 		8C8F933C1D9C013100EE5A60 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8C58FDF31D9E62AC0068B591 /* Assets */,
 				8CEA8EE91D9C63F400B512B8 /* Fixtures */,
 				8CEA8EE81D9C63DE00B512B8 /* InfoPropertyList */,
 			);
@@ -740,6 +757,7 @@
 				8CF699521D9D257700F2373A /* SearchService.swift */,
 				8C58FDCA1D9E2FDD0068B591 /* StarCountService.swift */,
 				8C58FDD41D9E34580068B591 /* UserDetailsService.swift */,
+				8C58FDE91D9E5F180068B591 /* ImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -820,6 +838,7 @@
 				8CA102BE1D9D463700F0782C /* UserRepositorySearchService.swift */,
 				8C58FDCC1D9E30730068B591 /* GithubStarCountService.swift */,
 				8C58FDD61D9E348C0068B591 /* GithubUserDetailsService.swift */,
+				8C58FDEB1D9E5FA60068B591 /* DownloadImageService.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -832,6 +851,7 @@
 				8CA102C01D9D476800F0782C /* UserRepositorySearchServiceSpec.swift */,
 				8C58FDCE1D9E30990068B591 /* GithubStarCountServiceSpec.swift */,
 				8C58FDD81D9E35290068B591 /* GithubUserDetailsServiceSpec.swift */,
+				8C58FDED1D9E61150068B591 /* DownloadImageServiceSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -969,6 +989,7 @@
 			files = (
 				8CEA8EEB1D9C640500B512B8 /* hello.json in Resources */,
 				8C58FDD31D9E31C90068B591 /* stars_count.json in Resources */,
+				8C58FDF51D9E62C60068B591 /* avatar.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,7 +1054,9 @@
 				8C58FDD11D9E31270068B591 /* ServiceParameterError.swift in Sources */,
 				8CEA8ED91D9C5A4F00B512B8 /* DeserializationError.swift in Sources */,
 				8CA102BF1D9D463700F0782C /* UserRepositorySearchService.swift in Sources */,
+				8C58FDEA1D9E5F180068B591 /* ImageService.swift in Sources */,
 				8CF699531D9D257700F2373A /* SearchService.swift in Sources */,
+				8C58FDEC1D9E5FA60068B591 /* DownloadImageService.swift in Sources */,
 				8C8F933E1D9C01F500EE5A60 /* main.swift in Sources */,
 				8C164F891D9DA314008F15C0 /* UserDetailControllerConfigurator.swift in Sources */,
 				8CF699371D9D14C200F2373A /* Repository.swift in Sources */,
@@ -1060,6 +1083,7 @@
 				8CA102C51D9D487900F0782C /* RepositorySearchServiceMock.swift in Sources */,
 				8CA102C11D9D476800F0782C /* UserRepositorySearchServiceSpec.swift in Sources */,
 				8C164F8B1D9DA3A8008F15C0 /* UserDetailControllerConfiguratorSpec.swift in Sources */,
+				8C58FDEE1D9E61150068B591 /* DownloadImageServiceSpec.swift in Sources */,
 				8C8F93621D9C0EFF00EE5A60 /* OtherViewControllerMock.swift in Sources */,
 				8C58FDE81D9E54B20068B591 /* UserDetailsServiceMock.swift in Sources */,
 				8CF699571D9D264C00F2373A /* GithubSearchServiceSpec.swift in Sources */,
