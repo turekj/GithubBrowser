@@ -54,7 +54,7 @@ class UserRepositoryControllerConfiguratorSpec: QuickSpec {
             }
             
             context("When configuring cell select action for a repository") {
-                let repo = UserRepository(id: 1, title: "", imageUrl: nil, type: .repository)
+                let repo = UserRepository(id: 1, title: "", url: "", type: .repository)
                 let controller = UserRepositoryListMock()
                 _ = sut.configureController(controller, with: flowController)
                 
@@ -79,7 +79,7 @@ class UserRepositoryControllerConfiguratorSpec: QuickSpec {
             }
             
             context("When configuring cell select action for a user") {
-                let user = UserRepository(id: 1, title: "login", imageUrl: nil, type: .user)
+                let user = UserRepository(id: 1, title: "login", url: "", type: .user)
                 let controller = UserRepositoryListMock()
                 _ = sut.configureController(controller, with: flowController)
                 

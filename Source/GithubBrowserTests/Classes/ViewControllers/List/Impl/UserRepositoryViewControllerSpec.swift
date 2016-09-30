@@ -20,7 +20,7 @@ class UserRepositoryViewControllerSpec: QuickSpec {
             
             context("When search term has changed") {
                 it("Should return empty results if term is shorter than two characters") {
-                    let entries = [UserRepository(id: 4, title: "T", imageUrl: "I", type: .user)]
+                    let entries = [UserRepository(id: 4, title: "T", url: "I", type: .user)]
                     userRepositoryService.searchResult = Observable.just(entries)
                     
                     self.fireSearchBarTextChangeEvent(searchBar: view.searchBar, text: "A")
@@ -30,7 +30,7 @@ class UserRepositoryViewControllerSpec: QuickSpec {
                 }
                 
                 it("Should get results from service if term is at least two characters long") {
-                    let entries = [UserRepository(id: 4, title: "T", imageUrl: "I", type: .user)]
+                    let entries = [UserRepository(id: 4, title: "T", url: "I", type: .user)]
                     userRepositoryService.searchResult = Observable.just(entries)
                     
                     self.fireSearchBarTextChangeEvent(searchBar: view.searchBar, text: "AB")
@@ -51,8 +51,8 @@ class UserRepositoryViewControllerSpec: QuickSpec {
                 }
                 
                 it("Should sort entries from service by id") {
-                    let entries = [UserRepository(id: 4, title: "T", imageUrl: "I", type: .user),
-                                   UserRepository(id: 2, title: "E", imageUrl: "L", type: .user)]
+                    let entries = [UserRepository(id: 4, title: "T", url: "I", type: .user),
+                                   UserRepository(id: 2, title: "E", url: "L", type: .user)]
                     userRepositoryService.searchResult = Observable.just(entries)
                     
                     self.fireSearchBarTextChangeEvent(searchBar: view.searchBar, text: "ABCD")

@@ -6,7 +6,7 @@ class RepositoriesDeserializerMock: Deserializer {
     
     var receivedInput: Any?
     var deserializedRepositories: [Repository] = [
-        Repository(id: 1, name: "repo", ownerAvatarUrl: nil)
+        Repository(id: 1, name: "repo", url: "repo_url")
     ]
     
     func deserialize(_ serialized: Any?) throws -> [Repository] {

@@ -16,11 +16,15 @@ class GithubUserDeserializer: Deserializer {
             throw DeserializationError.improperInputFormat
         }
         
+        guard let url = json["url"] as? String else {
+            throw DeserializationError.improperInputFormat
+        }
+        
         let avatarUrl = json["avatar_url"] as? String
         let starCount = json["star_count"] as? Int
         let followers = json["followers"] as? Int
         
-        return User(id: id, login: login, avatarUrl: avatarUrl,
+        return User(id: id, login: login, url: url, avatarUrl: avatarUrl,
                     starCount: starCount, followers: followers)
     }
 }

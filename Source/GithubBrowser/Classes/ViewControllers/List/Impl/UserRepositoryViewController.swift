@@ -60,6 +60,7 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
                     cellIdentifier: ReuseIdentifiers.userRepositoryCell.rawValue,
                     cellType: UserRepositoryCell.self)) { (row, userRepository, cell) in
                 cell.titleView.text = userRepository.title
+                cell.subtitleView.text = userRepository.url
             }
             .addDisposableTo(self.disposeBag)
         

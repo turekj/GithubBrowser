@@ -10,7 +10,7 @@ class UserRepositoryFromUserFactorySpec: QuickSpec {
             let sut = UserRepositoryFromUserFactory()
             
             context("When creating user repository entry") {
-                let user = User(id: 19, login: "usr_lgn", avatarUrl: "https://url.com")
+                let user = User(id: 19, login: "usr_lgn", url: "https://url.com")
                 
                 let result = sut.makeUserRepository(user)
                 
@@ -22,8 +22,8 @@ class UserRepositoryFromUserFactorySpec: QuickSpec {
                     expect(result.title).to(equal("usr_lgn"))
                 }
                 
-                it("Should rewrite avatarUrl to imageUrl") {
-                    expect(result.imageUrl).to(equal("https://url.com"))
+                it("Should rewrite url field") {
+                    expect(result.url).to(equal("https://url.com"))
                 }
                 
                 it("Should set type to user") {

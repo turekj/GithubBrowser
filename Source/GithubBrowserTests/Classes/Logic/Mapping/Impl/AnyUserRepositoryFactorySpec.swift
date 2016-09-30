@@ -16,7 +16,7 @@ class AnyUserRepositoryFactorySpec: QuickSpec {
                 it("Should pass make invocation to wrapped object") {
                     expect(result.id).to(equal(33))
                     expect(result.title).to(equal(""))
-                    expect(result.imageUrl).to(equal("https://image.com"))
+                    expect(result.url).to(equal("https://image.com"))
                     expect(result.type).to(equal(UserRepositoryEntryType.repository))
                     expect(factory.source).to(equal(15))
                 }

@@ -9,6 +9,6 @@ class UserRepositoryFromIntFactoryMock: UserRepositoryFactory {
     func makeUserRepository(_ source: Int) -> UserRepository {
         self.source = source
         
-        return UserRepository(id: 33, title: "", imageUrl: "https://image.com", type: .repository)
+        return UserRepository(id: 33, title: "", url: "https://image.com", type: .repository)
     }
 }

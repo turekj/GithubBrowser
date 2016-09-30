@@ -19,14 +19,21 @@ class GithubRepositoryDeserializerSpec: QuickSpec {
                 }
                 
                 it("Should throw deserialization error if repository id is missing") {
-                    let input = ["name": "name"] as [String: Any]
+                    let input = ["name": "name", "url": "repo_url"] as [String: Any]
                     
                     expect { try sut.deserialize(input) }.to(
                         throwError(DeserializationError.improperInputFormat))
                 }
                 
                 it("Should throw deserialization error if repository name is missing") {
-                    let input = ["id": 14] as [String: Any]
+                    let input = ["id": 14, "url": "repo_url"] as [String: Any]
+                    
+                    expect { try sut.deserialize(input) }.to(
+                        throwError(DeserializationError.improperInputFormat))
+                }
+                
+                it("Should throw deserialization error if repository url is missing") {
+                    let input = ["id": 11, "name": "repo"] as [String: Any]
                     
                     expect { try sut.deserialize(input) }.to(
                         throwError(DeserializationError.improperInputFormat))
@@ -34,30 +41,13 @@ class GithubRepositoryDeserializerSpec: QuickSpec {
                 
                 it("Should serialize repositories properly if data is in correct format") {
                     let input = ["id": 13, "name": "repository_name",
-                                 "owner": ["avatar_url": "avatar"]] as [String: Any]
+                                 "url": "repo_url"] as [String: Any]
                     
                     let repository = try! sut.deserialize(input)
                     
                     expect(repository.id).to(equal(13))
                     expect(repository.name).to(equal("repository_name"))
-                    expect(repository.ownerAvatarUrl).to(equal("avatar"))
-                }
-                
-                it("Should handle optional owner info") {
-                    let input = ["id": 13, "name": "repository_name"] as [String: Any]
-                    
-                    let repository = try! sut.deserialize(input)
-                    
-                    expect(repository.ownerAvatarUrl).to(beNil())
-                }
-                
-                it("Should handle optional owner avatar") {
-                    let input = ["id": 13, "name": "repository_name",
-                                 "owner": ["not_an": "avatar"]] as [String: Any]
-                    
-                    let repository = try! sut.deserialize(input)
-                    
-                    expect(repository.ownerAvatarUrl).to(beNil())
+                    expect(repository.url).to(equal("repo_url"))
                 }
             }
         }
