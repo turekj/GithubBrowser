@@ -69,7 +69,7 @@ class GithubUserDetailsServiceSpec: QuickSpec {
                     expect(result).toNot(beNil())
                     expect(result?.id).to(equal(deserializer.deserialized.id))
                     expect(result?.login).to(equal(deserializer.deserialized.login))
-                    expect(result?.avatarUrl).to(equal(deserializer.deserialized.avatarUrl))
+                    expect(result?.url).to(equal(deserializer.deserialized.url))
                 }
             }
         }

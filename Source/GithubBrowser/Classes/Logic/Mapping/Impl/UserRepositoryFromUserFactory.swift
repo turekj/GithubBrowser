@@ -7,7 +7,7 @@ class UserRepositoryFromUserFactory: UserRepositoryFactory {
         return UserRepository(
             id: source.id,
             title: source.login,
-            url: source.avatarUrl,
+            url: source.url,
             type: .user)
     }
 }

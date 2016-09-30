@@ -22,8 +22,8 @@ class UserRepositoryFromRepositoryFactorySpec: QuickSpec {
                     expect(result.title).to(equal("oper"))
                 }
                 
-                it("Should rewrite ownerAvatarUrl to imageUrl") {
-                    expect(result.imageUrl).to(equal("URL"))
+                it("Should rewrite ownerAvatarUrl to url") {
+                    expect(result.url).to(equal("URL"))
                 }
                 
                 it("Should set type to repository") {

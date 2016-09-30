@@ -41,7 +41,7 @@ class GithubSearchServiceSpec: QuickSpec {
                     expect(result!.count).to(equal(1))
                     expect(result![0].id).to(equal(1))
                     expect(result![0].login).to(equal("user_log"))
-                    expect(result![0].avatarUrl).to(equal("http://avatar.com"))
+                    expect(result![0].url).to(equal("http://user.com"))
                 }
                 
                 it("Should pass fetched JSON to deserializer") {
