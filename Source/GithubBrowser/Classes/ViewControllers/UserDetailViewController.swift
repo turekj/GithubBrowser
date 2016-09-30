@@ -9,6 +9,8 @@ class UserDetailViewController: UIViewController, UserDetail {
     let detailsService: UserDetailsService
     
     var userLogin: Variable<String?> = Variable(nil)
+    var userData: Observable<User>?
+    let disposeBag = DisposeBag()
     
     init(view: UserDetailView, detailsService: UserDetailsService) {
         self.userDetailView = view
@@ -22,6 +24,7 @@ class UserDetailViewController: UIViewController, UserDetail {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
+        self.bindViewModel()
     }
     
     func configureView() {
@@ -30,6 +33,21 @@ class UserDetailViewController: UIViewController, UserDetail {
         constrain(self.userDetailView) { v in
             v.edges == v.superview!.edges
         }
+    }
+    
+    func bindViewModel() {
+        self.userLogin.asDriver()
+            .filter { $0 != nil }
+            .map { "Username: \($0!)" }
+            .drive(self.userDetailView.usernameLabel.rx.text)
+            .addDisposableTo(self.disposeBag)
+    }
+    
+    // MARK: - Layout
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.navigationItem.title = self.userLogin.value
     }
     
     // MARK: - Required initializer

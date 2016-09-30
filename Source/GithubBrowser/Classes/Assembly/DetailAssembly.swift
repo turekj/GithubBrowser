@@ -22,7 +22,7 @@ class DetailAssembly: AssemblyType {
             usernameLabel.text = "Username"
             usernameLabel.lineBreakMode = .byTruncatingTail
             let starCountLabel = UILabel()
-            starCountLabel.text = "Star count"
+            starCountLabel.text = "Stars count"
             starCountLabel.lineBreakMode = .byTruncatingTail
             let followersLabel = UILabel()
             followersLabel.text = "Followers count"
