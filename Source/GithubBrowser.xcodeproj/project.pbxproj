@@ -302,7 +302,7 @@
 				8C164F821D9DA015008F15C0 /* Impl */,
 				8C164F841D9DA028008F15C0 /* UserDetail.swift */,
 			);
-			name = Detail;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		8C164F821D9DA015008F15C0 /* Impl */ = {
@@ -310,7 +310,7 @@
 			children = (
 				8C164F801D9DA012008F15C0 /* UserDetailViewController.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8C58FDE01D9E49DF0068B591 /* Detail */ = {
@@ -318,7 +318,7 @@
 			children = (
 				8C58FDE11D9E49FA0068B591 /* UserDetailView.swift */,
 			);
-			name = Detail;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		8C58FDE31D9E54410068B591 /* Detail */ = {
@@ -326,7 +326,7 @@
 			children = (
 				8C58FDE41D9E54450068B591 /* Impl */,
 			);
-			name = Detail;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		8C58FDE41D9E54450068B591 /* Impl */ = {
@@ -334,7 +334,7 @@
 			children = (
 				8C58FDE51D9E54540068B591 /* UserDetailViewControllerSpec.swift */,
 			);
-			name = Impl;
+			path = Impl;
 			sourceTree = "<group>";
 		};
 		8C58FDF31D9E62AC0068B591 /* Assets */ = {
@@ -342,17 +342,17 @@
 			children = (
 				8C58FDF41D9E62C60068B591 /* avatar.jpg */,
 			);
-			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		8C58FDF81D9E8AAF0068B591 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8C58FDF91D9E8ABB0068B591 /* UserSpec.swift */,
 				8C58FDFB1D9E8C5C0068B591 /* RepositorySpec.swift */,
 				8C58FDFD1D9E8D3B0068B591 /* UserRepositorySpec.swift */,
+				8C58FDF91D9E8ABB0068B591 /* UserSpec.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8C8F93071D9BFFB700EE5A60 = {
@@ -386,8 +386,8 @@
 		8C8F93271D9BFFB700EE5A60 /* GithubBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
-				8C8F933C1D9C013100EE5A60 /* Resources */,
 				8C8F933B1D9C011800EE5A60 /* Classes */,
+				8C8F933C1D9C013100EE5A60 /* Resources */,
 			);
 			path = GithubBrowserTests;
 			sourceTree = "<group>";
@@ -475,11 +475,11 @@
 		8C8F933B1D9C011800EE5A60 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8C58FDF81D9E8AAF0068B591 /* Model */,
 				8CEA8E8F1D9C27DC00B512B8 /* Extensions */,
 				8CEA8E961D9C2AC600B512B8 /* Flow */,
 				8CA102A71D9D3FE600F0782C /* Logic */,
 				8C8F934D1D9C09AD00EE5A60 /* Mock */,
+				8C58FDF81D9E8AAF0068B591 /* Model */,
 				8CEA8ED21D9C593700B512B8 /* Services */,
 				8CA102D31D9D721900F0782C /* ViewControllers */,
 			);
@@ -531,10 +531,10 @@
 			children = (
 				8C8F93631D9C0F0900EE5A60 /* NavigationControllerMock.swift */,
 				8C8F93611D9C0EFF00EE5A60 /* OtherViewControllerMock.swift */,
+				8C164F8C1D9DA3D4008F15C0 /* UserDetailMock.swift */,
 				8CEA8EB41D9C385000B512B8 /* UserRepositoryListMock.swift */,
 				8C8F935F1D9C0EF500EE5A60 /* ViewControllerMock.swift */,
 				8C8F93651D9C127C00EE5A60 /* YetAnotherViewControllerMock.swift */,
-				8C164F8C1D9DA3D4008F15C0 /* UserDetailMock.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -714,8 +714,8 @@
 			children = (
 				8CEA8EA41D9C30E500B512B8 /* CompositeControllerConfigurator.swift */,
 				8CEA8E981D9C2AE200B512B8 /* MainFlowController.swift */,
-				8CEA8EAD1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift */,
 				8C164F881D9DA314008F15C0 /* UserDetailControllerConfigurator.swift */,
+				8CEA8EAD1D9C376400B512B8 /* UserRepositoryControllerConfigurator.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -725,8 +725,8 @@
 			children = (
 				8CEA8EA61D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift */,
 				8CEA8E9B1D9C2BC000B512B8 /* MainFlowControllerSpec.swift */,
-				8CEA8EAF1D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift */,
 				8C164F8A1D9DA3A8008F15C0 /* UserDetailControllerConfiguratorSpec.swift */,
+				8CEA8EAF1D9C378B00B512B8 /* UserRepositoryControllerConfiguratorSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -760,10 +760,10 @@
 		8CEA8EB61D9C39FC00B512B8 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				8C164F861D9DA28D008F15C0 /* DetailAssembly.swift */,
 				8CEA8EB71D9C3A1600B512B8 /* GlobalAssembly.swift */,
 				8CEA8EB91D9C3A3600B512B8 /* ListAssembly.swift */,
 				8CA102CF1D9D6CBE00F0782C /* ServiceAssembly.swift */,
-				8C164F861D9DA28D008F15C0 /* DetailAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -773,10 +773,10 @@
 			children = (
 				8CEA8ECC1D9C555700B512B8 /* Deserializers */,
 				8CEA8EDC1D9C5FF300B512B8 /* Impl */,
+				8C58FDE91D9E5F180068B591 /* ImageService.swift */,
 				8CF699521D9D257700F2373A /* SearchService.swift */,
 				8C58FDCA1D9E2FDD0068B591 /* StarCountService.swift */,
 				8C58FDD41D9E34580068B591 /* UserDetailsService.swift */,
-				8C58FDE91D9E5F180068B591 /* ImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -853,11 +853,11 @@
 			isa = PBXGroup;
 			children = (
 				8CA102921D9D35A300F0782C /* AnySearchService.swift */,
+				8C58FDEB1D9E5FA60068B591 /* DownloadImageService.swift */,
 				8CF699581D9D284100F2373A /* GithubSearchService.swift */,
-				8CA102BE1D9D463700F0782C /* UserRepositorySearchService.swift */,
 				8C58FDCC1D9E30730068B591 /* GithubStarCountService.swift */,
 				8C58FDD61D9E348C0068B591 /* GithubUserDetailsService.swift */,
-				8C58FDEB1D9E5FA60068B591 /* DownloadImageService.swift */,
+				8CA102BE1D9D463700F0782C /* UserRepositorySearchService.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -866,11 +866,11 @@
 			isa = PBXGroup;
 			children = (
 				8CA102941D9D361F00F0782C /* AnySearchServiceSpec.swift */,
+				8C58FDED1D9E61150068B591 /* DownloadImageServiceSpec.swift */,
 				8CF699561D9D264C00F2373A /* GithubSearchServiceSpec.swift */,
-				8CA102C01D9D476800F0782C /* UserRepositorySearchServiceSpec.swift */,
 				8C58FDCE1D9E30990068B591 /* GithubStarCountServiceSpec.swift */,
 				8C58FDD81D9E35290068B591 /* GithubUserDetailsServiceSpec.swift */,
-				8C58FDED1D9E61150068B591 /* DownloadImageServiceSpec.swift */,
+				8CA102C01D9D476800F0782C /* UserRepositorySearchServiceSpec.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -878,17 +878,17 @@
 		8CEA8EE21D9C60CB00B512B8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8C58FDF61D9E688B0068B591 /* ImageServiceMock.swift */,
 				8CF699421D9D19A300F2373A /* RepositoriesDeserializerMock.swift */,
 				8CA102C41D9D487900F0782C /* RepositorySearchServiceMock.swift */,
 				8CA102961D9D365300F0782C /* SearchServiceMock.swift */,
+				8C58FDDA1D9E35810068B591 /* SingleUserDeserializerMock.swift */,
+				8C58FDDC1D9E35FA0068B591 /* StarCountServiceMock.swift */,
 				8CF6994A1D9D1E2B00F2373A /* StringDeserializerMock.swift */,
+				8C58FDE71D9E54B20068B591 /* UserDetailsServiceMock.swift */,
 				8CA102D11D9D713800F0782C /* UserRepositorySearchServiceMock.swift */,
 				8CA102C21D9D480600F0782C /* UserSearchServiceMock.swift */,
 				8CEA8EE31D9C60D800B512B8 /* UsersDeserializerMock.swift */,
-				8C58FDDA1D9E35810068B591 /* SingleUserDeserializerMock.swift */,
-				8C58FDDC1D9E35FA0068B591 /* StarCountServiceMock.swift */,
-				8C58FDE71D9E54B20068B591 /* UserDetailsServiceMock.swift */,
-				8C58FDF61D9E688B0068B591 /* ImageServiceMock.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
