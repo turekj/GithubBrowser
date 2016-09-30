@@ -65,6 +65,14 @@ class UserDetailViewController: UIViewController, UserDetail {
             .asDriver(onErrorJustReturn: "Stars count: n/a")
             .drive(self.userDetailView.starCountLabel.rx.text)
             .addDisposableTo(self.disposeBag)
+                
+        self.userData?
+            .filter { $0.avatarUrl != nil }
+            .flatMapLatest { self.imageService.image(fromUrl: $0.avatarUrl!) }
+            .asDriver(onErrorJustReturn: UIImage(named: "placeholder")!)
+            .map { (image: UIImage) -> UIImage? in image }
+            .drive(self.userDetailView.avatarView.rx.image)
+            .addDisposableTo(self.disposeBag)
     }
     
     // MARK: - Layout

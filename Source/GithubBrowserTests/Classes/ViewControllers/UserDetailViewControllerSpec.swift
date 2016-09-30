@@ -26,6 +26,10 @@ class UserDetailViewControllerSpec: QuickSpec {
             sut.viewDidLoad()
             
             context("When user login changes") {
+                beforeEach {
+                    avatarView.image = nil
+                }
+                
                 it("Should bind new value to a label") {
                     sut.userLogin.value = "new_login"
                     _ = try! sut.userLogin.asDriver().toBlocking().first()
@@ -57,6 +61,28 @@ class UserDetailViewControllerSpec: QuickSpec {
                     _ = try! sut.userData?.toBlocking().first()
                     
                     expect(starCountLabel.text).to(equal("Stars count: 12"))
+                }
+                
+                it("Should map avatar URL to image and bind it to avatar view") {
+                    sut.userLogin.value = "loginlogin"
+                    _ = try! sut.userData?.toBlocking().first()
+                    
+                    expect(avatarView.image).toEventuallyNot(beNil(), timeout: 3)
+                    expect(avatarView.image?.size.width).toEventually(equal(460), timeout: 3)
+                    expect(avatarView.image?.size.height).toEventually(equal(460), timeout: 3)
+                    expect(imageService.url).to(equal("http://url.com"))
+                }
+                
+                it("Should use a placeholder image on error") {
+                    imageService.error = ServiceParameterError.requiredParameterMissing
+                    sut.userLogin.value = "tttt"
+                    _ = try! sut.userData?.toBlocking().first()
+                    
+                    expect(avatarView.image).toEventuallyNot(beNil(), timeout: 3)
+                    expect(avatarView.image?.size.width).toEventually(
+                        beLessThanOrEqualTo(360), timeout: 3)
+                    expect(avatarView.image?.size.height).toEventually(
+                        beLessThanOrEqualTo(360), timeout: 3)
                 }
             }
         }
