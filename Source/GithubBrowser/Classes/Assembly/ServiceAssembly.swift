@@ -75,5 +75,9 @@ class ServiceAssembly: AssemblyType {
         container.register(StarCountService.self) { _ in
             return GithubStarCountService()
         }
+        
+        container.register(ImageService.self) { _ in
+            return DownloadImageService()
+        }
     }
 }

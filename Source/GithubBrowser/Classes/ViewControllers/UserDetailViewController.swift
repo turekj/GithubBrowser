@@ -7,14 +7,16 @@ class UserDetailViewController: UIViewController, UserDetail {
     
     let userDetailView: UserDetailView
     let detailsService: UserDetailsService
+    let imageService: ImageService
     
     var userLogin: Variable<String?> = Variable(nil)
     var userData: Observable<User>?
     let disposeBag = DisposeBag()
     
-    init(view: UserDetailView, detailsService: UserDetailsService) {
+    init(view: UserDetailView, detailsService: UserDetailsService, imageService: ImageService) {
         self.userDetailView = view
         self.detailsService = detailsService
+        self.imageService = imageService
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -62,6 +64,14 @@ class UserDetailViewController: UIViewController, UserDetail {
             .map { "Stars count: \($0.starCount!)" }
             .asDriver(onErrorJustReturn: "Stars count: n/a")
             .drive(self.userDetailView.starCountLabel.rx.text)
+            .addDisposableTo(self.disposeBag)
+                
+        self.userData?
+            .filter { $0.avatarUrl != nil }
+            .flatMapLatest { self.imageService.image(fromUrl: $0.avatarUrl!) }
+            .asDriver(onErrorJustReturn: UIImage(named: "placeholder")!)
+            .map { (image: UIImage) -> UIImage? in image }
+            .drive(self.userDetailView.avatarView.rx.image)
             .addDisposableTo(self.disposeBag)
     }
     

@@ -30,6 +30,7 @@
 		8C58FDEC1D9E5FA60068B591 /* DownloadImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDEB1D9E5FA60068B591 /* DownloadImageService.swift */; };
 		8C58FDEE1D9E61150068B591 /* DownloadImageServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDED1D9E61150068B591 /* DownloadImageServiceSpec.swift */; };
 		8C58FDF51D9E62C60068B591 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C58FDF41D9E62C60068B591 /* avatar.jpg */; };
+		8C58FDF71D9E688B0068B591 /* ImageServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDF61D9E688B0068B591 /* ImageServiceMock.swift */; };
 		8C8F93141D9BFFB700EE5A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */; };
 		8C8F93191D9BFFB700EE5A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F93171D9BFFB700EE5A60 /* Main.storyboard */; };
 		8C8F931B1D9BFFB700EE5A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8F931A1D9BFFB700EE5A60 /* Assets.xcassets */; };
@@ -170,6 +171,7 @@
 		8C58FDEB1D9E5FA60068B591 /* DownloadImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadImageService.swift; sourceTree = "<group>"; };
 		8C58FDED1D9E61150068B591 /* DownloadImageServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadImageServiceSpec.swift; sourceTree = "<group>"; };
 		8C58FDF41D9E62C60068B591 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+		8C58FDF61D9E688B0068B591 /* ImageServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageServiceMock.swift; sourceTree = "<group>"; };
 		8C8F93101D9BFFB700EE5A60 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8F93131D9BFFB700EE5A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C8F93181D9BFFB700EE5A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -869,6 +871,7 @@
 				8C58FDDA1D9E35810068B591 /* SingleUserDeserializerMock.swift */,
 				8C58FDDC1D9E35FA0068B591 /* StarCountServiceMock.swift */,
 				8C58FDE71D9E54B20068B591 /* UserDetailsServiceMock.swift */,
+				8C58FDF61D9E688B0068B591 /* ImageServiceMock.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1092,6 +1095,7 @@
 				8CF6993D1D9D166F00F2373A /* GithubRepositoryDeserializerSpec.swift in Sources */,
 				8CEA8ED61D9C596A00B512B8 /* GithubUserDeserializerSpec.swift in Sources */,
 				8C8F93601D9C0EF500EE5A60 /* ViewControllerMock.swift in Sources */,
+				8C58FDF71D9E688B0068B591 /* ImageServiceMock.swift in Sources */,
 				8CA102BD1D9D451700F0782C /* AnyUserRepositoryFactorySpec.swift in Sources */,
 				8CEA8EA71D9C319F00B512B8 /* CompositeControllerConfiguratorSpec.swift in Sources */,
 				8C58FDDD1D9E35FA0068B591 /* StarCountServiceMock.swift in Sources */,
