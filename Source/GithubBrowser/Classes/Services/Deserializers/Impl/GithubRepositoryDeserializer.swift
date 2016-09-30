@@ -16,9 +16,10 @@ class GithubRepositoryDeserializer: Deserializer {
             throw DeserializationError.improperInputFormat
         }
         
-        let ownerDetails = json["owner"] as? [String: Any?]
-        let ownerAvatarUrl = ownerDetails?["avatar_url"] as? String
+        guard let url = json["url"] as? String else {
+            throw DeserializationError.improperInputFormat
+        }
         
-        return Repository(id: id, name: name, ownerAvatarUrl: ownerAvatarUrl)
+        return Repository(id: id, name: name, url: url)
     }
 }

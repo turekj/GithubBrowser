@@ -4,11 +4,11 @@ import Foundation
 struct Repository {
     let id: Int
     let name: String
-    let ownerAvatarUrl: String?
+    let url: String
     
-    init(id: Int, name: String, ownerAvatarUrl: String?) {
+    init(id: Int, name: String, url: String) {
         self.id = id
         self.name = name
-        self.ownerAvatarUrl = ownerAvatarUrl
+        self.url = url
     }
 }
