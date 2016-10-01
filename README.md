@@ -11,13 +11,13 @@
 ### Notes for review
 
 * API calls are not authenticated, which means they have hard rate limit. **Search API calls are limited to 5 per minute**: every search requires two API calls (users & repositories) and Github limits search quota to 10 requests per minute.
-* API errors are handled gracefully, but not in a user-friendly manner: the list vanishes if something goes wrong. This might be a little misleading, since rate limit is easy to hit after a few letters (despite throttling). I have decided that for this task (since one of the requirements is *How your app will look is not that important until it's usable*) on time is better than perfect, but it could be easily fixed by binding a view model appropriately. 
+* API errors are handled gracefully, but not in a user-friendly manner: the list vanishes if something goes wrong. ~~This might be a little misleading, since rate limit is easy to hit after a few letters (despite throttling). I have decided that for this task (since one of the requirements is *How your app will look is not that important until it's usable*) on time is better than perfect, but it could be easily fixed by binding a view model appropriately.~~ I hate rate limiting so much, I have finally decided to show a toast message when it kicks in.
 
 ### Notes to self (real-world app TODOs)
 
 Obvious things to do:
 
-- [ ] Handle errors (especially rate limiting error) on UI. Right now an empty list is returned.
+- [ ] Handle errors (~~especially rate limiting error~~) on UI. Right now an empty list is returned.
 - [ ] Add API authentication not to hit the rate limit so often.
 - [ ] Freeze all of the dependencies in `Cartfile`.
 - [ ] Introduce caching not to hit rate limit so often:
