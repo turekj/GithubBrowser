@@ -16,6 +16,7 @@
 		8C1EB1E61DA0405F00354F6B /* ErrorDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1EB1E51DA0405F00354F6B /* ErrorDetector.swift */; };
 		8C1EB1E91DA040B900354F6B /* GithubRateLimitErrorDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1EB1E81DA040B900354F6B /* GithubRateLimitErrorDetector.swift */; };
 		8C1EB1ED1DA0414800354F6B /* GithubRateLimitErrorDetectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1EB1EC1DA0414800354F6B /* GithubRateLimitErrorDetectorSpec.swift */; };
+		8C1EB1EF1DA0470100354F6B /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1EB1EE1DA0470100354F6B /* ToastSwiftFramework.framework */; };
 		8C58FDCB1D9E2FDD0068B591 /* StarCountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDCA1D9E2FDD0068B591 /* StarCountService.swift */; };
 		8C58FDCD1D9E30730068B591 /* GithubStarCountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDCC1D9E30730068B591 /* GithubStarCountService.swift */; };
 		8C58FDCF1D9E30990068B591 /* GithubStarCountServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58FDCE1D9E30990068B591 /* GithubStarCountServiceSpec.swift */; };
@@ -163,6 +164,7 @@
 		8C1EB1E51DA0405F00354F6B /* ErrorDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDetector.swift; sourceTree = "<group>"; };
 		8C1EB1E81DA040B900354F6B /* GithubRateLimitErrorDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRateLimitErrorDetector.swift; sourceTree = "<group>"; };
 		8C1EB1EC1DA0414800354F6B /* GithubRateLimitErrorDetectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRateLimitErrorDetectorSpec.swift; sourceTree = "<group>"; };
+		8C1EB1EE1DA0470100354F6B /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToastSwiftFramework.framework; path = ../Carthage/Build/iOS/ToastSwiftFramework.framework; sourceTree = "<group>"; };
 		8C58FDCA1D9E2FDD0068B591 /* StarCountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarCountService.swift; sourceTree = "<group>"; };
 		8C58FDCC1D9E30730068B591 /* GithubStarCountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubStarCountService.swift; sourceTree = "<group>"; };
 		8C58FDCE1D9E30990068B591 /* GithubStarCountServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubStarCountServiceSpec.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				8CEA8EC21D9C4BBC00B512B8 /* RxSwift.framework in Frameworks */,
 				8CEA8E9E1D9C2DD600B512B8 /* Dollar.framework in Frameworks */,
 				8C8F93471D9C07E700EE5A60 /* Swinject.framework in Frameworks */,
+				8C1EB1EF1DA0470100354F6B /* ToastSwiftFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +541,7 @@
 		8C8F93421D9C069100EE5A60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8C1EB1EE1DA0470100354F6B /* ToastSwiftFramework.framework */,
 				8CA102CD1D9D5EDB00F0782C /* Cartography.framework */,
 				8CEA8EEF1D9C675100B512B8 /* RxTests.framework */,
 				8CEA8EEC1D9C663F00B512B8 /* RxBlocking.framework */,
@@ -1070,6 +1074,7 @@
 				"$(SRCROOT)/../Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/../Carthage/Build/iOS/RxAlamofire.framework",
 				"$(SRCROOT)/../Carthage/Build/iOS/Cartography.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/ToastSwiftFramework.framework",
 			);
 			outputPaths = (
 			);
