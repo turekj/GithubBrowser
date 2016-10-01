@@ -11,14 +11,21 @@ class UserRepositoryViewControllerSpec: QuickSpec {
         describe("UserRepositoryViewController") {
             let searchBar = UISearchBar()
             let list = UITableView()
-            let view = UserRepositoryView(searchBar: searchBar, list: list)
+            let view = UserRepositoryViewToastMock(searchBar: searchBar, list: list)
             let userRepositoryService = UserRepositorySearchServiceMock()
+            let errorDetector = ErrorDetectorMock()
             
             let sut = UserRepositoryViewController(
-                view: view, userRepositoryService: AnySearchService(userRepositoryService))
+                view: view, userRepositoryService: AnySearchService(userRepositoryService),
+                rateLimitErrorDetector: errorDetector)
             sut.viewDidLoad()
             
             context("When search term has changed") {
+                beforeEach {
+                    errorDetector.returnValue = false
+                    view.toastMessage = nil
+                }
+                
                 it("Should return empty results if term is shorter than two characters") {
                     let entries = [UserRepository(id: 4, title: "T", url: "I", type: .user)]
                     userRepositoryService.searchResult = Observable.just(entries)
@@ -38,6 +45,28 @@ class UserRepositoryViewControllerSpec: QuickSpec {
                     
                     expect(result?.count).to(equal(1))
                     expect(result?[0]).to(equal(entries[0]))
+                }
+                
+                it("Should show a toast if rate limiting error is reported") {
+                    errorDetector.returnValue = true
+                    userRepositoryService.searchResult = Observable.error(
+                        DeserializationError.improperInputFormat)
+                    
+                    self.fireSearchBarTextChangeEvent(searchBar: view.searchBar, text: "ABC")
+                    _ = try! sut.searchResults.toBlocking().first()
+                    
+                    expect(view.toastMessage).to(equal("Rate limit hit. You are too fast! 🔥"))
+                }
+                
+                it("Should not show a toast if error is not a rate limiting error") {
+                    errorDetector.returnValue = false
+                    userRepositoryService.searchResult = Observable.error(
+                        DeserializationError.improperInputFormat)
+                    
+                    self.fireSearchBarTextChangeEvent(searchBar: view.searchBar, text: "ABC")
+                    _ = try! sut.searchResults.toBlocking().first()
+                    
+                    expect(view.toastMessage).to(beNil())
                 }
                 
                 it("Should return empty results if fetching data from service fails") {

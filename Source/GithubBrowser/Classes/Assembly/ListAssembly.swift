@@ -12,8 +12,10 @@ class ListAssembly: AssemblyType {
         container.register(UserRepositoryViewController.self) { r in
             let view = r.resolve(UserRepositoryView.self)!
             let service = r.resolve(AnySearchService<UserRepository>.self)!
+            let errorDetector = r.resolve(ErrorDetector.self, name: "rateLimit")!
             
-            return UserRepositoryViewController(view: view, userRepositoryService: service)
+            return UserRepositoryViewController(
+                view: view, userRepositoryService: service, rateLimitErrorDetector: errorDetector)
         }
         
         container.register(UserRepositoryView.self) { _ in
@@ -25,6 +27,10 @@ class ListAssembly: AssemblyType {
             let list = UITableView()
             
             return UserRepositoryView(searchBar: searchBar, list: list)
+        }
+        
+        container.register(ErrorDetector.self, name: "rateLimit") { _ in
+            return GithubRateLimitErrorDetector()
         }
     }
 }

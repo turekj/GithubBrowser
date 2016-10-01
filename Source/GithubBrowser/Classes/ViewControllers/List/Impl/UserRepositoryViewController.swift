@@ -8,6 +8,7 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
     
     let userRepositoryView: UserRepositoryView
     let userRepositoryService: AnySearchService<UserRepository>
+    let rateLimitErrorDetector: ErrorDetector
     
     var onUserRepositorySelected: ((UserRepository) -> Void)?
     
@@ -17,9 +18,11 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
     var searchResults: Observable<[UserRepository]> = Observable.just([])
     let disposeBag = DisposeBag()
     
-    init(view: UserRepositoryView, userRepositoryService: AnySearchService<UserRepository>) {
+    init(view: UserRepositoryView, userRepositoryService: AnySearchService<UserRepository>,
+         rateLimitErrorDetector: ErrorDetector) {
         self.userRepositoryView = view
         self.userRepositoryService = userRepositoryService
+        self.rateLimitErrorDetector = rateLimitErrorDetector
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -51,7 +54,14 @@ class UserRepositoryViewController: UIViewController, UserRepositoryList {
                 
                 return self.userRepositoryService.search(withQuery: query)
                     .map { $0.sorted(by: { $0.id < $1.id }) }
-                    .catchErrorJustReturn([])
+                    .catchError { error in
+                        if (self.rateLimitErrorDetector.isDomainSpecificError(error: error)) {
+                            self.userRepositoryView.presentToast(
+                                "Rate limit hit. You are too fast! 🔥")
+                        }
+                        
+                        return Observable.just([])
+                    }
             }
             .observeOn(MainScheduler.instance)
         
