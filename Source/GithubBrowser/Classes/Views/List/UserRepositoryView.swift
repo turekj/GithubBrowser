@@ -1,4 +1,5 @@
 import Cartography
+import ToastSwiftFramework
 import UIKit
 
 
@@ -43,6 +44,12 @@ class UserRepositoryView: UIView {
             l.trailing == l.superview!.trailing
             l.bottom == l.superview!.bottom
         }
+    }
+    
+    // MARK: - Toast
+    
+    public func presentToast(_ message: String) {
+        self.makeToast(message, duration: 1.5, position: .bottom)
     }
     
     // MARK: - Required initializer
